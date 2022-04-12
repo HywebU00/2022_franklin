@@ -1,0 +1,23 @@
+.banner{
+    img{
+        max-width: unset;
+        width: 100%;
+    }
+}
+ul{
+    list-style: none;
+}
+.list-num {
+    color: $gray-600;
+    p{
+        margin-top: 2em;
+    }
+  ul{
+    list-style-type: decimal;
+    line-height: 2em;
+  }
+}
+main{
+    background: url(../../image/ftft_bg.jpg) no-repeat  center center;
+    background-size: cover;
+}

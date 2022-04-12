@@ -1,0 +1,26 @@
+.ftft-login{
+    // margin-top: 66px;
+    .form-signin{
+        margin: 0 auto 3em auto;
+        padding-top: 8em;
+        p{
+            line-height: 2em;
+        }
+    }
+    .input-password{
+        position: relative;
+        input{
+            padding-right: 3em;
+        }
+        i{
+            position: absolute;
+            top: 0.6em;
+            right: 1em;
+            font-size: 1.2em;
+            color: $gray-600;
+        }
+    }
+}
+.navbar-login{
+    background: #fff;
+}
