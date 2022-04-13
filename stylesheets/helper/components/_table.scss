@@ -1,0 +1,75 @@
+.table-style-headerDeep {
+    table {
+        thead {
+					background-color: $primary;
+					color: #fff;
+				
+				th{
+					white-space: nowrap;
+					min-width: 230px;
+					padding-top: 1.2em ;
+					padding-bottom: 1.2em ;
+					position: relative;
+					&:after{
+						content: '';
+						position: absolute;
+						height: 1em;
+						width: 1px;
+						background-color: #fff;
+						top:1.5em;
+						right: 0;
+					}
+					&:last-child{
+						&::after{
+							display: none;
+						}
+					}
+				}
+				}
+				tbody{
+					background-color: #fff;
+					tr{
+						vertical-align: middle;
+					}
+					th{
+						font-weight: 400;
+					}
+				}
+			td>table{
+				width: 100%;
+				th{
+					width: 50%;
+					font-weight: 400;
+					vertical-align: text-top;
+				}
+			
+				tr{
+					border-bottom:1px solid $border-color  ;
+					td,th{
+						padding: 0.5em 0 ;
+					
+					}
+					td{
+						padding-left: 0.5em;
+						i{
+							color: $success;
+							margin-right: 0.2em;
+						}
+					}
+					&:first-child{
+						td,th{
+							padding-top: 0em;
+						}
+						
+					}
+					&:last-child{
+						border-bottom: none;
+					}
+				}
+		
+			}
+    }
+		.table>:not(:first-child){
+			border-top: 0;
+		}
+}
