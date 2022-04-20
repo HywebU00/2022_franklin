@@ -10,17 +10,61 @@
 
 <body>
   <header>
-    <nav class="navbar-login navbar fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="image/ftft-logo.gif" alt="" />
-        </a>
+    <nav class="navbar navbar-light navbar-expand-lg nav-default fixed-top">
+      <!-- container-fluid -->
+      <div class="container ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex nav-mobile">
+          <a class="navbar-brand" href="#">
+            <img src="image/ftft-logo.gif" alt="" />
+          </a>
+          <ul class="align-items-center">
+            <li class="nav-item">
+              <button class="btn search-mobile popover-mobile-search">
+                <img class="search" src="image/search_icon.png" alt="">
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#userModal">
+                <img src="image/user_icon.png" alt="">
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav">
+            <!-- 點擊 a 連結 新增classname "show" 改變點擊樣式 -->
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link nav-toggle show" href="#">開戶進度</a>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link nav-toggle" href="#">常見問題</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-user ms-auto align-items-center">
+            <li class="nav-item"><span class="search">
+                <input type="text">
+                <img src="image/search_icon.png" alt="">
+              </span></li>
+            <li class="nav-item">
+              <a class="nav-link popover-dismiss" tabindex="0" role="button" data-bs-toggle="popover"
+                data-bs-trigger="focus" title="Dismissible popover">
+                <img src="image/user_icon.png" alt="">
+              </a></li>
+            <li class="nav-item">
+              <div class="btn btn-outline-primary">登出</div>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
-  <main class="">
-    <section>
-      <div class="container form-verify">
+  <main >
+    <section class="form-verify-page">
+      <div class="container ">
         <!-- <h1 class="h3 pb-2">客戶投資適性分析暨風險預告書</h1> -->
         <p>親愛的 <span>尹淑芬 </span>，您好 ！</p>
         <p>請填寫下列問題進行身份驗證以開啟交易權限。</p>
@@ -101,6 +145,8 @@
     </div>
   </footer>
   <script src="js/bootstrap.bundle.js"></script>
+  <!-- 全站同用的ＪＳ -->
+  <script src="js/ftft.js"></script>
 </body>
 
 </html>

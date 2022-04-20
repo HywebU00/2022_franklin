@@ -1,3 +1,7 @@
+body {
+    background: #f0f0f0;
+}
+
 .banner {
     img {
         max-width: unset;
@@ -5,16 +9,23 @@
     }
 }
 
+h1 {
+    color: $primary;
+}
+
 ul {
     list-style: none;
     color: $gray-600;
 }
-.bi-check-circle-fill{
+
+.bi-check-circle-fill {
     color: $success;
 }
-.bi-x-circle-fill{
+
+.bi-x-circle-fill {
     color: $danger;
 }
+
 .list-disc,
 .list-num {
     color: $gray-600;
@@ -26,9 +37,10 @@ ul {
 }
 
 .list-disc {
-   p{
-    margin-bottom: 0.5em;
-   }
+    p {
+        margin-bottom: 0.5em;
+    }
+
     ul {
         list-style-type: disc;
 
@@ -47,18 +59,32 @@ ul {
 }
 
 main {
-    margin: 0 auto 3em auto;
+
     padding-top: 8em;
     background: url(../../image/ftft_bg.jpg) no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
+
+    .container {
+        padding-bottom: 3em;
+    }
 }
-.btn-submit{
+
+.btn-submit {
     padding: 1.2em 5em;
 }
+
 .form-control-bg {
-    background-color: lighten($primary,65%);
-    &:active,&:focus{
-        background-color: lighten($primary,65%)
+    background-color: lighten($primary, 65%);
+
+    &:active,
+    &:focus {
+        background-color: lighten($primary, 65%)
     }
-    
+
+}
+
+label.form-label {
+    color: $gray-600;
+    font-weight: 500;
 }

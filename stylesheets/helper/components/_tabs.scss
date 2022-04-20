@@ -1,0 +1,17 @@
+.tab {
+	
+	.nav-item {
+		.nav-link {
+			color: $primary;
+			font-weight: 500;
+			border-bottom: 4px solid #fff;
+			border-radius: 0;
+			padding-bottom: 0.3em;
+		}
+
+		.nav-link.active {
+			background-color: unset;
+			border-bottom: 4px solid $primary;
+		}
+	}
+}

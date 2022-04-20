@@ -1,0 +1,14 @@
+.breadcrumb{
+    margin:2em 0;
+    .breadcrumb-item{
+     
+        +.breadcrumb-item{
+            &::before{
+                content: '>';
+            }
+        }
+       a{
+        text-decoration:none;
+       }
+    }
+}
