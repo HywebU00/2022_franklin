@@ -1,7 +1,10 @@
 body {
     background: #f0f0f0;
 }
-
+p{
+    margin-bottom: 0;
+    line-height: 2em;
+}
 .banner {
     img {
         max-width: unset;

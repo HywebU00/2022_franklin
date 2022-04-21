@@ -1,9 +1,18 @@
 .form-center{
-    max-width: 600px;
+    max-width: 640px;
     margin: 0 auto;
-    
+   .form-control,.form-select{
+     border:none;
+     height: 3em;
+     background: #fff;
+     border:1px solid #cecece;
+     &:focus ,&:active{
+      background: #fff;
+      border:1px solid #cecece;
+     }
+   }
     form{
-        margin-top:2em;
+        margin-top:1em;
     }
  }
  .form-signin {

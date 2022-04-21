@@ -1,9 +1,11 @@
 .btn-submit ,.btn-logout, .btn-width{
-    padding:  1.2em ;
+    padding:  0.5rem ;
     width: 50%;
+    font-size: 1.25rem;
     max-width: 320px;
     @include media-breakpoint-up(lg) { 
-        padding: 1.2em 5em ;
+        // padding: 1.2em 5em ;
+        padding: 0.5rem 5rem;
         width: auto;
     }
 }
