@@ -1,3 +1,9 @@
-.btn-submit ,.btn-logout{
-    padding: 1.2em 5em;
+.btn-submit ,.btn-logout, .btn-width{
+    padding:  1.2em ;
+    width: 50%;
+    max-width: 320px;
+    @include media-breakpoint-up(lg) { 
+        padding: 1.2em 5em ;
+        width: auto;
+    }
 }

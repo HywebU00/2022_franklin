@@ -424,3 +424,23 @@
 		}
 	}
 }
+.table-style-level{
+	
+	th{
+		background: #dee5ef;
+		padding: 1.5em;
+		padding-right:2em;
+		text-align: end;
+		width: 250px;
+		border-bottom:1px solid #fff ;
+		min-width: 250px;
+		vertical-align: middle;
+		white-space: nowrap;
+	}
+	td{
+		padding-left:2em;
+		vertical-align: middle;
+		background: #fff;
+		min-width: 300px;
+	}
+}
