@@ -14,6 +14,10 @@ p{
 
 h1 {
     color: $primary;
+    .eg-name{
+        font-size: .75em;
+        font-weight: 300;
+    }
 }
 
 ul {
@@ -90,4 +94,24 @@ main {
 label.form-label {
     color: $gray-600;
     font-weight: 500;
+}
+
+.select-order{
+    display: flex;
+    align-items: center;
+    span{
+        white-space: nowrap;
+        color: $primary;
+        margin-bottom: 0;
+        margin-right: 0.5em;
+    }
+    select{
+        border: 0px;
+        border-radius: 0px;
+        background-color: $primary;
+        background-image: url(../../image/select_arrow.svg);
+        color: #fff;
+        padding-top: .8em;
+        padding-bottom: .8em;
+    }
 }

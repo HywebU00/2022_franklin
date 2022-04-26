@@ -57,6 +57,23 @@
                     立即開戶
                   </button>
                 </div>
+                <div class="col-12 col-md-6 ">
+                  <label class="d-none" for="">verification code</label>
+                  <input
+                    type="text"
+                    class="form-control h-100"
+                    id=""
+                    placeholder="請輸入驗證碼"
+                  />
+                </div>
+                <div class="col-sm-8 col-12 col-md-6 d-flex  ms-md-0  ms-auto ">
+                  <img class="h-100" src="image/captcha.gif" alt="">
+                  <button class="btn ms-2 btn-secondary btn-reflash w-100" type="submit">
+                    <img src="image/reflash.svg" alt="">
+                   <span> 重新整理</span>
+                  </button>
+        
+                </div>
                 <div class="col-12 d-flex justify-content-end my-4">
                   <button
                     class="btn btn-lg btn-outline-secondary"
@@ -65,6 +82,7 @@
                     忘記密碼
                   </button>
                 </div>
+              
               </div>
             </form>
           <!-- 注意事項列表 -->
@@ -86,9 +104,16 @@
         </div>
       </div>
       <!-- 廣告位置 -->
-      <section class="banner">
-        <img src="image/ftft_banner.jpg" class="img-fluid" alt="" />
-      </section>
+          <!-- 廣告位置 -->
+    <section class="banner">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="image/ftft_banner.jpg">
+        <source media="(min-width: 992px)" src="image/ftft_banner.jpg"">
+        <source media=" (min-width: 576px)" srcset="image/ftft_banner_md.jpg">
+        <source media="(max-width: 575px)" srcset="image/ftft_banner_sm.jpg">
+        <img srcset="image/ftft_banner.jpg">
+      </picture>
+    </section>
     </main>
     <footer>
       <div class="container">
@@ -139,5 +164,7 @@
       </div>
     </footer>
     <script src="js/bootstrap.bundle.js"></script>
+      <!-- 廣告圖片大小 -->
+  <script src="js/picturefill.js"></script>
   </body>
 </html>

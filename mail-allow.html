@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/all.min.css" />
-    <title>2022富蘭克林基金 personaldata</title>
+    <title>2022富蘭克林基金 mail-allow</title>
 </head>
 
 <body>
@@ -379,59 +379,198 @@
             <!-- Breadcrumb end -->
 
             <div class="container">
-                <h1 class="h3 pb-2">個人基本資料查詢</h1>
-               <section>
-                <div class=" table-responsive ">
-                    <div class="table-responsive-xl">
-                        <table class="table table-style-level">
-                            <tbody>
-                                <tr>
-                                    <th scope="row">姓 名</th>
-                                    <td>林小妹(48576)</td>
-                                    
-                                </tr>
-                                <tr>
-                                    <th scope="row">開戶日</th>
-                                    <td>2021/12/13</td>
-                                    
-                                </tr>
-                                <tr>
-                                    <th scope="row">身分證字號</th>
-                                    <td>F22010****</td>
-                                   
-                                </tr>
-                                <tr>
-                                    <th scope="row">出生日期</th>
-                                    <td colspan="2">1999/11/07</td>
-                                    
-                                </tr>
-                                <tr>
-                                    <th scope="row">台幣核印日期</th>
-                                    <td>2022/01/18</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">台幣扣款帳號</th>
-                                    <td>103 臺灣新光商業銀行 永和分行 066650108****</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">台幣買回帳號</th>
-                                    <td>103 臺灣新光商業銀行 永和分行 066650108****</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">電子郵件信箱</th>
-                                    <td>***test@gmail.com</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <h1 class="h3 pb-2">通知信寄發管理</h1>
+                <form action="">
+                    <div class=" table-responsive">
+                        <div class="table-responsive-xl">
+                            <table class="table table-style-level table-explain">
+                                <thead class="">
+                                    <th class="text-center">作業項目</th>
+                                    <th class="text-center">功能</th>
+                                    <th class="text-center">說明</th>
+                                    <th class="text-center">是否寄發</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">基金交易委託</th>
+                                        <td colspan="2" class="p-0 border-end">
+                                            <table class="list">
+                                                <tr>
+                                                    <th>單筆申購委託(自動扣款戶)</th>
+                                                    <td>境內基金－單筆申購交易委託通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>買回委託</th>
+                                                    <td>境內基金－買回交易委託通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>買轉申購委託</th>
+                                                    <td>境內基金－轉申購交易委託通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>定期(不)定額委託</th>
+                                                    <td>境內基金－定期(不)定額交易委託通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>取消單筆申購委託(自動扣款戶)</th>
+                                                    <td>境內基金－取消單筆申購交易委託通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>取消定期(不)定額委託</th>
+                                                    <td>境內基金－取消定期(不)定額交易委託通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>取消買回委託</th>
+                                                    <td>境內基金－取消買回交易委託通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>取消轉申購委託</th>
+                                                    <td>境內基金－取消轉申購交易委託通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>定期(不)定額變更委託</th>
+                                                    <td>境內基金－定期(不)定額變更委託通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>定期(不)定額變更預約取消</th>
+                                                    <td>境內基金－取消定期(不)定額變更交易委託通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>單筆申購扣款失敗</th>
+                                                    <td>境內基金－單筆申購扣款失敗通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>投資fund輕鬆(母子基金)申購委託</th>
+                                                    <td>境內基金－投資fund輕鬆(母子基金)交易委託(新申購)通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>投資fund輕鬆(母子基金)轉申購委託</th>
+                                                    <td>境內基金－投資fund輕鬆(母子基金)交易委託(庫存轉申購)通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>投資fund輕鬆(母子基金)取消委託(新申購及轉申購)</th>
+                                                    <td>境內基金－取消投資fund輕鬆(母子基金)交易委託通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>投資fund輕鬆(母子基金)契約終止通知</th>
+                                                    <td>境內基金－投資fund輕鬆(母子基金)契約終止通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>投資fund輕鬆(母子基金)預約轉申購委託通知</th>
+                                                    <td>境內基金－投資fund輕鬆(母子基金)預約轉申購委託通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>投資fund輕鬆(母子基金)專案啟用提醒通知</th>
+                                                    <td>境內基金－投資fund輕鬆(母子基金)專案啟用提醒通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>ETF申購委託(自動扣款戶)</th>
+                                                    <td>境內基金－ETF申購交易委託通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>取消ETF申購委託(自動扣款戶)</th>
+                                                    <td>境內基金－取消ETF申購交易委託通知</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td class=" ">
+                                            <div class=" d-flex justify-content-center">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">是</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">否</label>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">基金申購交易確認</th>
+                                        <td colspan="2" class="p-0 border-end">
+                                            <table class="list">
+                                                <tr>
+                                                    <th>定期(不)定額扣款-扣款成功/失敗</th>
+                                                    <td>內基金－定期(不)定額申購交易結果通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>定期(不)定額強迫終止扣款</th>
+                                                    <td>境內基金－定期(不)定額連續３次扣款失敗終止扣款通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>單筆申購單位數通知</th>
+                                                    <td>境內基金－單筆申購交易確認書</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>境內配息通知信</th>
+                                                    <td>境內基金－配息通知</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td class=" ">
+                                            <div class=" d-flex justify-content-center">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions1" id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">是</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions1" id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">否</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">基金買回／轉申購確認</th>
+                                        <td colspan="2" class="p-0 border-end">
+                                            <table class="list">
+                                                <tr>
+                                                    <th>買回匯款(包含買回交易及轉換買回) 匯款成功</th>
+                                                    <td>境內基金－買回交易成功通知</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>轉申購(轉申購單位數通知)-成功</th>
+                                                    <td>境內基金－轉申購交易成功通知</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td class=" ">
+                                            <div class=" d-flex justify-content-center">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions2" id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">是</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">否</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                <div class="list-disc">
-                    <p>注意事項：</p>
-                    <ul>
-                        <li>本頁所載均為電子交易相關帳戶資訊，若欲查詢實體紙本扣款、買回、配息等帳戶資訊，請致電客服專線0800-088-899洽詢。</li>
-                    </ul>
-                </div>
-               </section>
+                    <div class="row mt-5 justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center form-password">
+                            <span class="text-nowrap me-2 "> 請輸入交易密碼 </span>
+                            <input type="password" class="form-control " id="">
+                        </div>
+                    </div>
+                    <div class="row mt-5 pb-5  ">
+                        <div class="col d-flex  justify-content-center">
+                            <button type="submit" class="btn btn-primary btn-width mx-1 mx-lg-2">確認送出</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
@@ -478,7 +617,6 @@
             </p>
         </div>
     </footer>
-
   <!-- 手機版本使用者視窗 modal -->
   <div class="modal fade user-mobile-modal" id="userModal" tabindex="-1">
     <div class="modal-dialog">

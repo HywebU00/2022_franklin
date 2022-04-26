@@ -40,7 +40,7 @@
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">我的資產</a>
               <div class="dropdown-menu megamenu" role="menu">
                 <div class="row g-3 container mx-auto">
-                  <div class="col-lg-3 col-12 col-md-6">
+                  <div class="col-lg-3 col-6">
                     <div class="col-megamenu">
                       <h6 class="title">次選單</h6>
                       <ul class="list-subtitle">
@@ -51,7 +51,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-12 col-md-6">
+                  <div class="col-lg-3 col-6">
                     <div class="col-megamenu">
                       <h6 class="title">次選單</h6>
                       <ul class="list-subtitle">
@@ -62,7 +62,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-12 col-md-6">
+                  <div class="col-lg-3 col-6">
                     <div class="col-megamenu">
                       <h6 class="title">次選單</h6>
                       <ul class="list-subtitle">
@@ -73,7 +73,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-12 col-md-6">
+                  <div class="col-lg-3 col-6">
                     <div class="col-megamenu">
                       <h6 class="title">次選單</h6>
                       <ul class="list-subtitle">
@@ -364,7 +364,13 @@
   <main class="mp-page">
     <!-- 廣告位置 -->
     <section class="banner">
-      <img src="image/ftft_banner.jpg" class="img-fluid" alt="" />
+      <picture>
+        <source media="(min-width: 1200px)" srcset="image/ftft_banner.jpg">
+        <source media="(min-width: 992px)" src="image/ftft_banner.jpg"">
+        <source media=" (min-width: 576px)" srcset="image/ftft_banner_md.jpg">
+        <source media="(max-width: 575px)" srcset="image/ftft_banner_sm.jpg">
+        <img srcset="image/ftft_banner.jpg">
+      </picture>
     </section>
     <div class="container ">
 
@@ -396,83 +402,85 @@
         </div>
         <div class="tab-pane fade show active" id="observe" role="tabpanel" aria-labelledby="pills-profile-tab">
           <!-- 觀察基金 -->
-          <div class="table-style-headerDeep table-observelist table-responsive ">
-            <div class="table-responsive-xl">
-              <table class="table">
-                <thead class="">
-                  <tr>
-                    <th scope="col">基金名稱 <img src="image/arrow.png" alt=""></th>
-                    <th scope="col">配息資訊 <img src="image/arrow.png" alt=""></th>
-                    <th scope="col">計價幣別 <img src="image/arrow.png" alt=""></th>
-                    <th scope="col">最新淨值 <img src="image/arrow.png" alt=""></th>
-                    <th scope="col">漲跌 <img src="image/arrow.png" alt=""></th>
-                    <th scope="col">交易</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>AI新科技基金</td>
-                    <td>累積型</td>
-                    <td>新台幣</td>
-                    <td>80.06(02/23)</td>
-                    <td><span><i class="bi bi-caret-down-fill text-success"></i> </span> 1.08</td>
-                    <td><select class="form-select py-3" aria-label="Default select example">
-                        <option selected disabled>選擇交易類型</option>
-                        <option value="1">單筆申購</option>
-                        <option value="2">定期定額</option>
-                        <option value="3">定期不定額</option>
-                      </select>
-                    </td>
-                    <td>
-                      <!-- 點擊蒐藏 增加 “active” 的 class name -->
-                      <button class="btn"><i class="bi bi-suit-heart-fill  active"></i></button>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>特別股收益基金</td>
-                    <td>累積型</td>
-                    <td>新台幣</td>
-                    <td>80.06(02/23)</td>
-                    <td><span><i class="bi bi-caret-down-fill text-success"></i> </span> 1.08</td>
-                    <td><select class="form-select py-3" aria-label="Default select example">
-                        <option selected disabled>選擇交易類型</option>
-                        <option value="1">單筆申購</option>
-                        <option value="2">定期定額</option>
-                        <option value="3">定期不定額</option>
-
-                      </select>
-                    </td>
-                    <td><button class="btn"><i class="bi bi-suit-heart-fill  active"></i></button></i>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>全球高收益債基金</td>
-                    <td>累積型</td>
-                    <td>新台幣</td>
-                    <td>80.06(02/23)</td>
-                    <td><span><i class="bi bi-caret-down-fill text-success"></i> </span> 1.08</td>
-                    <td><select class="form-select py-3" aria-label="Default select example">
-                        <option selected disabled>選擇交易類型</option>
-                        <option value="1">單筆申購</option>
-                        <option value="2">定期定額</option>
-                        <option value="3">定期不定額</option>
-
-                      </select>
-                    </td>
-                    <td><button class="btn"><i class="bi bi-suit-heart-fill  active"></i></button></i>
-                    </td>
-                  </tr>
-
-                </tbody>
-              </table>
-            </div>
-          </div>
-
           <section>
-
+            <div class="table-style-headerDeep table-observelist table-responsive ">
+              <div class="table-responsive-xl">
+                <table class="table">
+                  <thead class="">
+                    <tr>
+                      <th scope="col">基金名稱</th>
+                      <!-- 點擊後 呈現不同的資料排列狀態 -->
+                      <th scope="col"><button class="btn">投資市值 <img src="image/arrow.png" alt=""></button></th>
+                      <!-- <th scope="col"><button class="btn">投資市值 <img src="image/arrow-up.png" alt=""></button></th>
+                    <th scope="col"><button class="btn">投資市值 <img src="image/arrow-down.png" alt=""></button></th> -->
+                      <th scope="col"><button class="btn">成本 <img src="image/arrow.png" alt=""></button></th>
+                      <!-- <th scope="col"><button class="btn">成本 <img src="image/arrow-up.png" alt=""></button></th>
+                    <th scope="col"><button class="btn">成本 <img src="image/arrow-down.png" alt=""></button></th> -->
+                      <th scope="col"><button class="btn">未實現損益 <img src="image/arrow.png" alt=""></button></th>
+                      <!-- <th scope="col"><button class="btn">未實現損益 <img src="image/arrow-up.png" alt=""></button></th>
+                    <th scope="col"><button class="btn">未實現損益 <img src="image/arrow-down.png" alt=""></button></th> -->
+                      <th scope="col"><button class="btn">報酬率 <img src="image/arrow.png" alt=""></button></th>
+                      <!-- <th scope="col"><button class="btn">報酬率 <img src="image/arrow-up.png" alt=""></button></th>
+                    <th scope="col"><button class="btn">報酬率 <img src="image/arrow-down.png" alt=""></button></th> -->
+                      <th scope="col">交易</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>AI新科技基金</td>
+                      <td>累積型</td>
+                      <td>新台幣</td>
+                      <td>80.06(02/23)</td>
+                      <td><span><i class="bi bi-caret-down-fill text-success"></i> </span> 1.08</td>
+                      <td><select class="form-select py-3" aria-label="Default select example">
+                          <option selected disabled>選擇交易類型</option>
+                          <option value="1">單筆申購</option>
+                          <option value="2">定期定額</option>
+                          <option value="3">定期不定額</option>
+                        </select>
+                      </td>
+                      <td>
+                        <!-- 點擊蒐藏 增加 “active” 的 class name -->
+                        <button class="btn"><i class="bi bi-suit-heart-fill  active"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>特別股收益基金</td>
+                      <td>累積型</td>
+                      <td>新台幣</td>
+                      <td>80.06(02/23)</td>
+                      <td><span><i class="bi bi-caret-down-fill text-success"></i> </span> 1.08</td>
+                      <td><select class="form-select py-3" aria-label="Default select example">
+                          <option selected disabled>選擇交易類型</option>
+                          <option value="1">單筆申購</option>
+                          <option value="2">定期定額</option>
+                          <option value="3">定期不定額</option>
+                        </select>
+                      </td>
+                      <td><button class="btn"><i class="bi bi-suit-heart-fill  active"></i></button></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>全球高收益債基金</td>
+                      <td>累積型</td>
+                      <td>新台幣</td>
+                      <td>80.06(02/23)</td>
+                      <td><span><i class="bi bi-caret-down-fill text-success"></i> </span> 1.08</td>
+                      <td><select class="form-select py-3" aria-label="Default select example">
+                          <option selected disabled>選擇交易類型</option>
+                          <option value="1">單筆申購</option>
+                          <option value="2">定期定額</option>
+                          <option value="3">定期不定額</option>
+                        </select>
+                      </td>
+                      <td><button class="btn"><i class="bi bi-suit-heart-fill  active"></i></button></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </section>
         </div>
       </div>
@@ -532,32 +540,35 @@
         </div>
         <div class="modal-body">
           <ul>
-            <li><i class="bi bi-person"></i> <span>客戶姓名 </span>王大明</li>
-            <li><i class="bi bi-credit-card-2-back"></i> <span>指定扣款帳號</span>臺灣銀行00000000****</li>
-            <li><i class="bi bi-wallet"></i><span>投信戶號</span>45251</li>
+            <li><img src="image/icon-username.png" alt=""><span>客戶姓名 :</span>王大明</li>
+            <li><img src="image/icon-account.png" alt=""><span>指定扣款帳號 :</span>臺灣銀行00000000****</li>
+            <li><img src="image/icon-pay.png" alt=""><span>投信戶號 :</span>45251</li>
           </ul>
         </div>
-        <div class="modal-footer d-flex justify-content-center">
-          <div class="btn btn-outline-primary">登出</div>
-        </div>
+        </ul>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="btn btn-outline-primary btn-logout">登出</div>
       </div>
     </div>
   </div>
-   <!-- 手機版本搜尋視窗 modal -->
- <!-- 點擊按鈕後 新增加 show 的classname -->
- <div class="user-mobile-popover ">
-  <div class="search">
+  <!-- 手機版本搜尋視窗 modal -->
+  <!-- 點擊按鈕後 新增加 show 的classname -->
+  <div class="user-mobile-popover ">
+    <div class="search">
       <div class="d-flex mb-3 ">
-          <input type="text" class="form-control " placeholder="輸入搜尋文字">
-          <button class="btn btn-primary" type="button">搜尋</button>
+        <input type="text" class="form-control " placeholder="輸入搜尋文字">
+        <button class="btn btn-primary" type="button">搜尋</button>
       </div>
+    </div>
   </div>
-</div>
   <script src="js/bootstrap.bundle.js"></script>
   <!-- apexcharts -->
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-   <!-- 全站同用的ＪＳ -->
-   <script src="js/ftft.js"></script>
+  <!-- 廣告圖片大小 -->
+  <script src="js/picturefill.js"></script>
+  <!-- 全站同用的ＪＳ -->
+  <script src="js/ftft.js"></script>
 </body>
 
 </html>

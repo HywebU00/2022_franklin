@@ -291,6 +291,9 @@
 		}
 
 		th {
+			button{
+				font-weight: 600;
+			}
 			img {
 				margin-top: -5px;
 				margin-left: 0.3em;
@@ -313,17 +316,25 @@
 			}
 		}
 	}
-
+	tbody{
+	
+		td{
+			font-weight: 600;
+		}
+	}
+	select{
+		background-color:#f6f6f6 ;
+		color:rgb(119, 119, 119);
+	}
 	.tr-collapse {
 		background-color: #333;
-
+		//border-bottom:0px ;
 		table {
 			margin-bottom: 0;
 		}
 
 		tbody {
 			background-color: unset;
-
 			color: #fff;
 
 			th,
@@ -356,6 +367,7 @@
 
 			tr {
 				border: 1px solid #333;
+			
 			}
 		}
 
@@ -379,6 +391,19 @@
 	thead {
 		tr>th{
 			text-align: end;
+			vertical-align: middle;
+			.btn{
+				color: #fff;
+				font-weight: 600;
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				width: 100%;
+				padding-right: 0.25em;
+				img{
+					margin-left: 0.5em;
+				}
+			}
 			&:first-child{
 				text-align: start;
 				padding-left: 1.25em;
@@ -392,6 +417,9 @@
 				&::after{
 					display: none;
 				}
+			}
+			&::after{
+				top:1.9em;
 			}
 		}
 	}
@@ -443,6 +471,13 @@
 		background: #fff;
 		min-width: 300px;
 	}
+	td{
+		// span{
+		// 	width: 300px;
+		// 	display: inline-block;
+		// 	text-align: right;
+		// }
+	}
 	.th{
 		font-weight: 600;
 		width: 250px;
@@ -454,6 +489,7 @@
 		}
 	}
 	.td{
+		
 		width: calc(100% - 250px);
 		min-width: unset;
 		display: flex;
@@ -464,6 +500,69 @@
 			padding: 0.5em;
 		}
 		
+	}
+}
+.table-explain{
+	.modal-header{
+		color: $primary;
+		border-bottom:0px ;
+	}
+	.modal-body{
+		padding-top: 0px;
+	}
+	p{
+		color: $secondary;
+		margin-bottom: 0.5em;
+	}
+	thead th{
+	
+	    background: #f0f0f0;	
+		border-top: 5px solid $primary;
+		width: unset;
+		min-width: unset;
+		border-right: 1px solid lighten($secondary, 30%);
+		&:last-child{
+			border-right: 0px;
+		}
+	}
+	tbody{
+		
+		border-top:0px !important;
+		th{
+			width: unset;
+			min-width: unset;
+			text-align: center;
+			padding: 1em;
+		}
+		ul{
+			margin-bottom: 0px;
+			li{
+				color: #000;
+			}
+		}
+		.list{
+			width: 100%;
+			th, td{
+				width: 50%;
+				// width: 300px;
+				white-space: normal;
+				min-width: 300px;
+				border-bottom:0px;
+				padding:1em 2em;
+			}
+			tr{
+				border-bottom: 1px solid #bcc1c6;
+				&:last-child{
+					border-bottom: 0px;
+				}
+			}
+			th{
+				background-color: #fff;
+				font-weight: 400;
+				text-align: start;
+			}
+		}
+	
 	}
 }
 

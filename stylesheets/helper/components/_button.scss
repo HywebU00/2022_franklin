@@ -9,3 +9,19 @@
         width: auto;
     }
 }
+.btn-reflash{
+    white-space: nowrap;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    span{
+        display: inline-block;
+        
+    }
+    img{
+        height: 20px;
+        margin-right: 0.5em;
+    }
+}
