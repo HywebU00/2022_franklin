@@ -344,10 +344,12 @@
             </li>
           </ul>
           <ul class="navbar-nav navbar-user ms-auto align-items-center">
-            <li class="nav-item"><span class="search">
+            <li class="nav-item">
+              <div class="search">
                 <input type="text">
-                <img src="image/search_icon.png" alt="">
-              </span></li>
+                <button class="btn"><img src="image/search_icon.png" alt=""></button>
+              </div>
+            </li>
             <li class="nav-item">
               <a class="nav-link popover-dismiss" tabindex="0" role="button" data-bs-toggle="popover"
                 data-bs-trigger="focus" title="Dismissible popover">
@@ -361,7 +363,7 @@
       </div>
     </nav>
   </header>
-  <main class="mp-page">
+  <main class="">
     <!-- 廣告位置 -->
     <!-- <section class="banner">
       <picture>
@@ -375,23 +377,29 @@
     <div class="container ">
 
       <!-- Breadcrumb -->
-      <nav aria-label="breadcrumb">
+      <nav aria-label="breadcrumb" class="d-block d-md-flex">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
           <li class="breadcrumb-item"><a href="#">Library</a></li>
           <li class="breadcrumb-item active" aria-current="page">Data</li>
         </ol>
-        <ul>
-          <li><input class="form-findfund form-label" type="text" placeholder="找基金"></li>
-          <li><button class="btn">回上頁</button></li>
+        <ul class="function-list mb-4 mb-md-0">
+          <li>
+            <div class="form-findfund">
+              <input class=" form-control" type="text" placeholder="找基金">
+              <button><img src="image/search_icon_gray.png" alt=""></button>
+            </div>
+          </li>
+          <li><button class="btn ">回上頁</button></li>
         </ul>
       </nav>
       <!-- Breadcrumb end -->
       <h1 class="h3 pb-2">
-        <span>富蘭克林華美AI新科技基金-累積型-新台幣
-          <br>
-          <span class="eg-name"> Franklin Templeton SinoAm AI Hi-Tech Fund</span>
-        </span>
+        <div class="d-flex align-items-center">富蘭克林華美AI新科技基金-累積型-新台幣
+          <!-- 點擊蒐藏 增加 “active” 的 class name -->
+          <button class="btn btn-like"><i class="bi bi-suit-heart-fill active"></i></button>
+        </div>
+        <span class="eg-name"> Franklin Templeton SinoAm AI Hi-Tech Fund</span>
       </h1>
       <div class="d-flex justify-content-between">
         <!-- tab -->
@@ -423,7 +431,7 @@
 
         <!-- 基本資料 -->
         <div class="tab-pane fade show active" id="invest" role="tabpanel" aria-labelledby="pills-home-tab">
-          <div class="container">
+          <div class="container mt-5">
             <!-- 基金資訊 start -->
             <section class="mb-5">
               <h2 class="h4 py-2">基金資訊</h2>
@@ -512,18 +520,50 @@
             <!-- 公告訊息 start -->
             <section class="mb-5">
               <h2 class="h4 py-2">公告訊息</h2>
-              <p class="pb-3">掌握台灣第一潛力，佈局科技傳產雙主軸，佈局全球，分享新興經濟體的高成長動能。</p>
+              <div class="content-info">
+                <p class="">掌握台灣第一潛力，佈局科技傳產雙主軸，佈局全球，分享新興經濟體的高成長動能。</p>
+              </div>
             </section>
             <!-- 公告訊息 end -->
             <!-- 經理人簡介 start -->
             <section class="mb-5">
               <h2 class="h4 py-2">經理人簡介</h2>
+              <div class="content-info">
+                <div class="row">
+                  <div class="col-12 col-md-3">
+                    <img class="img-fluid" src="image/photo.jpg" alt="">
+                  </div>
+                  <div class="col-12 col-md-9">
+                    <div class="list-disc list-introduce">
+                      <div class="title mt-4 mt-md-0">經理人: <span>劉翠玲</span></div>
+                      <div class="subtitle">簡介</div>
+                      <p>學歷：</p>
+                      <ul class="">
+                        <li>長庚大學生物科技管理學碩士
+                        </li>
+                        <li>
+                          輔仁大學食品營養學系碩士
+                        </li>
+                        
+                      </ul>
+                      <p>經歷：</p>
+                      <ul>
+                        <li>富蘭克林華美AI 新科技基金經理人</li>
+                        <li>富蘭克林華美全球醫療保健基金經理人</li>
+                        <li>國票證券投顧投資研究部研究員</li>
+                        <li>中信證券投資顧問部研究員</li>
+                        <li>台灣經濟研究院生物科技產業研究中心專案經理</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
             <!-- 經理人簡介 end -->
             <!-- 公告訊息 start -->
             <section>
               <h2 class="h4 py-2">交易須知</h2>
-              <div class=" table-responsive ">
+              <div class=" table-responsive table-style-border">
                 <div class="table-responsive-xl">
                   <table class="table">
                     <thead class="">
@@ -541,16 +581,16 @@
                         <td>3%</td>
                         <td>0.27%</td>
                         <td>2%</td>
-                        <td>網路下單及臨櫃申購： 單筆申購及定期(不)定額扣款每月最低新台幣2,000元</td>
-                        <td><a href="#">按此查詢</a></td>
-                        <td><a href="#">紙本申購</a></td>
+                        <td class="td-minwidth">網路下單及臨櫃申購： 單筆申購及定期(不)定額扣款每月最低新台幣2,000元</td>
+                        <td><a class="btn btn-outline-primary" href="#">按此查詢</a></td>
+                        <td><a class="btn btn-outline-primary" href="#">紙本申購</a></td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
             </section>
-             <!-- 公告訊息 end -->
+            <!-- 公告訊息 end -->
           </div>
         </div>
         <div class="tab-pane fade " id="observe" role="tabpanel" aria-labelledby="pills-profile-tab">
@@ -602,8 +642,8 @@
     </div>
   </footer>
 
-   <!-- 手機版本使用者視窗 modal -->
-   <div class="modal fade user-mobile-modal" id="userModal" tabindex="-1">
+  <!-- 手機版本使用者視窗 modal -->
+  <div class="modal fade user-mobile-modal" id="userModal" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -636,8 +676,8 @@
   <script src="js/bootstrap.bundle.js"></script>
   <!-- apexcharts -->
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <!-- 廣告圖片大小 -->
-    <script src="js/picturefill.js"></script>
+  <!-- 廣告圖片大小 -->
+  <script src="js/picturefill.js"></script>
   <!-- 全站同用的ＪＳ -->
   <script src="js/ftft.js"></script>
 </body>

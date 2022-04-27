@@ -11,4 +11,51 @@
         text-decoration:none;
        }
     }
+   
+}
+nav{
+
+    align-items: center;
+    justify-content: space-between;
+    .function-list{
+        margin-top: 0.5em;
+        padding-left: 0;
+        margin-bottom: 0;
+        display: flex;
+        input{
+            height: 100%;
+            background-color: lighten(#dfdfdf, 8%);
+            border:1px solid #dfdfdf;
+            margin-right: 1.5em;
+            padding-right: 45px;
+           
+        }
+        .form-findfund{
+            position: relative;
+            height: 100%;
+            width: 200px;
+            button{
+                position: absolute;
+                background:unset;
+                border:0px;
+                right: 8px;
+                top: 6px;
+                cursor: pointer;
+             
+            }
+        }
+        .btn{
+           
+            cursor: pointer;
+            background-color: lighten(#dfdfdf, 8%);
+            border:1px solid #dfdfdf;
+            color:#777;
+            padding: 0.5em 1.8em;
+            margin-left: 0.5em;
+            &:hover{
+                background:#777 ;
+                color: #fff;
+            }
+        }
+    }
 }

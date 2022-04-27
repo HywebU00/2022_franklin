@@ -19,7 +19,9 @@ h1 {
         font-weight: 300;
     }
 }
-
+h2{
+    color: $primary;
+}
 ul {
     list-style: none;
     color: $gray-600;
@@ -65,6 +67,30 @@ ul {
     }
 }
 
+.list-introduce{
+    font-weight: 600;
+    color: #000;
+    .title{
+        margin-bottom: 1em;
+        span{
+            font-size: 1.2em;
+        }
+    }
+    
+    .subtitle{
+        margin-bottom: 0.5em;
+        color: $primary;
+    }
+
+    p,ul>li{
+        color: #000;
+        font-weight: 400;
+       
+    }
+    ul{
+        margin-bottom: 1.5em;
+    }
+}
 main {
 
     padding-top: 8em;
@@ -113,5 +139,14 @@ label.form-label {
         color: #fff;
         padding-top: .8em;
         padding-bottom: .8em;
+    }
+}
+.content-info{
+    background: #fff;
+    border-top: 5px solid $primary;
+    padding:3em 4em;
+    border-radius: 0.25em;
+    img{
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     }
 }

@@ -128,11 +128,15 @@
 				color: $primary;
 			}
 
-			img {
+			button {
 				position: absolute;
-				right: 16px;
-				top: 0px;
+				right: 1px;
+				top: 2px;
 				color: $primary;
+				cursor: pointer;
+				&:focus{
+					box-shadow: none;
+				}
 			}
 		}
 
