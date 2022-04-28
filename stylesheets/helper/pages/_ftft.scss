@@ -144,9 +144,21 @@ label.form-label {
 .content-info{
     background: #fff;
     border-top: 5px solid $primary;
-    padding:3em 4em;
+    padding: 2em 3em;
     border-radius: 0.25em;
     img{
         box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     }
+    ul{
+        color: #000;
+        li{
+            margin-bottom: 0.5em;
+        }
+    }
+}
+
+.was-validated .input-password .form-control{
+    &:invalid , &:valid{
+        background-image: none;
+    } 
 }

@@ -9,11 +9,14 @@
 
   <body>
     <header>
-      <nav class="navbar-login navbar fixed-top">
+      <nav class="navbar navbar-light navbar-expand-lg nav-default fixed-top">
+        <!-- container-fluid -->
         <div class="container ">
-          <a class="navbar-brand" href="#">
-            <img src="image/ftft-logo.gif" alt="" />
-          </a>
+          <div class="d-flex nav-mobile">
+            <a class="navbar-brand" href="#">
+              <img src="image/ftft-logo.gif" alt="" />
+            </a>
+          </div>
         </div>
       </nav>
     </header>
@@ -24,7 +27,7 @@
             歡迎進入富蘭克林華美投信基金交易系統專區，請輸入您的身分證字號或營利事業統一編號及網路登入密碼，若您尚未取得網路登入密碼，請您至
             立即開戶填寫開戶資料，填寫完畢後將由系統自動寄發網路登入密碼函至您的原留信箱。
           </p>
-            <form class="">
+            <form class="needs-validation" novalidate>
               <div class="row g-2 row-cols-2">
                 <div class="col ">
                   <label class="d-none" for="">Email address</label>
@@ -33,7 +36,9 @@
                     class="form-control h-100"
                     id=""
                     placeholder="請輸入帳號"
+                    required
                   />
+       
                 </div>
                 <div class="col ">
                   <button class="btn btn-lg btn-danger w-100" type="submit">
@@ -47,9 +52,10 @@
                     class="form-control h-100"
                     id=""
                     placeholder="請輸入密碼"
-                  />
+                    required
+                  />             
                   <!-- 輸入密碼點及時出現不同icon -->
-                  <i class="bi bi-eye-fill"></i>
+                  <i class="btn-eye bi bi-eye-fill"></i>
                   <!-- <i class="bi bi-eye"></i> -->
                 </div>
                 <div class="col">
@@ -64,6 +70,7 @@
                     class="form-control h-100"
                     id=""
                     placeholder="請輸入驗證碼"
+                    required
                   />
                 </div>
                 <div class="col-sm-8 col-12 col-md-6 d-flex  ms-md-0  ms-auto ">
@@ -72,7 +79,9 @@
                     <img src="image/reflash.svg" alt="">
                    <span> 重新整理</span>
                   </button>
-        
+                </div>
+                <div class="col invalid-feedback">
+                  請輸入密碼
                 </div>
                 <div class="col-12 d-flex justify-content-end my-4">
                   <button
@@ -166,5 +175,6 @@
     <script src="js/bootstrap.bundle.js"></script>
       <!-- 廣告圖片大小 -->
   <script src="js/picturefill.js"></script>
+  <script src="js/ftft.js"></script>
   </body>
 </html>

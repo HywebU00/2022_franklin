@@ -375,7 +375,6 @@
       </picture>
     </section> -->
     <div class="container ">
-
       <!-- Breadcrumb -->
       <nav aria-label="breadcrumb" class="d-block d-md-flex">
         <ol class="breadcrumb">
@@ -401,21 +400,21 @@
         </div>
         <span class="eg-name"> Franklin Templeton SinoAm AI Hi-Tech Fund</span>
       </h1>
-      <div class="d-flex justify-content-between">
+      <div class="row d-block d-md-flex justify-content-between">
         <!-- tab -->
-        <ul class="tab nav nav-pills mb-4" id="pills-tab" role="tablist">
+        <ul class="col tab nav nav-pills mb-4" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#invest"
-              type="button" role="tab" aria-controls="pills-home" aria-selected="true">基本資料</button>
+            <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#invest" type="button"
+              role="tab" aria-controls="pills-home" aria-selected="true">基本資料</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#observe"
+            <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#observe"
               type="button" role="tab" aria-controls="pills-profile" aria-selected="false">淨值走勢</button>
           </li>
         </ul>
         <!-- tab end -->
         <!-- 網路下單 select -->
-        <div class="select-order">
+        <div class="col-8 col-sm-6 col-md-5  ms-auto col-lg-4  col-xl-3 select-order">
           <span class="h5">網路下單</span>
           <select class="form-select" aria-label="Default select example">
             <option selected>請選擇交易類型</option>
@@ -430,8 +429,8 @@
       <div class="tab-content" id="pills-tabContent">
 
         <!-- 基本資料 -->
-        <div class="tab-pane fade show active" id="invest" role="tabpanel" aria-labelledby="pills-home-tab">
-          <div class="container mt-5">
+        <div class="tab-pane fade " id="invest" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="container mt-3">
             <!-- 基金資訊 start -->
             <section class="mb-5">
               <h2 class="h4 py-2">基金資訊</h2>
@@ -544,7 +543,7 @@
                         <li>
                           輔仁大學食品營養學系碩士
                         </li>
-                        
+
                       </ul>
                       <p>經歷：</p>
                       <ul>
@@ -563,7 +562,7 @@
             <!-- 公告訊息 start -->
             <section>
               <h2 class="h4 py-2">交易須知</h2>
-              <div class=" table-responsive table-style-border">
+              <div class=" table-responsive table-style-border table-list table-trade">
                 <div class="table-responsive-xl">
                   <table class="table">
                     <thead class="">
@@ -593,7 +592,57 @@
             <!-- 公告訊息 end -->
           </div>
         </div>
-        <div class="tab-pane fade " id="observe" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="tab-pane fade show active" id="observe" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="container  mt-3">
+            <!-- 淨值走勢圖 start -->
+            <section class="mb-5">
+              <h2 class="h4 py-2">淨值走勢圖</h2>
+              <div class="content-info">
+                <ul>
+                  <li>查詢期間 <span class="text-primary">2022 / 1 /1 ~ 20222 / 5 /1 </span>淨值</li>
+                  <li> 最高:12.46(2021/11/19) 最低:8.36(2021/05/13)</li>
+                </ul>
+              </div>
+            </section>
+            <!-- 淨值走勢圖 end -->
+            <!-- 查詢區間淨值 start  -->
+            <section class="mb-5">
+              <h2 class="h4 py-2">查詢區間淨值</h2>
+              <div class=" table-responsive table-style-level table-explain">
+                <div class="table-responsive-xl">
+                  <table class="table ">
+                    <thead class="">
+                      <th class="text-center">日期</th>
+                      <th class="text-center">淨值</th>
+                      <th class="text-center">日期</th>
+                      <th class="text-center">淨值</th>
+                      <th class="text-center">日期</th>
+                      <th class="text-center">淨值</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">2022-03-07</th>
+                        <td>20.6700</td>
+                        <th scope="row">2022-03-07</th>
+                        <td>20.6700</td>
+                        <th scope="row">2022-03-07</th>
+                        <td>20.6700</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2022-03-07</th>
+                        <td>20.6700</td>
+                        <th scope="row">2022-03-07</th>
+                        <td>20.6700</td>
+                        <th scope="row">2022-03-07</th>
+                        <td>20.6700</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <!-- 查詢區間淨值 end -->
+          </div>
         </div>
       </div>
     </div>

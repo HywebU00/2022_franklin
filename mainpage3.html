@@ -36,11 +36,11 @@
         </div>
         <div class="collapse navbar-collapse" id="main_nav">
           <ul class="navbar-nav">
-            <!-- 點擊 a 連結 新增classname "show" 改變點擊樣式 -->
-            <li class="nav-item dropdown has-megamenu">
-              <a class="nav-link nav-toggle show" href="#">開戶進度</a>
+            <!-- 點擊 a 連結 新增 classname "show" 改變點擊樣式 -->
+            <li class="nav-item dropdown ">
+              <a class="nav-link nav-toggle show " href="#">開戶進度</a>
             </li>
-            <li class="nav-item dropdown has-megamenu">
+            <li class="nav-item dropdown ">
               <a class="nav-link nav-toggle" href="#">常見問題</a>
             </li>
           </ul>
@@ -48,7 +48,7 @@
             <li class="nav-item">
               <div class="search">
                 <input type="text">
-               <button class="btn"><img src="image/search_icon.png" alt=""></button>
+                <button class="btn"><img src="image/search_icon.png" alt=""></button>
               </div>
             </li>
             <li class="nav-item">
@@ -64,48 +64,57 @@
       </div>
     </nav>
   </header>
-  <main >
+  <main>
     <section class="">
       <div class="container ">
-              <!-- Breadcrumb -->
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item"><a href="#">Library</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Data</li>
-        </ol>
-      </nav>
-      <!-- Breadcrumb end -->   
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+          </ol>
+        </nav>
+        <!-- Breadcrumb end -->
         <div class="form-center">
           <p>親愛的 <span>尹淑芬 </span>，您好 ！</p>
           <p>請填寫下列問題進行身份驗證以開啟交易權限。</p>
-          <form class="row g-2 ">
+          <form class="row g-2 needs-validation" novalidate>
             <div class="col-12 mb-4">
               <label for="" class="form-label">出生日期<span class="text-danger"> *</span> </label>
-             <div class="row g-2">
-               <div class="col d-flex align-items-center"><span class="text-nowrap me-2 ">西元</span ><input type="" class="form-control form-control-bg" id=""><span class="text-nowrap ms-2 ">年</span ></div>
-               <div class="col d-flex align-items-center"><select id="inputState" class="form-select form-control-bg">
-                <option selected>01</option>
-                <option>02</option>
-              </select><span class="text-nowrap ms-2 ">月</span> </div>
-              <div class="col d-flex align-items-center"><select id="inputState" class="form-select form-control-bg">
-                <option selected>01</option>
-                <option>02</option>
-              </select><span class="text-nowrap ms-2 ">日</span> </div>
-             </div>
+              <div class="row g-2 input-group">
+                <div class="col d-flex align-items-center">
+                  <span class="text-nowrap me-2 ">西元</span><input type="" class="form-control form-control-bg" id=""
+                    required><span class="text-nowrap ms-2 ">年</span>
+                </div>
+                <div class="col d-flex align-items-center">
+                  <select id="inputState" class="form-select form-control-bg" required>
+                    <option selected>01</option>
+                    <option>02</option>
+                  </select>
+                  <span class="text-nowrap ms-2 ">月</span> </div>
+                <div class="col d-flex align-items-center"><select id="inputState" class="form-select form-control-bg"
+                    required>
+                    <option selected>01</option>
+                    <option>02</option>
+                  </select><span class="text-nowrap ms-2 ">日</span> </div>
+              </div>
+
             </div>
             <div class="col-md-7 mb-4 mb-md-0">
               <label for="inputEmail" class="form-label">電子郵件信箱 <span class="text-danger"> *</span> </label>
-              <input type="text" class="form-control form-control-bg" id="inputEmail" placeholder="請填寫電子郵件信箱">
+              <input type="text" class="form-control form-control-bg" id="inputEmail" placeholder="請填寫電子郵件信箱"required>
+              <div class="invalid-feedback">網路扣款銀行帳號末三碼 </div>
             </div>
             <div class="col-md-5">
               <label for="inputEmail" class="form-label">網路扣款銀行帳號末三碼 <span class="text-danger"> *</span> </label>
-              <input type="text" class="form-control form-control-bg" id="inputEmail" placeholder="號末三碼">
-            </div>  
+              <input type="text" class="form-control form-control-bg" id="inputEmail" placeholder="號末三碼"required>
+               <div class="invalid-feedback">網路扣款銀行帳號末三碼 </div>
+            </div>
             <div class="col d-flex my-5 justify-content-center">
               <button type="submit" class="btn btn-primary btn-submit">進行身份驗證</button>
             </div>
-          </form>  
+          </form>
         </div>
       </div>
     </section>
@@ -153,6 +162,37 @@
       </p>
     </div>
   </footer>
+  <!-- 手機版本使用者視窗 modal -->
+  <div class="modal fade user-mobile-modal" id="userModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><img src="image/icon-username.png" alt=""><span>客戶姓名 :</span>王大明</li>
+            <li><img src="image/icon-account.png" alt=""><span>指定扣款帳號 :</span>臺灣銀行00000000****</li>
+            <li><img src="image/icon-pay.png" alt=""><span>投信戶號 :</span>45251</li>
+          </ul>
+        </div>
+        </ul>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="btn btn-outline-primary btn-logout">登出</div>
+      </div>
+    </div>
+  </div>
+  <!-- 手機版本搜尋視窗 modal -->
+  <!-- 點擊按鈕後 新增加 show 的 classname -->
+  <div class="user-mobile-popover">
+    <div class="search">
+      <div class="d-flex mb-3 ">
+        <input type="text" class="form-control " placeholder="輸入搜尋文字">
+        <button class="btn btn-primary" type="button">搜尋</button>
+      </div>
+    </div>
+  </div>
   <script src="js/bootstrap.bundle.js"></script>
   <!-- 全站同用的ＪＳ -->
   <script src="js/ftft.js"></script>

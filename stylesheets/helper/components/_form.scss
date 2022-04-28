@@ -4,10 +4,10 @@
    .form-control,.form-select{
      border:none;
      height: 3em;
-     background: #fff;
+     background-color: #fff;
      border:1px solid #cecece;
      &:focus ,&:active{
-      background: #fff;
+      background-color: #fff;
       border:1px solid #cecece;
      }
    }
@@ -49,7 +49,7 @@
     border:none;
     height: 2.5em;
     &:active, &:focus{
-      background: #e4eefd;
+      background-color: #e4eefd;
     }
   }
  
@@ -60,7 +60,7 @@
     border: 1px #cecece solid ;
     height: 2.5em;
     &:active, &:focus{
-      background: #fff;
+      background-color: #fff;
     }
   }
 }
