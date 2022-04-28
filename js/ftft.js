@@ -69,10 +69,10 @@ const EyeBtn = document.querySelectorAll(".btn-eye");
 if (EyeBtn != null) {
   EyeBtn.forEach((item) => {
     item.addEventListener("click", () => {
-      if (item.previousElementSibling.type === "text") {
-        item.previousElementSibling.type = "password";
-      } else {
+      if (item.previousElementSibling.type === "password") {
         item.previousElementSibling.type = "text";
+      } else {
+        item.previousElementSibling.type = "password";
       }
       item.classList.toggle("bi-eye");
     });
