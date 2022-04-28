@@ -7,44 +7,41 @@ var options1 = {
   chart: {
     id: "chart2",
     type: "line",
-    height: 230,
-    foreColor: "#ccc",
+    height: 300,
+    foreColor: "rgb(119, 119, 119);",
     toolbar: {
       autoSelected: "pan",
       show: false,
     },
   },
-  colors: ["#093e8d"],
+  colors: ["#FF1818"],
   stroke: {
-    width: 2,
+    width: 1.5,
   },
   grid: {
-    borderColor: "#555",
+    borderColor: "#ccc",
     clipMarkers: false,
     yaxis: {
       lines: {
-        show: false,
+        show: true,
       },
     },
   },
+
   dataLabels: {
     enabled: false,
   },
-  fill: {
-    gradient: {
-      enabled: true,
-      opacityFrom: 0.55,
-      opacityTo: 0,
-    },
-  },
-
   series: [
     {
       data: data,
     },
   ],
   tooltip: {
+    enabled: false,
     theme: "dark",
+    x: {
+      show: false,
+    },
   },
   xaxis: {
     type: "datetime",
@@ -64,7 +61,7 @@ var options2 = {
     id: "chart1",
     height: 130,
     type: "line",
-    foreColor: "#ccc",
+    foreColor: "rgb(119, 119, 119);",
     brush: {
       target: "chart2",
       enabled: true,
@@ -81,20 +78,23 @@ var options2 = {
       },
     },
   },
-  colors: ["#FF0080"],
+  colors: ["#FF1818"],
   series: [
     {
       data: data,
     },
   ],
   stroke: {
-    width: 2,
+    width: 1,
   },
   grid: {
-    borderColor: "#444",
+    borderColor: "#ccc",
   },
   markers: {
     size: 0,
+  },
+  tooltip: {
+    enabled: false,
   },
   xaxis: {
     type: "datetime",
