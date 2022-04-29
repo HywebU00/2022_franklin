@@ -12,7 +12,9 @@
 	align-items: center;
 
 	.nav-item {
-
+.btn{
+	white-space: nowrap;
+}
 		a.nav-link {
 			padding: 0 1em;
 
@@ -51,6 +53,12 @@
 		li {
 			margin: 0 0.5em;
 
+			button{
+				border-radius: 30px;
+				&:last-child{
+					margin-left: 0.5em;
+				}
+			}
 			@include media-breakpoint-down(xs) {
 
 				margin: 0em;
@@ -63,9 +71,12 @@
 	}
 
 	.navbar-brand {
+		img{
+			width: 100%;
+			margin-left: 0.5em;
+		}
 		@include media-breakpoint-down(lg) {
-			margin-left: 1em;
-			margin-top: 0.7em;
+			margin-top: 0.8em;
 		}
 	}
 }
@@ -369,7 +380,7 @@
 		}
 	}
 	.btn-close {
-	background-image: url(../../image/white-close.svg);
+	background-image: url(../image/white-close.svg);
 		
 	}
 

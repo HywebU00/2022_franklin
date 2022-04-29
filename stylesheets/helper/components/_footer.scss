@@ -1,5 +1,8 @@
 footer{
 	background-color: #f0f0f0;
+	.border-bottom{
+		border-bottom:$gray-500 1px solid !important;
+	}
     .list{
 			margin-bottom: 0.5em;
 			margin-top: 2em;
@@ -14,6 +17,7 @@ footer{
 				}
 				span{
 					font-size: 2em;
+					@include media-breakpoint-down(sm) {font-size: 1.5em; }
 					font-weight: 600;
 				}
 			}
@@ -55,7 +59,15 @@ footer{
 		.list-logo{
 			padding-bottom: 1em;
 			ul{
+				color: #000;
 				margin-bottom: 0;
+				li{
+					white-space: nowrap;
+					margin-bottom: 0.25em;
+					@include media-breakpoint-down(sm) { 
+						white-space: normal;
+					 }
+				}
 			}
 			.img{
 				img{
@@ -67,5 +79,8 @@ footer{
 				}
 			}
 		}
-    
+    p{
+		color: $gray-600;
+		padding-bottom: 2em;
+	}
 }

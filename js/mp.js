@@ -67,6 +67,14 @@ var options = {
         },
       },
     },
+    {
+      breakpoint: 375,
+      options: {
+        title: {
+          offsetY: 100,
+        },
+      },
+    },
   ],
   legend: {
     position: "right",
@@ -154,6 +162,14 @@ var options2 = {
       options: {
         title: {
           offsetY: 130,
+        },
+      },
+    },
+    {
+      breakpoint: 375,
+      options: {
+        title: {
+          offsetY: 100,
         },
       },
     },
@@ -249,6 +265,14 @@ var options3 = {
       options: {
         title: {
           offsetY: 130,
+        },
+      },
+    },
+    {
+      breakpoint: 375,
+      options: {
+        title: {
+          offsetY: 100,
         },
       },
     },
