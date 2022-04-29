@@ -19,7 +19,7 @@
         </button>
         <div class="d-flex nav-mobile">
           <a class="navbar-brand" href="#">
-            <img src="image/ftft-logo.gif" alt="" />
+            <img src="image/ftft-logo.png" alt="" />
           </a>
           <ul class="align-items-center">
             <li class="nav-item">
@@ -600,6 +600,7 @@
                   <li> 最高:12.46(2021/11/19) 最低:8.36(2021/05/13)</li>
                 </ul>
               </div>
+             
               <div class="card p-5 border-0">
                 <div class="" id="chart-area"></div>
                 <div class="" id="chart-bar"></div>
@@ -609,7 +610,37 @@
             <!-- 查詢區間淨值 start  -->
             <section class="mb-5">
               <h2 class="h4 py-2">查詢區間淨值</h2>
-              <div class=" table-responsive table-style-level table-explain">
+              <div class="row mb-4">
+                <div class="col-lg-6 col-sm-10 col-12">
+                  <div class="row g-2 select-Month">
+                    <div class="col-12 col-sm-5 d-flex align-items-center">
+                      <span class="select-title me-2">年 </span>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>選擇年份</option>
+                        <option value="1">2022</option>
+                        <option value="2">2023</option>
+                        <option value="3">2024</option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-sm-5 d-flex align-items-center">
+                      <span class="select-title me-2 ">月 </span>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>選擇月份</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-2 col-12 mt-3 mt-sm-2 d-flex align-items-center">
+                      <button class="btn btn-primary">
+                        <span>查 詢</span>
+                        <img class="" src="image/search_icon_white.png" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" table-responsive table-style-level table-explain table-netValue">
                 <div class="table-responsive-xl">
                   <table class="table ">
                     <thead class="">
@@ -655,7 +686,7 @@
           class="d-flex list-logo col-xl-6 col-12 col-md-6 align-items-center justify-content-center justify-content-xl-start ">
           <div class="row justify-content-start ">
             <div class="col-5 img">
-              <img src="image/ftft-logo.gif" alt="" />
+              <img src="image/ftft-logo.png" alt="" />
               <span class="mt-2">110金管 投信新字第010號</span>
             </div>
             <ul class="col-xl-7 col-12  text-start  mt-2 mt-lg-0">
@@ -719,4 +750,5 @@
   <!-- page setting -->
   <script src="js/fundIntroduce.js"></script>
 </body>
+
 </html>
