@@ -414,7 +414,7 @@
         </ul>
         <!-- tab end -->
         <!-- 網路下單 select -->
-        <div class="col-8 col-sm-6 col-md-5  ms-auto col-lg-4  col-xl-3 select-order">
+        <div class="col-12 col-sm-6 col-md-5  ms-auto col-lg-4  col-xl-3 select-order">
           <span class="h5">網路下單</span>
           <select class="form-select" aria-label="Default select example">
             <option selected>請選擇交易類型</option>
@@ -594,16 +594,36 @@
             <!-- 淨值走勢圖 start -->
             <section class="mb-5">
               <h2 class="h4 py-2">淨值走勢圖</h2>
-              <div class="content-info mb-5">
+              <div class="row mb-4">
+                <div class="col-lg-6 col-sm-10 col-12">
+                  <div class="row g-2 select-Date">
+                    <div class="col-12 col-sm-4 d-flex align-items-center"> 
+                    <input type="text" class="datepicker_input form-control" placeholder="選擇日期" required aria-label="">
+                    </div>
+                    <div class="col-sm-1 select-title"><span class="pc-text"> ~ </span><span class="mobile-text">至</span></div>
+                    <div class="col-12 col-sm-4 d-flex align-items-center">
+                      <input type="text" class="datepicker_input form-control" placeholder="選擇日期" required aria-label="">
+                    </div>
+                    <div class="col-sm-1 col-12 mt-3 mt-sm-2 d-flex align-items-center">
+                      <button class="btn btn-primary">
+                        <span>查 詢</span>
+                        <img class="" src="image/search_icon_white.png" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-info mb-5 content-trend">
                 <ul>
                   <li>查詢期間 <span class="text-primary">2022 / 1 /1 ~ 20222 / 5 /1 </span>淨值</li>
                   <li> 最高:12.46(2021/11/19) 最低:8.36(2021/05/13)</li>
                 </ul>
-              </div>
-             
-              <div class="card p-5 border-0">
+              </div>           
+              <div class="card card-info border-0">
+               <div class="content">
                 <div class="" id="chart-area"></div>
                 <div class="" id="chart-bar"></div>
+               </div>
               </div>
             </section>
             <!-- 淨值走勢圖 end -->
@@ -749,6 +769,10 @@
   <script src="js/ftft.js"></script>
   <!-- page setting -->
   <script src="js/fundIntroduce.js"></script>
+<!-- Vanilla Datepicker JS -->
+<script src='js/vanillajs-datepicker.min.js'></script>
+<script src="js/datePicker_setting.js"></script>
+
 </body>
 
 </html>

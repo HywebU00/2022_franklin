@@ -1,96 +1,145 @@
-.form-center{
-    max-width: 640px;
-    margin: 0 auto;
-   .form-control,.form-select{
-     border:none;
-     height: 3em;
-     background-color: #fff;
-     border:1px solid #cecece;
-     &:focus ,&:active{
+.form-center {
+  max-width: 640px;
+  margin: 0 auto;
+
+  .form-control,
+  .form-select {
+    border: none;
+    height: 3em;
+    background-color: #fff;
+    border: 1px solid #cecece;
+
+    &:focus,
+    &:active {
       background-color: #fff;
-      border:1px solid #cecece;
-     }
-   }
-    form{
-        margin-top:1em;
-    }
- }
- .form-signin {
-    width: 100%;
-    max-width: 640px;
-    padding: 15px;
-    margin: auto;
-    .btn-danger{
-      color: #fff;
+      border: 1px solid #cecece;
     }
   }
-  
+
+  form {
+    margin-top: 1em;
+  }
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 640px;
+  padding: 15px;
+  margin: auto;
+
+  .btn-danger {
+    color: #fff;
+  }
+}
+
 .form-signin .checkbox {
-    font-weight: 400;
-  }
-  
-  .form-signin .form-floating:focus-within {
-    z-index: 2;
-  }
-  
-  .form-signin input[type="text"] {
-    margin-bottom: -1px;
+  font-weight: 400;
+}
 
-  }
-  
-  .form-signin input[type="password"] {
-    margin-bottom: 10px;
-  
-  }
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
 
-.form-list{
-  input,select{
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+
+}
+
+.form-list {
+
+  input,
+  select {
     background-color: #e4eefd;
-    border:none;
+    border: none;
     height: 2.5em;
-    &:active, &:focus{
+
+    &:active,
+    &:focus {
       background-color: #e4eefd;
     }
   }
- 
+
 }
-.form-password{
-  input,select{
+
+.form-password {
+
+  input,
+  select {
     background-color: #fff;
-    border: 1px #cecece solid ;
+    border: 1px #cecece solid;
     height: 2.5em;
-    &:active, &:focus{
+
+    &:active,
+    &:focus {
       background-color: #fff;
     }
   }
 }
 
-.select-Month{
-.select-title{
-  color: $gray-600;
-  font-weight: 600;
-}
+.select-Month,
+.select-Date {
+  .select-title {
+    color: $gray-600;
+    font-weight: 600;
 
-.btn{
-  display: flex;
-  height: 100%;
-  align-items: center;
-  span{
-    display: none;
+    .pc-text {
+      display: none;
+
+      @include media-breakpoint-up(sm) {
+        display: block;
+      }
+    }
+
+    .mobile-text {
+      display: block;
+
+      @include media-breakpoint-up(sm) {
+        display: none;
+      }
+
+    }
   }
-  @include media-breakpoint-down(sm) {
-    img{
+
+  .btn {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    span {
       display: none;
     }
-    width: 100%;
-    span{
-      display: inline-block;
+
+    @include media-breakpoint-down(sm) {
+      img {
+        display: none;
+      }
+
       width: 100%;
+
+      span {
+        display: inline-block;
+        width: 100%;
+      }
+
+      padding: 0.5rem;
+      font-size: 1.25rem;
     }
- 
-    padding: 0.5rem;
-    font-size: 1.25rem;
-    }
-  
+
+  }
 }
+.select-Date{
+  .select-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media-breakpoint-up(sm) { width: 20px;}
+
+  }
+
 }

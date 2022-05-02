@@ -1,10 +1,12 @@
 body {
     background: #f0f0f0;
 }
-p{
+
+p {
     margin-bottom: 0;
     line-height: 2em;
 }
+
 .banner {
     img {
         max-width: unset;
@@ -14,14 +16,17 @@ p{
 
 h1 {
     color: $primary;
-    .eg-name{
+
+    .eg-name {
         font-size: .75em;
         font-weight: 300;
     }
 }
-h2{
+
+h2 {
     color: $primary;
 }
+
 ul {
     list-style: none;
     color: $gray-600;
@@ -67,33 +72,39 @@ ul {
     }
 }
 
-.list-introduce{
+.list-introduce {
     font-weight: 600;
     color: #000;
-    .title{
+
+    .title {
         margin-bottom: 1em;
-        span{
+
+        span {
             font-size: 1.2em;
         }
     }
-    
-    .subtitle{
+
+    .subtitle {
         margin-bottom: 0.5em;
         color: $primary;
     }
 
-    p,ul>li{
+    p,
+    ul>li {
         color: #000;
         font-weight: 400;
-       
+
     }
-    ul{
+
+    ul {
         margin-bottom: 1.5em;
     }
 }
+
 main {
 
-    padding-top: 8em;
+    padding-top: 6em;
+    // padding-top: 8em;
     background: url(../image/ftft_bg.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
@@ -122,43 +133,97 @@ label.form-label {
     font-weight: 500;
 }
 
-.select-order{
+.select-order {
     display: flex;
     align-items: center;
-    span{
+
+    // margin-right: 1em;
+    span {
         white-space: nowrap;
         color: $primary;
         margin-bottom: 0;
         margin-right: 0.5em;
     }
-    select{
+
+    select {
         border: 0px;
-    
+
         background-color: $primary;
         background-image: url(../image/select_arrow.svg);
         color: #fff;
         padding-top: .8em;
         padding-bottom: .8em;
     }
+
+    flex-wrap:nowrap;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(sm) {
+        flex-wrap: wrap;
+        padding: 0 1.75em;
+        margin-bottom: 3em;
+
+        span {
+            margin-bottom: 0.75em;
+        }
+    }
 }
-.content-info{
+
+.content-info {
     background: #fff;
     border-top: 5px solid $primary;
-    padding: 2em 3em;
+    padding: 1.5em;
     border-radius: 0.25em;
-    img{
+
+    @include media-breakpoint-up(sm) {
+        padding: 2em 3em;
+    }
+
+    img {
         box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     }
-    ul{
+
+    ul {
         color: #000;
-        li{
+
+        // padding-left: 0em;
+        li {
             margin-bottom: 0.5em;
         }
     }
 }
 
-.was-validated .input-password .form-control{
-    &:invalid , &:valid{
+.content-trend {
+    background: #eaeaea;
+    border-top: 0px; 
+    ul {
+        padding-left: 0em;
+    }
+}
+
+.card-info {
+    min-width: 300px;
+    overflow-x: scroll;
+
+    .content {
+
+        min-width: 400px;
+    }
+
+    padding: 2em;
+
+
+}
+
+.was-validated .input-password .form-control {
+
+    &:invalid,
+    &:valid {
         background-image: none;
-    } 
+    }
+}
+
+.datepicker-cell.selected {
+    background-color: $primary !important;
+
 }

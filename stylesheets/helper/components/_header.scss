@@ -356,11 +356,15 @@
 		}
 
 		button {
-			padding: 0.5em 3em;
+			padding: 0.5em 1em;
 			border-radius: .25em;
 			white-space: nowrap;
+			@include media-breakpoint-up(sm) { 
+				padding:  0.5em 3em;
+			 }
 		}
 	}
+
 }
 
 .user-mobile-popover.show {
