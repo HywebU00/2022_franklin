@@ -143,3 +143,95 @@
   }
 
 }
+.step-list{
+  margin-bottom: 6em;
+  .step-group{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &::after{
+      position: absolute;
+      content: '';
+      width: 80%;
+      top:45%;
+      left: 10%;
+      height: 6px;
+      background: #dee5ef;
+    }
+    @include media-breakpoint-up(sm) { 
+      &::after{
+        width: 90%;
+        left: 5%;
+      }
+
+     }
+   
+  }
+  .step-1{
+    &:before{
+      position: absolute;
+      content: '';
+      width: 50%;
+      top:45%;
+      height: 6px;
+      background: $primary;
+      z-index: 1;
+    }
+  }
+  .step-2{
+    &:before{
+      position: absolute;
+      content: '';
+      width: 80%;
+      top:45%;
+      left: 10%;
+      height: 6px;
+      background: $primary;
+      z-index: 1;
+    }
+    @include media-breakpoint-up(sm) { 
+      &::before{
+        width: 90%;
+        left: 5%;
+      }
+
+     }
+  }
+  .step-item-1,.step-item-2,.step-item-3{
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #dee5ef;
+    position: relative;
+    &:after{
+      position: absolute;
+      content: '設定購買方式';
+      top:60px;
+      white-space: nowrap;
+      left: -20%;
+      
+    }
+  }
+  .step-item-1{
+    &:after{
+      left: -50%;
+    }
+   
+  }
+  .step-item-2{
+    &:after{
+      content: '資料確認'; 
+    }
+  }
+  .step-item-3{
+    &:after{
+      content: '完成交易'; 
+    }
+  }
+  .active{
+    background: no-repeat $primary url(../../image/check_icon.png) center center;
+    color: $primary;
+  }
+
+}

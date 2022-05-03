@@ -34,6 +34,7 @@
 			background-color: #fff;
 
 			td {
+
 				// padding:  1.25rem;
 				&:first-child {
 					padding-left: 1.25rem;
@@ -216,6 +217,7 @@
 
 .table-fundlist {
 	margin-bottom: 3em;
+
 	.table {
 		thead {
 			th {
@@ -233,10 +235,12 @@
 
 			tr {
 				border-top: none;
-				>td{
+
+				>td {
 					border-bottom: 0px;
 				}
-				&:nth-child(even){
+
+				&:nth-child(even) {
 					border-bottom: 1px solid #dee2e6;
 				}
 			}
@@ -244,6 +248,7 @@
 			td {
 				text-align: end;
 				font-weight: 600;
+
 				th {
 					cursor: pointer;
 				}
@@ -279,7 +284,7 @@
 				// 	background: lighten($primary, 80%);
 				// }
 			}
-			
+
 		}
 	}
 
@@ -307,7 +312,7 @@
 		tr {
 			border-bottom: 1px solid #dee2e6;
 		}
-		
+
 
 		th {
 			button {
@@ -339,18 +344,18 @@
 		}
 	}
 
-	
+
 	select {
 		background-color: #f6f6f6;
 		color: rgb(119, 119, 119);
-		padding: 0.8em ;
+		padding: 0.8em;
 		width: 165px;
 	}
 
 	.tr-collapse {
 		background-color: #333;
 
-		
+
 		table {
 			margin-bottom: 0;
 		}
@@ -368,7 +373,7 @@
 			td {
 				width: 200px;
 				text-align: end;
-				
+
 			}
 
 			th {
@@ -390,8 +395,9 @@
 
 			tr {
 				border: 1px solid #333;
-				&:nth-child(even){
-					border-bottom:  1px solid #333;
+
+				&:nth-child(even) {
+					border-bottom: 1px solid #333;
 				}
 			}
 		}
@@ -483,12 +489,14 @@
 				color: #cecece;
 			}
 		}
+
 		select {
 			background-color: #f6f6f6;
 			color: rgb(119, 119, 119);
-			padding: 0.8em ;
+			padding: 0.8em;
 			width: 165px;
 		}
+
 		.active {
 			color: $ligthdanger;
 		}
@@ -523,11 +531,13 @@
 		width: 250px;
 		min-width: 250px;
 		padding-right: 2em;
+
 		@include media-breakpoint-down(md) {
 			width: 160px;
 			min-width: 160px;
 		}
-		@include media-breakpoint-down(sm){
+
+		@include media-breakpoint-down(sm) {
 			padding: 1em;
 		}
 	}
@@ -550,7 +560,7 @@
 
 
 .table-explain {
-	
+
 
 	thead th {
 
@@ -560,6 +570,7 @@
 		min-width: unset;
 		border-right: 1px solid lighten($secondary, 30%);
 		padding: 1em;
+
 		&:last-child {
 			border-right: 0px;
 		}
@@ -624,7 +635,7 @@
 		border-top: 5px solid $primary;
 
 		th {
-	
+
 			white-space: nowrap;
 		}
 	}
@@ -642,41 +653,112 @@
 		white-space: nowrap;
 	}
 }
-.table-list{
-	thead{
-		th{
-			padding:1.25em 1.2em;
+
+.table-list {
+	thead {
+		th {
+			padding: 1.25em 1.2em;
 		}
 	}
-	tbody{
-		td,th{
-			padding:1.25em 1.2em;
+
+	tbody {
+
+		td,
+		th {
+			padding: 1.25em 1.2em;
 		}
 	}
 }
-.table-trade{
-	thead{
-		th{
-		text-align: center;
+
+.table-buylist {
+	.th-minwidth {
+		th {
+			min-width: 200px;
+		}
+		
+	}
+.td-table{
+	td {
+		min-width: 200px;
+		padding: 0.5em 1em;
+		&:last-child{
+			border-right: 1px solid #dee2e6;
+		}
+		&:first-child{
+			border-left: 1px solid #dee2e6;
 		}
 	}
-	tbody{
-		tr>td{
+	tr{
+		border-bottom:  1px solid #dee2e6;
+		&:last-child{
+			border-bottom: 0px;
+		}
+		
+	}
+}
+
+	thead {
+		th {
+			background-color: #dee5ef;
+			text-align: center;
+		}
+	}
+
+	tbody {
+		tr {
+			background: #fff;
+
+			td {
+				text-align: center;
+				vertical-align: middle;
+
+				&:nth-child(2) {
+					min-width: 200px;
+				}
+			}
+
+			.td-minwidth {
+				min-width: 200px;
+			}
+		}
+	}
+
+	.tfoot {
+		background-color: #eaeaea;
+
+		td {
+			padding: 1.25em 1.2em;
+		}
+	}
+}
+
+.table-trade {
+	thead {
+		th {
+			text-align: center;
+		}
+	}
+
+	tbody {
+		tr>td {
 			text-align: center;
 			vertical-align: middle;
-			&:nth-child(4){
+
+			&:nth-child(4) {
 				text-align: start;
 			}
 		}
 	}
 }
-.table-netValue{
+
+.table-netValue {
 	margin-top: 3em;
-tbody{
-	td{
-		min-width: auto;
-		padding-left: 0.5em;
-		text-align: center;
+
+	tbody {
+		td {
+			min-width: auto;
+			padding-left: 0.5em;
+			text-align: center;
+		}
 	}
-}
 }

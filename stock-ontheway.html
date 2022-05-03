@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylesheets/all.min.css" />
+  <title>2022富蘭克林基金_fstock-ontheway_2.3基金在途交易</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-light navbar-expand-lg nav-default fixed-top">
+      <!-- container-fluid -->
+      <div class="container ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex nav-mobile">
+          <a class="navbar-brand" href="#">
+            <img src="image/ftft-logo.png" alt="" />
+          </a>
+          <ul class="align-items-center">
+            <li class="nav-item">
+              <button class="btn search-mobile popover-mobile-search">
+                <img class="search" src="image/search_icon.png" alt="">
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#userModal">
+                <img src="image/user_icon.png" alt="">
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">我的資產</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2  g-3 container mx-auto ">
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div><!-- end row -->
+              </div>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">基金交易</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row row row-cols-1 row-cols-lg-4 row-cols-sm-2 g-3 container mx-auto">
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div><!-- end row -->
+              </div>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">會員專區</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row row row-cols-1 row-cols-lg-4 row-cols-sm-2 g-3 container mx-auto">
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div><!-- end row -->
+              </div>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">新募集基金</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row row row-cols-1 row-cols-lg-4 row-cols-sm-2 g-3 container mx-auto">
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div><!-- end row -->
+              </div>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">境外基金</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 g-3 container mx-auto">
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div><!-- end row -->
+              </div>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">常見問答</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row g-3 row-cols-1 row-cols-lg-4 row-cols-sm-2 container mx-auto">
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div><!-- end row -->
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-user ms-auto align-items-center">
+            <li class="nav-item">
+              <div class="search">
+                <input type="text">
+                <button class="btn"><img src="image/search_icon.png" alt=""></button>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link popover-dismiss" tabindex="0" role="button" data-bs-toggle="popover"
+                data-bs-trigger="focus" title="Dismissible popover">
+                <img src="image/user_icon.png" alt="">
+              </a></li>
+            <li class="nav-item">
+              <button class="btn btn-outline-primary">登出</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="">
+    <!-- 廣告位置 -->
+    <!-- <section class="banner">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="image/ftft_banner.jpg">
+        <source media="(min-width: 992px)" src="image/ftft_banner.jpg"">
+        <source media=" (min-width: 576px)" srcset="image/ftft_banner_md.jpg">
+        <source media="(max-width: 575px)" srcset="image/ftft_banner_sm.jpg">
+        <img srcset="image/ftft_banner.jpg">
+      </picture>
+    </section> -->
+    <div class="container ">
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb" class="d-block d-md-flex">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+        <ul class="function-list mb-4 mb-md-0">
+          <li>
+            <div class="form-findfund">
+              <input class=" form-control" type="text" placeholder="找基金">
+              <button><img src="image/search_icon_gray.png" alt=""></button>
+            </div>
+          </li>
+          <li><button class="btn ">回上頁</button></li>
+        </ul>
+      </nav>
+      <!-- Breadcrumb end -->
+      <!-- 單筆申購 start -->
+      <section class="mb-5">
+        <h2 class="h4 py-2">單筆申購</h2>
+        <div class=" table-responsive table-style-border table-list table-buylist">
+          <div class="table-responsive-xl">
+            <table class="table">
+              <thead class="">
+                <tr>
+                  <th scope="col">交易序號</th>
+                  <th scope="col">基金名稱</th>
+                  <th scope="col">計價幣別</th>
+                  <th scope="col">申購金額</th>
+                  <th scope="col">參考手續費</th>
+                  <th scope="col">申購總額</th>
+                  <th scope="col">委託確認時間</th>
+                  <th scope="col">委託有效日期</th>
+                  <th scope="col">繳款方式</th>
+                  <th scope="col">委託狀態</th>
+                  <th scope="col">取消交易</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2022122A0001</td>
+                  <td>新世界股票基金</td>
+                  <td>新台幣</td>
+                  <td class="text-end">3,000</td>
+                  <td class="text-end">0</td>
+                  <td class="text-end">3,000</td>
+                  <td>2022/01/19 10:32:01</td>
+                  <td>2022/01/19</td>
+                  <td>自動扣款</td>
+                  <td>委託成功</td>
+                  <td class="text-center">
+                    <a class="btn btn-outline-primary" href="#">取消</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2022122A0001</td>
+                  <td>新世界股票基金</td>
+                  <td>新台幣</td>
+                  <td class="text-end">3,000</td>
+                  <td class="text-end">0</td>
+                  <td class="text-end">3,000</td>
+                  <td>2022/01/19 10:32:01</td>
+                  <td>2022/01/19</td>
+                  <td>自動扣款</td>
+                  <td>委託成功</td>
+                  <td class="text-center">
+                    <a class="btn btn-outline-primary" href="#">取消</a>
+                  </td>
+                </tr>
+                <tr class="tfoot">
+                  <td colspan="9" class="text-end">扣款帳戶：013國泰世華商業銀行</td>
+                  <td>光復分行</td>
+                  <td class="text-nowrap">帳號：01508004XXXX</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- 單筆申購 end -->
+      <!-- 定期（不）定額 start -->
+      <section class="mb-5">
+        <h2 class="h4 py-2">定期（不）定額 </h2>
+        <div class=" table-responsive table-style-border table-list table-buylist">
+          <div class="table-responsive-xl">
+            <table class="table">
+              <thead class="">
+                <tr>
+                  <th scope="col">交易序號</th>
+                  <th scope="col">基金名稱</th>
+                  <th scope="col">交易方式</th>
+                  <th scope="col">扣款日期</th>
+                  <th scope="col">扣款金額</th>
+                  <th scope="col">參考手續費</th>
+                  <th scope="col">扣款總額</th>
+                  <th scope="col" colspan="2">加碼啟動</th>
+                  <th scope="col" colspan="2">減碼啟動</th>
+                  <th scope="col">委託確認時間</th>
+                  <th scope="col">委託有效日期</th>
+                  <th scope="col">交易有效日期</th>
+                  <th scope="col">委託狀態</th>
+                  <th scope="col">取消交易</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>202212X0002</td>
+                  <td>全球醫療保健基金</td>
+                  <td class="minwidth">定期定額</td>
+                  <td class="td-minwidth">
+                    <div>6日</div>
+                    <div>16日</div>
+                  </td>
+                  <td class="text-end">10,000</td>
+                  <td class="text-end">0</td>
+                  <td class="text-end">10,000</td>
+                  <td colspan="2">
+                  </td>
+                  <td colspan="2">
+                  </td>
+                  <td>2022/01/19 10:32:01</td>
+                  <td>2022/01/19</td>
+                  <td>2022/01/24</td>
+                  <td>委託成功</td>
+                  <td class="text-center">
+                    <a class="btn btn-outline-primary" href="#">取消</a>
+                  </td>
+                </tr>
+                <tr class="tfoot">
+                  <td colspan="14" class="text-end">扣款帳戶：013國泰世華商業銀行</td>
+                  <td>光復分行</td>
+                  <td class="text-nowrap">帳號：01508004XXXX</td>
+                </tr>
+                <tr>
+                  <td>202212X0002</td>
+                  <td>全球醫療保健基金</td>
+                  <td class="td-minwidth">定期不定額</td>
+                  <td>
+                    <div>6日</div>
+                    <div>16日</div>
+                  </td>
+                  <td class="text-end">10,000</td>
+                  <td class="text-end">0</td>
+                  <td class="text-end">10,000</td>
+                  <td colspan="2" class="td-minwidth">
+                    <div>當報酬率低於-1%</div>
+                    <div>扣款調高為50,000</div>
+                  </td>
+                  <td colspan="2" class="td-minwidth">
+                    <div>當報酬率高於+1%</div>
+                    <div>扣款調降為3,000</div>
+                  </td>
+
+                  <td>2022/01/19 10:32:01</td>
+                  <td>2022/01/19</td>
+                  <td>2022/01/24</td>
+                  <td>委託成功</td>
+                  <td class="text-center">
+                    <a class="btn btn-outline-primary" href="#">取消</a>
+                  </td>
+                </tr>
+                <tr class="tfoot">
+                  <td colspan="14" class="text-end">扣款帳戶：013國泰世華商業銀行</td>
+                  <td>光復分行</td>
+                  <td class="text-nowrap">帳號：01508004XXXX</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- 定期（不）定額 end -->
+      <!-- 買回 start -->
+      <section class="mb-5">
+        <h2 class="h4 py-2">買回</h2>
+        <div class=" table-responsive table-style-border table-list table-buylist">
+          <div class="table-responsive-xl">
+            <table class="table">
+              <thead class="">
+                <tr>
+                  <th scope="col">交易序號</th>
+                  <th scope="col">基金名稱</th>
+                  <th scope="col">買回單位數</th>
+                  <th scope="col">參考買回金額</th>
+                  <th scope="col">委託確認時間</th>
+                  <th scope="col">委託有效日期</th>
+                  <th scope="col">買回價金匯入日期</th>
+                  <th scope="col">委託狀態</th>
+                  <th scope="col">取消交易</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2022122R0001</td>
+                  <td>貨幣市場基金</td>
+                  <td class="text-end">10,000.00</td>
+                  <td class="text-end">103,197</td>
+                  <td>2022/01/19 10:32:01</td>
+                  <td>2022/01/19</td>
+                  <td>2022/01/24</td>
+                  <td>委託成功</td>
+                  <td class="text-center">
+                    <a class="btn btn-outline-primary" href="#">取消</a>
+                  </td>
+                </tr>
+                <tr class="tfoot">
+                  <td colspan="7" class="text-end">扣款帳戶：013國泰世華商業銀行</td>
+                  <td>光復分行</td>
+                  <td class="text-nowrap">帳號：01508004XXXX</td>
+                </tr>
+                <tr>
+                  <td>2022122R0001</td>
+                  <td>富蘭克林全球債券組合基金-累積型-美金</td>
+                  <td class="text-end">10,000.00</td>
+                  <td class="text-end">97,453.00</td>
+                  <td>2022/01/19 10:32:01</td>
+                  <td>2022/01/19</td>
+                  <td>2022/01/24</td>
+                  <td>取消交易</td>
+                  <td class="text-center">
+
+                  </td>
+                </tr>
+                <tr class="tfoot">
+                  <td colspan="7" class="text-end">扣款帳戶：013國泰世華商業銀行</td>
+                  <td>光復分行</td>
+                  <td class="text-nowrap">帳號：01508004XXXX</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- 買回 end -->
+      <!-- 轉申購 start -->
+      <section class="mb-5">
+        <h2 class="h4 py-2">轉申購 </h2>
+        <div class=" table-responsive table-style-border table-list table-buylist">
+          <div class="table-responsive-xl">
+            <table class="table">
+              <thead class="">
+                <tr>
+                  <th scope="col">交易序號</th>
+                  <th scope="col">基金名稱</th>
+                  <th scope="col">轉申購單位數</th>
+                  <th scope="col">轉申購基金名稱</th>
+                  <th scope="col">參考手續費</th>
+                  <th scope="col">委託確認時間</th>
+                  <th scope="col">委託有效日期</th>
+                  <th scope="col">委託狀態</th>
+                  <th scope="col">取消交易</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>20220122S000001</td>
+                  <td>貨幣市場基金</td>
+                  <td class="text-end">3,101,689.99</td>
+                  <td>第一富基金</td>
+                  <td class="text-end">0</td>
+                  <td>2022/01/24 10:32:01</td>
+                  <td>2022/01/24</td>
+                  <td>委託成功</td>
+                  <td class="text-center">
+                    <a class="btn btn-outline-primary" href="#">取消</a>
+                  </td>
+                </tr>
+                <tr class="tfoot">
+                  <td colspan="7" class="text-end">扣款帳戶：013國泰世華商業銀行</td>
+                  <td>光復分行</td>
+                  <td class="text-nowrap">帳號：01508004XXXX</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- 轉申購 end -->
+      <!-- 定期（不）定額變更start -->
+      <section class="mb-5">
+        <h2 class="h4 py-2">定期（不）定額變更 </h2>
+        <div class=" table-responsive table-style-border table-list table-buylist">
+          <div class="table-responsive-xl">
+            <table class="table ">
+              <thead class="th-minwidth">
+                <tr>
+                  <th scope="col">交易序號</th>
+                  <th scope="col">變更</th>
+                  <th scope="col">基金名稱</th>
+                  <th scope="col">交易狀態</th>
+                  <th scope="col">交易方式</th>
+                  <th scope="col">扣款日期</th>
+                  <th scope="col">扣款金額</th>
+                  <th scope="col">加碼啟動報酬率</th>
+                  <th scope="col">加碼扣款金額</th>
+                  <th scope="col">減碼啟動報酬率</th>
+                  <th scope="col">減碼扣款金額</th>
+                  <th scope="col">停利點</th>
+                  <th scope="col">停利轉申購基金</th>
+                  <th scope="col">委託確認時間</th>
+                  <th scope="col">委託有效日期</th>
+                  <th scope="col">委託狀態</th>
+                  <th scope="col">取消交易</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>20220122C000001</td>
+                  <td colspan="12" class="p-0">
+                    <table class="td-table">
+                      <tbody>
+                        <tr class="">
+                          <td>變更前</td>
+                          <td>策高股息基金-累積型</td>
+                          <td>正常扣款</td>
+                          <td>定期不定額</td>
+                          <td>
+                            <div>6日</div>
+                            <div>16日</div>
+                            <div>26日</div>
+                          </td>
+                          <td>2,000</td>
+                          <td>-1%</td>
+                          <td>100,000</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td>無設定</td>
+                        </tr>
+                        <tr>
+                          <td>變更後</td>
+                          <td>策高股息基金-累積型</td>
+                          <td>停止扣款</td>
+                          <td>定期不定額</td>
+                          <td>
+                            <div class="">6日</div>
+                            <div class="">16日</div>
+                            <div class="">26日</div>
+                          </td>
+                          <td>2,000</td>
+                          <td>-1%</td>
+                          <td>100,000</td>
+                          <td></td>
+                          <td></td>
+                          <td>0%</td>
+                          <td>無設定</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td>2022/01/24 11:30:00</td>
+                  <td>2022/01/24</td>
+                  <td>委託成功</td>
+                  <td class="text-center">
+                    <a class="btn btn-outline-primary" href="#">取消</a>
+                  </td>
+                </tr>
+
+                <!-- <tr>
+                  <td>20220122C000001</td>
+                  <td>變更前</td>
+                  <td class="td-minwidth">策高股息基金-累積型</td>
+                  <td>正常扣款</td>
+                  <td class="td-minwidth">定期不定額</td>
+                  <td class="td-minwidth">
+                    <div>6日</div>
+                    <div>16日</div>
+                    <div>26日</div>
+                  </td>
+                  <td class="text-end">2,000</td>
+                  <td>-1%</td>
+                  <td class="text-end">100,000</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>無設定</td>
+                  <td>2022/01/24 11:30:00</td>
+                  <td>2022/01/24</td>
+                  <td>委託成功</td>
+                  <td class="text-center">
+                    <a class="btn btn-outline-primary" href="#">取消</a>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- 定期（不）定額變更 end -->
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row justify-content-between mb-4 border-bottom mt-3">
+        <div
+          class="d-flex list-logo col-xl-6 col-12 col-md-6 align-items-center justify-content-center justify-content-xl-start ">
+          <div class="row justify-content-start ">
+            <div class="col-5 img">
+              <img src="image/ftft-logo.png" alt="" />
+              <span class="mt-2">110金管 投信新字第010號</span>
+            </div>
+            <ul class="col-xl-7 col-12  text-start  mt-2 mt-lg-0">
+              <li class="text-primary fw-bold mb-2">
+                富蘭克林華美證券投資信託股份有限公司
+              </li class="fw-bold">
+              <li class="">106 台北市大安區忠孝東路四段87號12樓</li>
+              <li class="">電話：(02)2781-9599 傳真：(02)2781-8299</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-6 col-12 col-md-6 ps-0 ps-xl-2">
+          <div class="d-flex justify-content-start mb-2 ms-2 m-md-0 justify-content-md-end align-items-center">
+            <img src="image/SMALL.gif" alt="" />
+          </div>
+        </div>
+      </div>
+      <p>
+        本基金受益憑證以無實體發行，經理公司依有價證券集中保管帳簿劃撥作業辦法及集保機構之相關規定以帳簿劃撥方式交付受益憑證。本基金經金管會核准或申報生效，惟不表示本基金絕無風險。經理公司以往之經理績效不保證基金之最低投資收益；經理公司除盡善良管理人之注意義務外，不負責基金之盈虧，亦不保證最低之收益。【富蘭克林華美投信獨立經營管理】
+      </p>
+    </div>
+  </footer>
+  <!-- 手機版本使用者視窗 modal -->
+  <div class="modal fade user-mobile-modal" id="userModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><img src="image/icon-username.png" alt=""><span>客戶姓名 :</span>王大明</li>
+            <li><img src="image/icon-account.png" alt=""><span>指定扣款帳號 :</span>臺灣銀行00000000****</li>
+            <li><img src="image/icon-pay.png" alt=""><span>投信戶號 :</span>45251</li>
+          </ul>
+        </div>
+        </ul>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="btn btn-outline-primary btn-logout">登出</div>
+      </div>
+    </div>
+  </div>
+  <!-- 手機版本搜尋視窗 modal -->
+  <!-- 點擊按鈕後 新增加 show 的classname -->
+  <div class="user-mobile-popover ">
+    <div class="search">
+      <div class="d-flex mb-3 ">
+        <input type="text" class="form-control " placeholder="輸入搜尋文字">
+        <button class="btn btn-primary" type="button">搜尋</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.js"></script>
+  <!-- apexcharts -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <!-- 廣告圖片大小 -->
+  <script src="js/picturefill.js"></script>
+  <!-- 全站同用的ＪＳ -->
+  <script src="js/ftft.js"></script>
+  <!-- page setting -->
+  <script src="js/fundIntroduce.js"></script>
+  <!-- Vanilla Datepicker JS -->
+  <script src='js/vanillajs-datepicker.min.js'></script>
+  <script src="js/datePicker_setting.js"></script>
+
+</body>
+
+</html>
