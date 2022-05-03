@@ -2,6 +2,7 @@ body {
     background: #f0f0f0;
 }
 
+
 p {
     margin-bottom: 0;
     line-height: 2em;
@@ -41,6 +42,7 @@ ul {
 }
 
 .list-disc,
+.list-square,
 .list-num {
     color: $gray-600;
 
@@ -69,6 +71,36 @@ ul {
     ul {
         list-style-type: decimal;
 
+    }
+}
+
+.list-square {
+    ul {
+        list-style-type: none;
+
+        li {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                left: -20px;
+                content: '◆';
+            }
+
+        }
+
+    }
+
+    .list-num {
+        ul {
+            list-style-type: number;
+            padding-left: 1em;
+            li {
+                &::before {
+                    display: none;
+                }
+            }
+        }
     }
 }
 
@@ -131,6 +163,9 @@ main {
 label.form-label {
     color: $gray-600;
     font-weight: 500;
+    i{
+        color: #6c757d;
+    }
 }
 
 .select-order {
@@ -195,7 +230,8 @@ label.form-label {
 
 .content-trend {
     background: #eaeaea;
-    border-top: 0px; 
+    border-top: 0px;
+
     ul {
         padding-left: 0em;
     }
@@ -226,4 +262,18 @@ label.form-label {
 .datepicker-cell.selected {
     background-color: $primary !important;
 
+}
+
+
+// 取消 input number樣式
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
