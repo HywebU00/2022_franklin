@@ -64,11 +64,14 @@
     }
   }
   .form-text{
-    padding: 0.5em 1em;
+    padding: 0.5em 0.75em;
     border-radius: 0.25em;
+    margin-top: 0;
     color: #212529;
     font-size: 1rem;
-    background-color: #e4eefd;
+    width: 100%;
+    background-color: #e9ecef;
+    // background-color: #e4eefd;
   }
   .card-trade{
     .card-header{
@@ -146,7 +149,9 @@
     color: #6c757d;
     font-weight: 500;
     font-size: 1.2rem;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     input{
       text-align: center;
       width: 100%;
@@ -165,6 +170,9 @@
     background: #e4eefd;
    //box-shadow: 0 0 0 0.2rem rgba(9, 62 ,141,0.25 );
     color: #212529;
+  }
+  .card-disabled{
+    background: #f9f9f9;
   }
 }
 
@@ -336,6 +344,19 @@
     color: $primary;
   }
 
+}
+.step-changelist{
+  .step-item-1{
+    &:after{
+      content: '基金異動';
+      left: -20%;
+    }
+  }
+  .step-item-3{
+    &:after{
+      content: '完成變更'; 
+    }
+  }
 }
 .alert{
 padding: 0.25em 1rem;

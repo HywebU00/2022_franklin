@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylesheets/all.min.css" />
+  <title>2022富蘭克林基金 change_trade/2.4.1/2.4.2 定期（不）定額契約變更資料異動</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-light navbar-expand-lg nav-default fixed-top">
+      <!-- container-fluid -->
+      <div class="container ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex nav-mobile">
+          <a class="navbar-brand" href="#">
+            <img src="image/ftft-logo.png" alt="" />
+          </a>
+          <ul class="align-items-center">
+            <li class="nav-item">
+              <button class="btn search-mobile popover-mobile-search">
+                <img class="search" src="image/search_icon.png" alt="">
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#userModal">
+                <img src="image/user_icon.png" alt="">
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">我的資產</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2  g-3 container mx-auto ">
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div><!-- end row -->
+              </div>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">基金交易</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row row row-cols-1 row-cols-lg-4 row-cols-sm-2 g-3 container mx-auto">
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                        <li><a href="#">次次選單2</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div><!-- end row -->
+              </div>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">會員專區</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row row row-cols-1 row-cols-lg-4 row-cols-sm-2 g-3 container mx-auto">
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div><!-- end row -->
+              </div>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">新募集基金</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row row row-cols-1 row-cols-lg-4 row-cols-sm-2 g-3 container mx-auto">
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                        <li><a href="#">次次選單3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div><!-- end row -->
+              </div>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">境外基金</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 g-3 container mx-auto">
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                        <li><a href="#">次次選單5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div><!-- end row -->
+              </div>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">常見問答</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row g-3 row-cols-1 row-cols-lg-4 row-cols-sm-2 container mx-auto">
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="col-megamenu">
+                      <h6 class="title">次選單</h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                        <li><a href="#">次次選單</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div><!-- end row -->
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-user ms-auto align-items-center">
+            <li class="nav-item">
+              <div class="search">
+                <input type="text">
+                <button class="btn"><img src="image/search_icon.png" alt=""></button>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link popover-dismiss" tabindex="0" role="button" data-bs-toggle="popover"
+                data-bs-trigger="focus" title="Dismissible popover">
+                <img src="image/user_icon.png" alt="">
+              </a></li>
+            <li class="nav-item">
+              <button class="btn btn-outline-primary">登出</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="">
+    <div class="container ">
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+      <!-- Breadcrumb end -->
+      <div class="container">
+        <!-- ================================== -->
+        <!-- 2.4.1定期不定額 契約變更-資料異動頁 start-->
+        <!-- ================================== -->
+        <section class="mb-5">
+          <div class="row step-list step-changelist justify-content-center">
+            <!-- 完成步驟進度加上classname "step-2" 或 "step-3" -->
+            <!-- 已完成的步驟icon加上classname "active" -->
+            <div class="col-11 col-sm-8 step-group ">
+              <div class="step-item-1 active"></div>
+              <div class="step-item-2 "></div>
+              <div class="step-item-3 "></div>
+            </div>
+          </div>
+        </section>
+        <section class="mb-5">
+          <form class="form-list" action="">
+            <!-- 基金明細列表 start -->
+            <div class="row">
+              <div class="col-12 mb-4">
+                <div class=" table-responsive table-style-border table-list table-detail">
+                  <div class="table-responsive-xl">
+                    <table class="table">
+                      <thead class="">
+                        <tr>
+                          <th scope="col">基金名稱</th>
+                          <th scope="col">最新淨值</th>
+                          <th scope="col">交易幣別</th>
+                          <th scope="col">網路申購費率</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="">新世紀股票基金</th>
+                          <td class="">0.27%</td>
+                          <td class="">2%</td>
+                          <td class="">2%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 基金明細列表 end -->
+            <!-- 基金狀態變更 start -->
+            <!-- input + disabled , select + disabled 及 form-text 為同樣的外觀樣式 可自行決定套用任意一款 -->
+            <div class="row g-3">
+              <div class="col-12 col-md-6 mb-4 ">
+                <div class="card p-4 card-disabled">
+                  <h2 class="h4 py-2">變更前</h2>
+                  <!-- 交易方式 start -->
+                  <div class="row mb-4">
+                    <div class="col-lg-6  col  mb-2">
+                      <label for="" class="form-label">交易狀態
+                      </label>
+                      <div class="form-text">正常扣款</div>
+                      <!-- <select disabled  class="form-select" aria-label="Default select example">
+                      <option selected>交易狀態</option>
+                      <option value="1">正常扣款</option>
+                      <option value="2">停止扣款</option>
+                    </select> -->
+                    </div>
+                    <div class="col-lg-6  col  mb-2">
+                      <label for="" class="form-label">交易方式
+                      </label>
+                      <div class="form-text">定期不定額</div>
+                      <!-- <select disabled  class="form-select" aria-label="Default select example">
+                      <option selected>交易方式</option>
+                      <option value="1">定期不定額</option>
+                      <option value="2">單筆購買</option>
+                      <option value="3">定期定額</option>
+                    </select> -->
+                    </div>
+                  </div>
+                  <!-- 交易方式 end -->
+                  <!-- 請選擇每月扣款日期按鈕 start-->
+                  <div class="row mb-4">
+                    <div class="col mb-4">
+                      <label for="" class="form-label ">請選擇每月扣款日期</label>
+                      <div class="row g-3">
+                        <div class="col-lg-4 col-12 col-sm-4">
+                          <button type="button" disabled class="btn btn-debit active">6 日</button>
+                        </div>
+                        <div class="col-lg-4 col-12 col-sm-4">
+                          <button type="button" disabled class="btn btn-debit  active">16 日</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 請選擇每月扣款日期按鈕 end-->
+                  <!-- 扣款金額 start -->
+                  <div class="row mb-4">
+                    <div class="col mb-2">
+                      <label for="" class="form-label">扣款金額</label>
+                      <div class="form-text">3000</div>
+                      <!-- <input disabled class="form-control " placeholder="請輸入金額2" type="tel" name="" id="" value="3000"> -->
+                    </div>
+                  </div>
+                  <!-- 扣款金額 end -->
+                  <!-- 加碼啟動 start-->
+                  <div class="row mb-4">
+                    <div class="col mb-4">
+                      <label for="" class="form-label ">加碼啟動</label>
+                      <div class="row g-2">
+                        <div class="col-12 pe-1 d-flex align-items-center">
+                          <span class="text-nowrap me-2 ">當報酬率低於 - </span>
+                          <div class="form-text">10</div>
+                          <!-- <input disabled type="number" value="10" class="form-control " placeholder="請輸入數值" id=""> -->
+                          <span class="text-nowrap ms-2 "> ％ </span>
+                        </div>
+                        <div class="col-12  ps-1 d-flex align-items-center">
+                          <span class="text-nowrap me-3 ">扣款金調高為 </span>
+                          <div class="form-text">1000</div>
+                          <!-- <input disabled type="number" value="1000" class="form-control " placeholder="請輸入金額" id=""> -->
+                          <span class="text-nowrap ms-2 "> 元 </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 加碼啟動 end-->
+                  <!-- 減碼啟動 start-->
+                  <div class="row mb-4">
+                    <div class="col mb-4">
+                      <label for="" class="form-label ">減碼啟動</label>
+                      <div class="row g-2">
+                        <div class="col-12 pe-1 d-flex align-items-center">
+                          <span class="text-nowrap me-2 ">當報酬率高於 +</span>
+                          <div class="form-text">10</div>
+                          <!-- <input disabled type="number" class="form-control " placeholder="請輸入數值" id="" value="10"> -->
+                          <span class="text-nowrap ms-2 "> ％ </span>
+                        </div>
+                        <div class="col-12 ps-1 d-flex align-items-center">
+                          <span class="text-nowrap me-3 ">扣款金降低為 </span>
+                          <div class="form-text">1000</div>
+                          <!-- <input disabled type="number" class="form-control " placeholder="請輸入金額" id="" value="1000"> -->
+                          <span class="text-nowrap ms-2 "> 元 </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 減碼啟動 end-->
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-4 ">
+                <div class="card p-4">
+                  <h2 class="h4 py-2">變更後</h2>
+                  <!-- 交易方式 start -->
+                  <div class="row mb-4">
+                    <div class="col-lg-6  col  mb-2">
+                      <label for="" class="form-label">交易狀態
+                      </label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>交易狀態</option>
+                        <option value="1">正常扣款</option>
+                        <option value="2">停止扣款</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-6  col  mb-2">
+                      <label for="" class="form-label">交易方式
+                      </label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>交易方式</option>
+                        <option value="1">定期不定額</option>
+                        <option value="2">單筆購買</option>
+                        <option value="3">定期定額</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- 交易方式 end -->
+                  <!-- 請選擇每月扣款日期按鈕 start-->
+                  <div class="row mb-4">
+                    <div class="col mb-4">
+                      <label for="" class="form-label ">請選擇每月扣款日期</label>
+                      <div class="row g-3">
+                        <div class="col-lg-4 col-12 col-sm-4">
+                          <button type="button" class="btn btn-debit active">6 日</button>
+                        </div>
+                        <div class="col-lg-4 col-12 col-sm-4">
+                          <button type="button" class="btn btn-debit">16 日</button>
+                        </div>
+                        <div class="col-lg-4 col-12 col-sm-4">
+                          <button type="button" class="btn btn-debit">26 日</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 請選擇每月扣款日期按鈕 end-->
+                  <!-- 扣款金額 start -->
+                  <div class="row mb-4">
+                    <div class="col mb-2">
+                      <label for="" class="form-label">扣款金額</label>
+                      <input class="form-control " placeholder="請輸入金額2" type="tel" name="" id="" value="">
+                    </div>
+                  </div>
+                  <!-- 扣款金額 end -->
+                  <!-- 加碼啟動 start-->
+                  <div class="row mb-4">
+                    <div class="col mb-4">
+                      <label for="" class="form-label ">加碼啟動</label>
+                      <div class="row g-2">
+                        <div class="col-12 pe-1 d-flex align-items-center">
+                          <span class="text-nowrap me-2 ">當報酬率低於 - </span>
+                          <input type="number" class="form-control " placeholder="請輸入數值" id="">
+                          <span class="text-nowrap ms-2 "> ％ </span>
+                        </div>
+                        <div class="col-12  ps-1 d-flex align-items-center">
+                          <span class="text-nowrap me-3 ">扣款金調高為 </span>
+                          <input type="number" class="form-control " placeholder="請輸入金額" id="">
+                          <span class="text-nowrap ms-2 "> 元 </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 加碼啟動 end-->
+                  <!-- 減碼啟動 start-->
+                  <div class="row mb-4">
+                    <div class="col mb-4">
+                      <label for="" class="form-label ">減碼啟動</label>
+                      <div class="row g-2">
+                        <div class="col-12 pe-1 d-flex align-items-center">
+                          <span class="text-nowrap me-2 ">當報酬率高於 +</span>
+                          <input type="number" class="form-control " placeholder="請輸入數值" id="">
+                          <span class="text-nowrap ms-2 "> ％ </span>
+                        </div>
+                        <div class="col-12 ps-1 d-flex align-items-center">
+                          <span class="text-nowrap me-3 ">扣款金降低為 </span>
+                          <input type="number" class="form-control " placeholder="請輸入金額" id="">
+                          <span class="text-nowrap ms-2 "> 元 </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 減碼啟動 end-->
+                </div>
+              </div>
+            </div>
+            <!-- 基金狀態變更 end -->
+            <div class="row mt-5 pb-5  ">
+              <div class="col d-flex  justify-content-center">
+                <button type="button" class="btn btn-outline-secondary btn-width btn-height mx-1 mx-lg-2">上一步</button>
+                <button type="submit" class="btn btn-primary btn-width btn-height mx-1 mx-lg-2">下一步</button>
+              </div>
+            </div>
+          </form>
+        </section>
+        <!-- ================================== -->
+        <!-- 2.4.1定期不定額 契約變更-資料異動頁 end -->
+        <!-- ================================== -->
+        <!-- ================================== -->
+        <!-- 2.4.2定期不定額 契約變更-資料異動頁 start-->
+        <!-- ================================== -->
+        <section class="mb-5">
+          <div class="row step-list step-changelist justify-content-center">
+            <!-- 完成步驟進度加上classname "step-2" 或 "step-3" -->
+            <!-- 已完成的步驟icon加上classname "active" -->
+            <div class="col-11 col-sm-8 step-group step-2">
+              <div class="step-item-1 active"></div>
+              <div class="step-item-2 active"></div>
+              <div class="step-item-3 "></div>
+            </div>
+          </div>
+        </section>
+        <section class="mb-5">
+          <form class="form-list" action="">
+            <!-- 基金明細列表 start -->
+            <div class="row">
+              <div class="col-12 mb-4">
+                <div class=" table-responsive table-style-border table-list table-detail">
+                  <div class="table-responsive-xl">
+                    <table class="table">
+                      <thead class="">
+                        <tr>
+                          <th scope="col">基金名稱</th>
+                          <th scope="col">最新淨值</th>
+                          <th scope="col">交易幣別</th>
+                          <th scope="col">網路申購費率</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="">新世紀股票基金</th>
+                          <td class="">0.27%</td>
+                          <td class="">2%</td>
+                          <td class="">2%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 基金明細列表 end -->
+            <!-- 確認資料狀態alert start -->
+            <div class="alert alert-danger mb-4">
+              <p>請確認購買資料是否正確</p>
+            </div>
+            <!-- 確認資料狀態alert end -->
+            <!-- 契約變更後資料狀態 start -->
+            <!-- input + disabled , select + disabled 及 form-text 為同樣的外觀樣式 可自行決定套用任意一款 -->
+            <div class="row g-2 ">
+              <div class="col-12 mb-4">
+                <!-- 交易方式 start -->
+                <div class="row mb-4">
+                  <h2 class="h4 py-2">變更後</h2>
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">交易狀態</label>
+                    <div class="form-text">正常扣款</div>
+                    <!-- <select disabled class="form-select" aria-label="Default select example">
+                      <option selected>交易方式</option>
+                      <option value="1">正常扣款</option>
+                      <option value="2">停止扣款</option>
+                    </select> -->
+                  </div>
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">交易方式</label>
+                    <div class="form-text">定期不定額</div>
+                    <!-- <select disabled class="form-select" aria-label="Default select example">
+                      <option selected>交易方式</option>
+                      <option value="1">定期不定額</option>
+                      <option value="2">單筆購買</option>
+                      <option value="3">定期定額</option>
+                    </select> -->
+                  </div>
+                </div>
+                <!-- 交易方式 end -->
+                <!-- 請選擇每月扣款日期按鈕 start-->
+                <div class="row mb-4">
+                  <div class="col-lg-8 mb-4">
+                    <label for="" class="form-label ">請選擇每月扣款日期</label>
+                    <div class="row g-3">
+                      <div class="col-lg-4 col-12 col-sm-4">
+                        <button disabled type="button" class="btn btn-debit active">6 日</button>
+                      </div>
+                      <div class="col-lg-4 col-12 col-sm-4">
+                        <button disabled type="button" class="btn btn-debit">16 日</button>
+                      </div>
+                      <div class="col-lg-4 col-12 col-sm-4">
+                        <button disabled type="button" class="btn btn-debit">26 日</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 請選擇每月扣款日期按鈕 end-->
+                <!-- 扣款金額 start -->
+                <div class="row mb-4">
+                  <div class="col-lg-8  col-md-12  mb-2">
+                    <label for="" class="form-label">扣款金額</label>
+                    <div class="form-text">1000</div>
+                    <!-- <input disabled class="form-control " placeholder="請輸入金額2" type="number" name="" id="" value=""> -->
+                  </div>
+                </div>
+                <!-- 扣款金額 end -->
+                <!-- 加碼啟動 start-->
+                <div class="row mb-4">
+                  <div class="col-lg-8 mb-4">
+                    <label for="" class="form-label ">加碼啟動</label>
+                    <div class="row g-2">
+                      <div class="col-lg-6 pe-lg-4 pe-1 d-flex align-items-center">
+                        <span class="text-nowrap me-2 ">當報酬率低於 - </span>
+                        <div class="form-text">10</div>
+                        <!-- <input type="number" disabled class="form-control " placeholder="請輸入數值" id=""> -->
+                        <span class="text-nowrap ms-2 "> ％ </span>
+                      </div>
+                      <div class="col-lg-6 ps-lg-4 ps-1 d-flex align-items-center">
+                        <span class="text-nowrap me-3 ">扣款金調高為 </span>
+                        <div class="form-text">1000</div>
+                        <!-- <input type="number" disabled class="form-control " placeholder="請輸入金額" id=""> -->
+                        <span class="text-nowrap ms-2 "> 元 </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 加碼啟動 end-->
+                <!-- 減碼啟動 start-->
+                <div class="row mb-4">
+                  <div class="col-lg-8 mb-4">
+                    <label for="" class="form-label ">減碼啟動</label>
+                    <div class="row g-2">
+                      <div class="col-lg-6 pe-lg-4 pe-1 d-flex align-items-center">
+                        <span class="text-nowrap me-2 ">當報酬率高於 +</span>
+                        <div class="form-text">10</div>
+                        <!-- <input disabled type="number" class="form-control " placeholder="請輸入數值" id=""> -->
+                        <span class="text-nowrap ms-2 "> ％ </span>
+                      </div>
+                      <div class="col-lg-6 ps-lg-4 ps-1 d-flex align-items-center">
+                        <span class="text-nowrap me-3 ">扣款金降低為 </span>
+                        <div class="form-text">1000</div>
+                        <!-- <input disabled type="number" class="form-control " placeholder="請輸入金額" id=""> -->
+                        <span class="text-nowrap ms-2 "> 元 </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 減碼啟動 end-->
+              </div>
+            </div>
+            <!-- 契約變更後資料狀態 end -->
+            <!-- 公開說明說 start-->
+            <div class="row">
+              <div class="col-12 mb-4">
+                <div class="card card-directions">
+                  <div class="list-square">
+                    <ul>
+                      <li>申購(轉申購)前請詳閱各基金公開說明書：本受益人同意上列交易內容無誤，且於申購前已取得並詳閱投信公司交付之簡式公開說明書或應受益人要求所提供之公開說明書。</li>
+                      <li class="list-num">基金投資風險預告書：受益人了解
+                        <ul>
+                          <li>本次申購基金之內容、目標、投資方針、投資風險及受益人所享有之權利、相關資料與規定，該基金可能因市場價格波動，而對原投入之本金或收益有所減損
+                            ，且最大可能損失達原始投資金額 ，受益人已評估其潛在之風險後，
+                            自行作成獨立審慎之投資決定，願承擔該等投資風險，如有任何投資損失，概與本公司無涉；</li>
+                          <li>
+                            若申購之基金為配息型，該基金的配息可能由基金的收益或本金中支付。任何涉及由本金支出的部份，可能導致原始投資金額減損。該基金進行配息前未先扣除應負擔之相關費用。本公司於公司網站：www.FTFT.com.tw揭露各配息型基金近12個月內由本金支付配息之相關資料供查詢。
+                          </li>
+                          <li>基金不受存款保險、保險安定基金或其他相關保障機制。(4)如因基金交易所生紛爭，受益人可向中華民國證券投資信託暨顧問商業同業公會或財團法人金融消費評議中心提出申訴。</li>
+                        </ul>
+                      </li>
+                      <li class="list-num">
+                        以投資高收益債券為訴求之基金風險預告書：受益人決定申購(轉申購)以高收益債券為訴求之基金前，應審慎評估本身之財務狀況與風險承受能力是否適合此種基金商品，並充分瞭解下列特有風險：
+                        <ul>
+                          <li>
+                            信用風險：由於高收益債券之信用評等未達投資等級或未經信用評等，可能面臨債券發行機構違約不支付本金、利息或破產之風險；
+                          </li>
+                          <li>
+                            利率風險：由於債券易受利率之變動而影響其價格，故可能因利率上升導致債券價格下跌，而蒙受虧損之風險，高收益債亦然；
+                          </li>
+                          <li>
+                            流動性風險：高收益債券可能因市場交易不活絡而造成流動性下降，而有無法在短期內依合理價格出售的風險；
+                          </li>
+                          <li>投資人投資以高收益債券為訴求之基金不宜占其投資組合過高之比重，且不適合無法承擔相關風險之投資人；
+                          </li>
+                          <li>
+                            若高收益債券基金為配息型，基金的配息可能由基金的收益或本金中支付。任何涉及由本金支出的部份，可能導致原始投資金額減損。本基金進行配息前未先扣除應負擔之相關費用；
+                          </li>
+                          <li>基金可投資於美國 Rule 144A 債券，該債券屬私</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 公開說明說 end-->
+            <!-- 公開說明說input  start-->
+            <div class="row">
+              <div class="col-12 mt-5 justify-content-center d-flex">
+                <div class="card card-agree">
+                  <div class="row justify-content-between">
+                    <div class="col-12 col-sm-10">
+                      <p>本人已確實詳閱此基金之公開說明書、近五年費用率及報酬率，<span></span> 以及投資(以高收益債券為訴求之)風險預告書內容，充份了解投資相關風險。</p>
+                    </div>
+                    <div class="col-12  col-sm-2 d-flex justify-content-end">
+                      <div class="form-check">
+                        <!-- 增加 disabled 則無法選取 -->
+                        <input type="checkbox" class="form-check-input" id="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 公開說明說input  end-->
+            <div class="row  mt-5 justify-content-center">
+              <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center form-password">
+                <span class="text-nowrap me-2 "> 請輸入交易密碼 </span>
+                <input type="password" class="form-control " id="">
+              </div>
+            </div>
+            <div class="row mt-5 pb-5  ">
+              <div class="col d-flex  justify-content-center">
+                <button type="button" class="btn btn-outline-secondary btn-width btn-height mx-1 mx-lg-2">上一步</button>
+                <button type="submit" class="btn btn-primary btn-width btn-height mx-1 mx-lg-2">下一步</button>
+              </div>
+            </div>
+          </form>
+        </section>
+        <!-- ================================== -->
+        <!-- 2.4.1定期不定額 契約變更-資料異動頁 end -->
+        <!-- ================================== -->
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row justify-content-between mb-4 border-bottom mt-3">
+        <div
+          class="d-flex list-logo col-xl-6 col-12 col-md-6 align-items-center justify-content-center justify-content-xl-start ">
+          <div class="row justify-content-start ">
+            <div class="col-5 img">
+              <img src="image/ftft-logo.png" alt="" />
+              <span class="mt-2">110金管 投信新字第010號</span>
+            </div>
+            <ul class="col-xl-7 col-12  text-start  mt-2 mt-lg-0">
+              <li class="text-primary fw-bold mb-2">
+                富蘭克林華美證券投資信託股份有限公司
+              </li class="fw-bold">
+              <li class="">106 台北市大安區忠孝東路四段87號12樓</li>
+              <li class="">電話：(02)2781-9599 傳真：(02)2781-8299</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-6 col-12 col-md-6 ps-0 ps-xl-2">
+          <div class="d-flex justify-content-start mb-2 ms-2 m-md-0 justify-content-md-end align-items-center">
+            <img src="image/SMALL.gif" alt="" />
+          </div>
+        </div>
+      </div>
+      <p>
+        本基金受益憑證以無實體發行，經理公司依有價證券集中保管帳簿劃撥作業辦法及集保機構之相關規定以帳簿劃撥方式交付受益憑證。本基金經金管會核准或申報生效，惟不表示本基金絕無風險。經理公司以往之經理績效不保證基金之最低投資收益；經理公司除盡善良管理人之注意義務外，不負責基金之盈虧，亦不保證最低之收益。【富蘭克林華美投信獨立經營管理】
+      </p>
+    </div>
+  </footer>
+  <!-- 手機版本使用者視窗 modal -->
+  <div class="modal fade user-mobile-modal" id="userModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><img src="image/icon-username.png" alt=""><span>客戶姓名 :</span>王大明</li>
+            <li><img src="image/icon-account.png" alt=""><span>指定扣款帳號 :</span>臺灣銀行00000000****</li>
+            <li><img src="image/icon-pay.png" alt=""><span>投信戶號 :</span>45251</li>
+          </ul>
+        </div>
+        </ul>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="btn btn-outline-primary btn-logout">登出</div>
+      </div>
+    </div>
+  </div>
+  <!-- 手機版本搜尋視窗 modal -->
+  <!-- 點擊按鈕後 新增加 show 的classname -->
+  <div class="user-mobile-popover ">
+    <div class="search">
+      <div class="d-flex mb-3 ">
+        <input type="text" class="form-control " placeholder="輸入搜尋文字">
+        <button class="btn btn-primary" type="button">搜尋</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.js"></script>
+  <!-- apexcharts -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <!-- 全站同用的ＪＳ -->
+  <script src="js/ftft.js"></script>
+  <script>
+    var popover = new bootstrap.Popover(document.querySelector('.popover-buy'), {
+      trigger: 'focus'
+    })
+    var popover2 = new bootstrap.Popover(document.querySelector('.popover-debit'), {
+      trigger: 'focus'
+    })
+    var popover3 = new bootstrap.Popover(document.querySelector('.popover-add'), {
+      trigger: 'focus'
+    })
+    var popover4 = new bootstrap.Popover(document.querySelector('.popover-reduce'), {
+      trigger: 'focus'
+    })
+    var popover5 = new bootstrap.Popover(document.querySelector('.popover-month'), {
+      trigger: 'focus'
+    })
+    var popover6 = new bootstrap.Popover(document.querySelector('.popover-fund'), {
+      trigger: 'focus'
+    })
+  </script>
+</body>
+
+</html>

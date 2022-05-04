@@ -762,3 +762,22 @@
 		}
 	}
 }
+
+.table-detail{
+	thead{
+		th{
+			text-align: center;
+		}
+	}
+	tbody{
+		th{
+			font-weight: 500;
+		}
+		td{
+			color: $primary;
+		}
+		td,th{
+			text-align: center;
+		}
+	}
+}
