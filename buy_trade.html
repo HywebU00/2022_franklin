@@ -432,13 +432,28 @@
                     </label>
                     <div class="row g-3">
                       <div class="col-lg-4 col-12 col-sm-4">
-                        <button type="button" class="btn btn-debit active">6 日</button>
+                        <div class="form-check form-check-btn">
+                          <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            6 日
+                          </label>
+                        </div>
                       </div>
                       <div class="col-lg-4 col-12 col-sm-4">
-                        <button type="button" class="btn btn-debit">16 日</button>
+                        <div class="form-check form-check-btn">
+                          <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault2">
+                          <label class="form-check-label" for="flexCheckDefault2">
+                            16 日
+                          </label>
+                        </div>
                       </div>
                       <div class="col-lg-4 col-12 col-sm-4">
-                        <button type="button" class="btn btn-debit">26 日</button>
+                        <div class="form-check form-check-btn">
+                          <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault3">
+                          <label class="form-check-label" for="flexCheckDefault3">
+                            26 日
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -456,17 +471,29 @@
                     </label>
                     <div class="row g-3">
                       <div class="col-lg-4 col-12 col-sm-4">
-                        <button type="button" class="btn btn-debit active">1000元</button>
+                        <div class="form-check form-check-btn">
+                          <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault01">
+                          <label class="form-check-label" for="flexCheckDefault01">
+                            1000 元
+                          </label>
+                        </div>
                       </div>
                       <div class="col-lg-4 col-12 col-sm-4">
-                        <button type="button" class="btn btn-debit">3000元</button>
+                        <div class="form-check form-check-btn">
+                          <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault02">
+                          <label class="form-check-label" for="flexCheckDefault02">
+                            3000 元
+                          </label>
+                        </div>
                       </div>
                       <div class="col-lg-4 col-12 col-sm-4">
-                        <button type="button" class="btn btn-debit">
-                          <p>自訂</p>
-                          <!-- 點擊後可以 自訂 輸入金額 -->
-                          <!-- <input type="number" placeholder="自訂" name="" id=""> -->
-                        </button>
+                        <div class="form-check form-check-btn">
+                          <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault03">
+                          <label class="form-check-label" for="flexCheckDefault03">
+                            <p>自訂</p>
+                            <!-- <input type="number" placeholder="自訂" name="" id=""> -->
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -659,10 +686,94 @@
                         <i class="bi bi-question-circle-fill"></i>
                       </a>
                     </label>
-                    <input class="form-control " type="tel" name="" id="" value="">
+                    <input disabled class="form-control " type="tel" name="" id="" value="臺灣銀行00000000****">
+                    <!-- <select class="form-select" >
+                        <option selected>臺灣銀行00000000****</option>
+                        <option value="1">悠遊付</option>
+                      </select> -->
                   </div>
                 </div>
                 <!-- 交易方式 end -->
+                <!-- 交易幣別 / 配息方式 start -->
+                <div class="row mb-4">
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">交易幣別</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>交易幣別</option>
+                      <option value="1">新台幣</option>
+                      <option value="2">美金</option>
+                      <option value="3">澳幣</option>
+                      <option value="3">人民幣</option>
+                      <option value="3">南非幣</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">配息方式</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>累積型</option>
+                      <option value="1">月配型</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- 交易幣別 / 配息方式 end -->
+                <!-- 優惠類別 start -->
+                <div class="row mb-4">
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">優惠類別</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>使用優惠類別</option>
+                      <option value="1">生日優惠零手續費</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">使用紅利積點</label>
+                    <div class="form-radio">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                          value="option1">
+                        <label class="form-check-label" for="inlineRadio1">使用</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                          value="option2">
+                        <label class="form-check-label" for="inlineRadio2">不使用</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 優惠類別 end -->
+                <!-- 基金買回 /買回單位數  start -->
+                <div class="row mb-4">
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">買回方式</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>選擇買回方式</option>
+                      <option value="1">部分買回(先進先出)</option>
+                      <option value="2">全部買回</option>ㄋ
+                    </select>
+                  </div>
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">買回單位數</label>
+                    <input class="form-control " placeholder="請輸入金額" type="text">
+                  </div>
+                </div>
+                <!-- 基金買回 /買回單位數  end -->
+                <!-- 轉申購方式 /買回單位數  start -->
+                <div class="row mb-4">
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">轉申購方式</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>選擇轉申購方式</option>
+                      <option value="1">部分轉申購(先進先出)</option>
+                      <option value="2">全部轉申購</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">轉申購單位數</label>
+                    <input class="form-control " placeholder="轉申購單位數" type="text">
+                  </div>
+                </div>
+                <!-- 轉申購方式 /買回單位數  end -->
                 <!-- 扣款金額 start -->
                 <div class="row mb-4">
                   <div class="col-lg-8  col-md-12  mb-2">
@@ -677,6 +788,395 @@
                   </div>
                 </div>
                 <!-- 扣款金額 end -->
+                <!-- 扣款方式 start -->
+                <div class="row mb-4">
+                  <div class="col-lg-8  col-md-12  mb-2">
+                    <label for="" class="form-label">扣款方式</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>選擇扣款方式</option>
+                      <option value="1">台灣銀行00000000****</option>
+                      <option value="2">悠遊付</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- 扣款方式 end -->
+                <!-- 轉申購單位數 start -->
+                <div class="row mb-4">
+                  <div class="col-lg-8  col-md-12  mb-2">
+                    <label for="" class="form-label">轉申購單位數
+                    </label>
+                    <input type="number" class="form-control" placeholder="轉申購單位數">
+                  </div>
+                </div>
+                <!-- 轉申購單位數 end -->
+                <!-- 選擇欲轉申購基金 start -->
+                <div class="row mb-4">
+                  <div class="col-lg-8  col-md-12  mb-2">
+                    <label for="" class="form-label">選擇欲轉申購基金
+                    </label>
+                    <select class="form-select" name="select">
+                      <option value="6801">
+                        第一富基金-累積型-新台幣 </option>
+                      <option value="6803">
+                        坦伯頓全球股票組合基金-累積型-新台幣
+                      </option>
+                      <option value="68125">
+                        坦伯頓全球股票組合基金-累積型-新台幣-R
+                      </option>
+                      <option value="6805">
+                        新世界股票基金-累積型-新台幣
+                      </option>
+                      <option value="68111">
+                        新世界股票基金-累積型-新台幣-N
+                      </option>
+                      <option value="6839">
+                        新世界股票基金-累積型-美元
+                      </option>
+                      <option value="68112">
+                        新世界股票基金-累積型-美元-N
+                      </option>
+                      <option value="6840">
+                        新世界股票基金-累積型-人民幣
+                      </option>
+                      <option value="6806">
+                        積極型-中華基金-累積型-新台幣
+                      </option>
+                      <option value="6807">
+                        新興趨勢傘型基金之天然資源組合基金-累積型-新台幣
+                      </option>
+                      <option value="6811">
+                        積極型-中國消費基金-累積型-新台幣
+                      </option>
+                      <option value="6832">
+                        積極型-中國消費基金-累積型-美元
+                      </option>
+                      <option value="6829">
+                        積極型-中國消費基金 -累積型-人民幣
+                      </option>
+                      <option value="6812">
+                        積極型-台股傘型基金之高科技基金-累積型-新台幣
+                      </option>
+                      <option value="6823">
+                        積極型-中國傘型基金之中國A股基金-累積型-新台幣
+                      </option>
+                      <option value="6835">
+                        積極型-中國傘型基金之中國A股基金 -累積型-美元
+                      </option>
+                      <option value="6830">
+                        積極型-中國傘型基金之中國A股基金 -累積型-人民幣
+                      </option>
+                      <option value="68101">
+                        積極型-中國傘型基金之中國A股基金-累積型-新台幣-N
+                      </option>
+                      <option value="68103">
+                        積極型-中國傘型基金之中國A股基金-累積型-美元-N
+                      </option>
+                      <option value="68102">
+                        積極型-中國傘型基金之中國A股基金-累積型-人民幣-N
+                      </option>
+                      <option value="68104">
+                        積極型-中國傘型基金之中國A股基金-累積型-南非幣-N
+                      </option>
+                      <option value="6827">
+                        全球成長基金-累積型-新台幣
+                      </option>
+                      <option value="6828">
+                        全球成長基金-累積型-美元
+                      </option>
+                      <option value="6864">
+                        策略高股息基金-累積型-新台幣
+                      </option>
+                      <option value="6865">
+                        策略高股息基金-月配息-新台幣
+                      </option>
+                      <option value="6866">
+                        策略高股息基金-累積型-美元
+                      </option>
+                      <option value="6867">
+                        策略高股息基金-月配息-美元
+                      </option>
+                      <option value="6871">
+                        退休傘型之目標2037組合基金-累積型-新台幣
+                      </option>
+                      <option value="6872">
+                        退休傘型之目標2037組合基金-累積型-美元
+                      </option>
+                      <option value="68127">
+                        退休傘型之目標2037組合基金-累積型-新台幣-R
+                      </option>
+                      <option value="6873">
+                        退休傘型之目標2047組合基金-累積型-新台幣
+                      </option>
+                      <option value="6874">
+                        退休傘型之目標2047組合基金-累積型-美元
+                      </option>
+                      <option value="68128">
+                        退休傘型之目標2047組合基金-累積型-新台幣-R
+                      </option>
+                      <option value="6875">
+                        全球醫療保健基金-累積型-新台幣
+                      </option>
+                      <option value="68115">
+                        全球醫療保健基金-累積型-新台幣-N
+                      </option>
+                      <option value="6876">
+                        全球醫療保健基金-累積型-美元
+                      </option>
+                      <option value="68116">
+                        全球醫療保健基金-累積型-美元-N
+                      </option>
+                      <option value="6877">
+                        特別股收益基金-累積型-新台幣-A
+                      </option>
+                      <option value="6878">
+                        特別股收益基金-月配息-新台幣-B
+                      </option>
+                      <option value="6879">
+                        特別股收益基金-月配息-新台幣-NB
+                      </option>
+                      <option value="6880">
+                        特別股收益基金-累積型-美元-A
+                      </option>
+                      <option value="6881">
+                        特別股收益基金-月配息-美元-B
+                      </option>
+                      特別股收益基金-月配息-美元-NB
+                      </option>
+                      <option value="6883">
+                        特別股收益基金-月配息-人民幣-B
+                      </option>
+                      <option value="6884">
+                        特別股收益基金-月配息-人民幣-NB
+                      </option>
+                      <option value="6885">
+                        特別股收益基金-月配息-南非幣-B
+                      </option>
+                      <option value="6886">
+                        特別股收益基金-月配息-南非幣-NB
+                      </option>
+                      <option value="68117">
+                        AI新科技基金-累積型-新台幣
+                      </option>
+                      <option value="68118">
+                        AI新科技基金-累積型-新台幣-N
+                      </option>
+                      <option value="68119">
+                        AI新科技基金-累積型-美元
+                      </option>
+                      <option value="68120">
+                        AI新科技基金-累積型-美元-N
+                      </option>
+                      <option value="68121">
+                        AI新科技基金-累積型-人民幣
+                      </option>
+                      <option value="68122">
+                        AI新科技基金-累積型-人民幣-N
+                      </option>
+                      <option value="68123">
+                        AI新科技基金-累積型-南非幣
+                      </option>
+                      <option value="68124">
+                        AI新科技基金-累積型-南非幣-N
+                      </option>
+                      <option value="6802">
+                        富蘭克林全球債券組合基金-累積型-新台幣
+                      </option>
+                      <option value="6804">
+                        富蘭克林全球債券組合基金-月配息-新台幣
+                      </option>
+                      <option value="6837">
+                        富蘭克林全球債券組合基金-累積型-美元
+                      </option>
+                      <option value="6838">
+                        富蘭克林全球債券組合基金-月配息-美元
+                      </option>
+                      <option value="6809">
+                        新興趨勢傘型基金之積極回報債券組合基金-累積型-新台幣
+                      </option>
+                      <option value="6810">
+                        新興趨勢傘型基金之積極回報債券組合基金-月配息-新台幣
+                      </option>
+                      <option value="6841">
+                        新興趨勢傘型基金之積極回報債券組合基金-累積型-美元
+                      </option>
+                      <option value="6842">
+                        新興趨勢傘型基金之積極回報債券組合基金-月配息-美元
+                      </option>
+                      <option value="6843">
+                        新興趨勢傘型基金之積極回報債券組合基金-累積型-人民幣
+                      </option>
+                      <option value="6844">
+                        新興趨勢傘型基金之積極回報債券組合基金-月配息-人民幣
+                      </option>
+                      <option value="6817">
+                        全球投資級債券基金-累積型-新台幣
+                      </option>
+                      <option value="6818">
+                        全球投資級債券基金-月配息-新台幣
+                      </option>
+                      <option value="68113">
+                        全球投資級債券基金-月配息-新台幣-NB
+                      </option>
+                      <option value="6845">
+                        全球投資級債券基金-累積型-美元
+                      </option>
+                      <option value="6846">
+                        全球投資級債券基金-月配息-美元
+                      </option>
+                      <option value="68114">
+                        全球投資級債券基金-月配息-美元-NB
+                      </option>
+                      <option value="6814">
+                        全球高收益債券基金-累積型-新台幣-A
+                      </option>
+                      <option value="6815">
+                        全球高收益債券基金-月配息-新台幣-B
+                      </option>
+                      <option value="6860">
+                        全球高收益債券基金-月配息-新台幣-C
+                      </option>
+                      <option value="6897">
+                        全球高收益債券基金-月配息-新台幣-NC
+                      </option>
+                      <option value="6819">
+                        全球高收益債券基金-累積型-美元-A
+                      </option>
+                      <option value="6820">
+                        全球高收益債券基金-月配息-美元-B
+                      </option>
+                      <option value="6861">
+                        全球高收益債券基金-月配息-美元-C
+                      </option>
+                      <option value="6898">
+                        全球高收益債券基金-月配息-美元-NC
+                      </option>
+                      <option value="6821">
+                        全球高收益債券基金-累積型-澳幣-A
+                      </option>
+                      <option value="6822">
+                        全球高收益債券基金-月配息-澳幣-B
+                      </option>
+                      <option value="6825">
+                        全球高收益債券基金-累積型-人民幣-A
+                      </option>
+                      <option value="6826">
+                        全球高收益債券基金-月配息-人民幣-B
+                      </option>
+                      <option value="6862">
+                        全球高收益債券基金-月配息-人民幣-C
+                      </option>
+                      <option value="6899">
+                        全球高收益債券基金-月配息-人民幣-NC
+                      </option>
+                      <option value="6833">
+                        全球高收益債券基金-累積型-南非幣-A
+                      </option>
+                      <option value="6834">
+                        全球高收益債券基金-月配息-南非幣-B
+                      </option>
+                      <option value="68100">
+                        全球高收益債券基金-月配息-南非幣-NC
+                      </option>
+                      <option value="6869">
+                        退休傘型之目標2027組合基金-累積型-新台幣
+                      </option>
+                      <option value="6870">
+                        退休傘型之目標2027組合基金-累積型-美元
+                      </option>
+                      <option value="68126">
+                        退休傘型之目標2027組合基金-累積型-新台幣-R
+                      </option>
+                      <option value="6887">
+                        新興國家固定收益基金-累積型-新台幣-A
+                      </option>
+                      <option value="6888">
+                        新興國家固定收益基金-月配息-新台幣-B
+                      </option>
+                      <option value="6889">
+                        新興國家固定收益基金-月配息-新台幣-NB
+                      </option>
+                      <option value="6890">
+                        新興國家固定收益基金-累積型-美元-A
+                      </option>
+                      <option value="6891">
+                        新興國家固定收益基金-月配息-美元-B
+                      </option>
+                      <option value="6892">
+                        新興國家固定收益基金-月配息-美元-NB
+                      </option>
+                      <option value="68105">
+                        新興國家固定收益基金-累積型-人民幣-A
+                      </option>
+                      <option value="6893">
+                        新興國家固定收益基金-月配息-人民幣-B
+                      </option>
+                      <option value="6894">
+                        新興國家固定收益基金-月配息-人民幣-NB
+                      </option>
+                      <option value="6895">
+                        新興國家固定收益基金-月配息-南非幣-B
+                      </option>
+                      <option value="6896">
+                        新興國家固定收益基金-月配息-南非幣-NB
+                      </option>
+                      <option value="68106">
+                        六年到期新興市場主權債券基金-累積型-美元
+                      </option>
+                      <option value="68108">
+                        六年到期新興市場主權債券基金-累積型-人民幣
+                      </option>
+                      <option value="68107">
+                        六年到期新興市場主權債券基金-累積型-澳幣
+                      </option>
+                      <option value="6847">
+                        多重資產收益基金-累積型-新台幣
+                      </option>
+                      <option value="6848">
+                        多重資產收益基金-月配息-新台幣
+                      </option>
+                      <option value="6849">
+                        多重資產收益基金-累積型-美元
+                      </option>
+                      <option value="6850">
+                        多重資產收益基金-月配息-美元
+                      </option>
+                      <option value="6851">
+                        多重資產收益基金-累積型-人民幣
+                      </option>
+                      <option value="6852">
+                        多重資產收益基金-月配息-人民幣
+                      </option>
+                      <option value="6853">
+                        多重資產收益基金-累積型-南非幣
+                      </option>
+                      <option value="6854">
+                        多重資產收益基金-月配息-南非幣
+                      </option>
+                      <option value="6855">
+                        亞太平衡基金-累積型-新台幣
+                      </option>
+                      <option value="6856">
+                        亞太平衡基金-月配息-新台幣
+                      </option>
+                      <option value="6857">
+                        亞太平衡基金-累積型-美元
+                      </option>
+                      <option value="6858">
+                        亞太平衡基金-月配息-美元
+                      </option>
+                      <option value="6859">
+                        亞太平衡基金-月配息-人民幣
+                      </option>
+                      <option value="6816">
+                        貨幣市場基金-年配息-新台幣
+                      </option>
+                      <option value="68130">
+                        富蘭克林華美全球潔淨能源ETF基金-累積型-新台幣
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <!-- 選擇欲轉申購基金 end -->
                 <!-- 請選擇每月扣款日期按鈕 start-->
                 <div class="row mb-4">
                   <div class="col-lg-8 mb-4">
@@ -689,13 +1189,28 @@
                     </label>
                     <div class="row g-3">
                       <div class="col-lg-4 col-12 col-sm-4">
-                        <button type="button" class="btn btn-debit active">6 日</button>
+                        <div class="form-check form-check-btn">
+                          <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault001">
+                          <label class="form-check-label" for="flexCheckDefault001">
+                            6 日
+                          </label>
+                        </div>
                       </div>
                       <div class="col-lg-4 col-12 col-sm-4">
-                        <button type="button" class="btn btn-debit">16 日</button>
+                        <div class="form-check form-check-btn">
+                          <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault002">
+                          <label class="form-check-label" for="flexCheckDefault002">
+                            16 日
+                          </label>
+                        </div>
                       </div>
                       <div class="col-lg-4 col-12 col-sm-4">
-                        <button type="button" class="btn btn-debit">26 日</button>
+                        <div class="form-check form-check-btn">
+                          <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault003">
+                          <label class="form-check-label" for="flexCheckDefault003">
+                            26 日
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -767,7 +1282,7 @@
 
 
         <!-- ================================== -->
-        <!-- 2.0.1交易基金/買基金/定期不定額 2 start-->
+        <!-- 2.0.2交易基金/買基金/定期不定額 2 start-->
         <!-- ================================== -->
         <section class="mb-5">
           <div class="row step-list justify-content-center">
@@ -816,7 +1331,6 @@
             </div>
             <!-- 確認資料狀態alert end -->
             <!-- 交易方式列表 start -->
-            <!-- input + disabled , select + disabled 及 form-text 為同樣的外觀樣式 可自行決定套用任意一款 -->
             <div class="row g-2 ">
               <div class="col-12 mb-4">
                 <!-- 交易方式 start -->
@@ -830,12 +1344,6 @@
                       </a>
                     </label>
                     <div class="form-text">定期不定額</div>
-                    <!-- <select class="form-select" aria-label="Default select example" disabled>
-                      <option selected>交易方式</option>
-                      <option value="1">定期不定額</option>
-                      <option value="2">單筆購買</option>
-                      <option value="3">定期定額</option>
-                    </select> -->
                   </div>
                   <div class="col-lg-4  col-md-6  mb-2">
                     <label for="" class="form-label">扣款方式
@@ -845,11 +1353,75 @@
                         <i class="bi bi-question-circle-fill"></i>
                       </a>
                     </label>
-                    <div class="form-text">臺灣銀行00000000****</div>        
-                    <!-- <input type="text" class="form-control" placeholder="臺灣銀行00000000****" disabled> -->
+                    <div class="form-text">臺灣銀行00000000****</div>
                   </div>
                 </div>
                 <!-- 交易方式 end -->
+                <!-- 交易幣別 / 配息方式 start -->
+                <div class="row mb-4">
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">交易幣別</label>
+                    <div class="form-text">新台幣</div>
+                  </div>
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">配息方式</label>
+                    <div class="form-text">累積型</div>
+                  </div>
+                </div>
+                <!-- 交易幣別 / 配息方式 end -->
+                <!-- 交易幣別 / 配息方式 start -->
+                <div class="row mb-4">
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">優惠類別</label>
+                    <div class="form-text">生日優惠零手續費</div>
+                    <!-- <select class="form-select" aria-label="Default select example">
+                          <option selected>使用優惠類別</option>
+                          <option value="1">生日優惠零手續費</option>
+                        </select> -->
+                  </div>
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">配息方式</label>
+                    <div class="form-text">不使用</div>
+                  </div>
+                </div>
+                <!-- 交易幣別 / 配息方式 end -->
+                <!-- 轉申購方式 /買回單位數  start -->
+                <div class="row mb-4">
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">轉申購方式</label>
+                    <div class="form-text">全部轉申購</div>
+                    <!-- <select class="form-select" aria-label="Default select example">
+                      <option selected>選擇轉申購方式</option>
+                      <option value="1">部分轉申購(先進先出)</option>
+                      <option value="2">全部轉申購</option>
+                    </select> -->
+                  </div>
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">轉申購單位數</label>
+                    <div class="form-text">3000</div>
+                    <!-- <input class="form-control " placeholder="轉申購單位數" type="text"> -->
+                  </div>
+                </div>
+                <!-- 轉申購方式 /買回單位數  end -->
+                <!-- 扣款金額 start -->
+                <!-- 基金買回 /買回單位數  start -->
+                <div class="row mb-4">
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">買回方式</label>
+                    <div class="form-text">全部買回</div>
+                    <!-- <select disabled class="form-select" aria-label="Default select example">
+                      <option selected>選擇買回方式</option>
+                      <option value="1">部分買回(先進先出)</option>
+                      <option value="2">全部買回</option>ㄋ
+                    </select> -->
+                  </div>
+                  <div class="col-lg-4  col-md-6  mb-2">
+                    <label for="" class="form-label">買回單位數</label>
+                    <div class="form-text">3000</div>
+                    <!-- <input  disabled class="form-control " placeholder="請輸入金額" type="text"> -->
+                  </div>
+                </div>
+                <!-- 基金買回 /買回單位數  end -->
                 <!-- 扣款金額 start -->
                 <div class="row mb-4">
                   <div class="col-lg-8  col-md-12  mb-2">
@@ -860,7 +1432,7 @@
                         <i class="bi bi-question-circle-fill"></i>
                       </a>
                     </label>
-                    <div class="form-text">3000</div>   
+                    <div class="form-text">3000</div>
                     <!-- <input type="number" class="form-control" placeholder="3000" disabled> -->
                   </div>
                 </div>
@@ -876,11 +1448,27 @@
                       </a>
                     </label>
                     <div class="row g-3">
-                      <div class="col-lg-4 col-12 col-sm-4">         
-                        <button disabled class="btn btn-debit active">6 日</button>
+                      <!-- 不能點擊狀態 -->
+                      <div class="col-lg-4 col-12 col-sm-4">
+                        <div class="form-check form-check-btn">
+                          <div class="btn">
+                            <span>6 日</span>
+                          </div>
+                        </div>
                       </div>
                       <div class="col-lg-4 col-12 col-sm-4">
-                        <button disabled class="btn btn-debit active">16 日</button>
+                        <div class="form-check form-check-btn">
+                          <div class="btn">
+                            <span>16 日</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-12 col-sm-4">
+                        <div class="form-check form-check-btn">
+                          <div class="btn">
+                            <span>26 日</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -899,13 +1487,13 @@
                     <div class="row g-2">
                       <div class="col-lg-6 pe-lg-4 pe-1 d-flex align-items-center">
                         <span class="text-nowrap me-2 ">當報酬率低於 -</span>
-                        <div class="form-text">10</div>   
+                        <div class="form-text">10</div>
                         <!-- <input type="number" class="form-control" placeholder="30" disabled> -->
                         <span class="text-nowrap ms-2 "> ％ </span>
                       </div>
                       <div class="col-lg-6 ps-lg-4 ps-1 d-flex align-items-center">
                         <span class="text-nowrap me-3 ">扣款金調高為</span>
-                        <div class="form-text">1000</div>   
+                        <div class="form-text">1000</div>
                         <!-- <input type="number" class="form-control" placeholder="3000" disabled> -->
                         <span class="text-nowrap ms-2 "> 元 </span>
                       </div>
@@ -926,13 +1514,13 @@
                     <div class="row g-2">
                       <div class="col-lg-6 pe-lg-4 pe-1 d-flex align-items-center">
                         <span class="text-nowrap me-2 ">當報酬率高於 +</span>
-                        <div class="form-text">10</div>   
+                        <div class="form-text">10</div>
                         <!-- <input type="number" class="form-control" placeholder="30" disabled> -->
                         <span class="text-nowrap ms-2 "> ％ </span>
                       </div>
                       <div class="col-lg-6 ps-lg-4 ps-1 d-flex align-items-center">
                         <span class="text-nowrap me-3 ">扣款金降低為 </span>
-                        <div class="form-text">1000</div>   
+                        <div class="form-text">1000</div>
                         <!-- <input type="number" class="form-control" placeholder="3000" disabled> -->
                         <span class="text-nowrap ms-2 "> 元 </span>
                       </div>
@@ -949,7 +1537,7 @@
                         <i class="bi bi-question-circle-fill"></i>
                       </a>
                     </label>
-                    <div class="form-text">10</div>   
+                    <div class="form-text">10</div>
                     <!-- <input type="number" class="form-control" placeholder="6000" disabled> -->
                   </div>
                 </div>
@@ -963,14 +1551,14 @@
                         <i class="bi bi-question-circle-fill"></i>
                       </a>
                     </label>
-                    <div class="form-text">6000</div>   
+                    <div class="form-text">6000</div>
                     <!-- <input type="number" class="form-control" placeholder="6000" disabled> -->
                   </div>
                 </div>
                 <!-- 每月扣款總額 end -->
               </div>
             </div>
-              <!-- 交易方式列表 end -->
+            <!-- 交易方式列表 end -->
             <!-- 公開說明說 start-->
             <div class="row">
               <div class="col-12 mb-4">
@@ -1049,7 +1637,7 @@
           </form>
         </section>
         <!-- ================================== -->
-        <!-- 2.0.1交易基金/買基金/定期不定額 2 end   -->
+        <!-- 2.0.2交易基金/買基金/定期不定額 2 end   -->
         <!-- ================================== -->
       </div>
     </div>

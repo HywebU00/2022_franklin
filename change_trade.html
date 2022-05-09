@@ -375,9 +375,9 @@
       </nav>
       <!-- Breadcrumb end -->
       <div class="container">
-        <!-- ================================== -->
-        <!-- 2.4.1定期不定額 契約變更-資料異動頁 start-->
-        <!-- ================================== -->
+        <!-- =================================================== -->
+        <!-- 2.4.1定期不定額 契約變更-資料異動頁 / fund-change3-1 start-->
+        <!-- =================================================== -->
         <section class="mb-5">
           <div class="row step-list step-changelist justify-content-center">
             <!-- 完成步驟進度加上classname "step-2" 或 "step-3" -->
@@ -420,7 +420,6 @@
             </div>
             <!-- 基金明細列表 end -->
             <!-- 基金狀態變更 start -->
-            <!-- input + disabled , select + disabled 及 form-text 為同樣的外觀樣式 可自行決定套用任意一款 -->
             <div class="row g-3">
               <div class="col-12 col-md-6 mb-4 ">
                 <div class="card p-4 card-disabled">
@@ -455,12 +454,22 @@
                     <div class="col mb-4">
                       <label for="" class="form-label ">請選擇每月扣款日期</label>
                       <div class="row g-3">
+                        <!-- 不能點擊狀態 -->
                         <div class="col-lg-4 col-12 col-sm-4">
-                          <button type="button" disabled class="btn btn-debit active">6 日</button>
+                          <div class="form-check form-check-btn">
+                            <div class="btn">
+                              <span>6 日</span>
+                            </div>
+                          </div>
                         </div>
                         <div class="col-lg-4 col-12 col-sm-4">
-                          <button type="button" disabled class="btn btn-debit  active">16 日</button>
+                          <div class="form-check form-check-btn">
+                            <div class="btn">
+                              <span>16 日</span>
+                            </div>
+                          </div>
                         </div>
+
                       </div>
                     </div>
                   </div>
@@ -550,13 +559,33 @@
                       <label for="" class="form-label ">請選擇每月扣款日期</label>
                       <div class="row g-3">
                         <div class="col-lg-4 col-12 col-sm-4">
-                          <button type="button" class="btn btn-debit active">6 日</button>
+                          <div class="form-check form-check-btn">
+                            <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              6 日
+                            </label>
+                          </div>
                         </div>
                         <div class="col-lg-4 col-12 col-sm-4">
-                          <button type="button" class="btn btn-debit">16 日</button>
+                          <div class="form-check form-check-btn">
+                            <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault2">
+                            <label class="form-check-label" for="flexCheckDefault2">
+                              16 日
+                            </label>
+                          </div>
                         </div>
                         <div class="col-lg-4 col-12 col-sm-4">
-                          <button type="button" class="btn btn-debit">26 日</button>
+                          <!-- <div class="form-check form-check-btn">
+                            <div class="btn">
+                              <span>6 日</span>
+                            </div>
+                          </div> -->
+                          <div class="form-check form-check-btn">
+                            <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault3">
+                            <label class="form-check-label" for="flexCheckDefault3">
+                              26 日
+                            </label>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -620,12 +649,14 @@
             </div>
           </form>
         </section>
-        <!-- ================================== -->
-        <!-- 2.4.1定期不定額 契約變更-資料異動頁 end -->
-        <!-- ================================== -->
-        <!-- ================================== -->
-        <!-- 2.4.2定期不定額 契約變更-資料異動頁 start-->
-        <!-- ================================== -->
+        <!-- =================================================== -->
+        <!-- 2.4.1定期不定額 契約變更-資料異動頁  fund-change3-1  end -->
+        <!-- =================================================== -->
+        <!-- ======================================================= -->
+        <!-- 2.4.1定期不定額 契約變更-資料異動頁 / stock-ontheway-1 
+          stock-ontheway1-2 / stock-ontheway2-1 /stock-ontheway2-2 / 
+          fund-change3-2 end -->
+        <!-- ======================================================= -->
         <section class="mb-5">
           <div class="row step-list step-changelist justify-content-center">
             <!-- 完成步驟進度加上classname "step-2" 或 "step-3" -->
@@ -672,186 +703,255 @@
               <p>請確認購買資料是否正確</p>
             </div>
             <!-- 確認資料狀態alert end -->
-            <!-- 契約變更後資料狀態 start -->
-            <!-- input + disabled , select + disabled 及 form-text 為同樣的外觀樣式 可自行決定套用任意一款 -->
+            <!-- 交易方式 start -->
+            <h2 class="h4 py-2">變更後</h2>
+            <div class="row mb-4">
+              <div class="col-lg-4  col-md-6  mb-2">
+                <label for="" class="form-label">交易狀態</label>
+                <div class="form-text">正常扣款</div>
+                <!-- <select disabled class="form-select" aria-label="Default select example">
+                  <option selected>交易方式</option>
+                  <option value="1">正常扣款</option>
+                  <option value="2">停止扣款</option>
+                </select> -->
+              </div>
+              <div class="col-lg-4  col-md-6  mb-2">
+                <label for="" class="form-label">交易方式</label>
+                <div class="form-text">定期不定額</div>
+                <!-- <select disabled class="form-select" aria-label="Default select example">
+                  <option selected>交易方式</option>
+                  <option value="1">定期不定額</option>
+                  <option value="2">單筆購買</option>
+                  <option value="3">定期定額</option>
+                </select> -->
+              </div>
+            </div>
+            <!-- 交易方式 end -->
+            <!-- 委託有效日期 / 交易有效日期 start -->
             <div class="row g-2 ">
               <div class="col-12 mb-4">
                 <!-- 交易方式 start -->
                 <div class="row mb-4">
-                  <h2 class="h4 py-2">變更後</h2>
                   <div class="col-lg-4  col-md-6  mb-2">
                     <label for="" class="form-label">交易狀態</label>
-                    <div class="form-text">正常扣款</div>
-                    <!-- <select disabled class="form-select" aria-label="Default select example">
-                      <option selected>交易方式</option>
-                      <option value="1">正常扣款</option>
-                      <option value="2">停止扣款</option>
-                    </select> -->
+                    <div class="form-text">2022/01/19</div>
                   </div>
                   <div class="col-lg-4  col-md-6  mb-2">
                     <label for="" class="form-label">交易方式</label>
-                    <div class="form-text">定期不定額</div>
-                    <!-- <select disabled class="form-select" aria-label="Default select example">
-                      <option selected>交易方式</option>
-                      <option value="1">定期不定額</option>
-                      <option value="2">單筆購買</option>
-                      <option value="3">定期定額</option>
-                    </select> -->
+                    <div class="form-text">2022/01/26</div>
                   </div>
                 </div>
-                <!-- 交易方式 end -->
-                <!-- 請選擇每月扣款日期按鈕 start-->
-                <div class="row mb-4">
-                  <div class="col-lg-8 mb-4">
-                    <label for="" class="form-label ">請選擇每月扣款日期</label>
-                    <div class="row g-3">
-                      <div class="col-lg-4 col-12 col-sm-4">
-                        <button disabled type="button" class="btn btn-debit active">6 日</button>
+                <!-- 委託有效日期 / 交易有效日期 end -->
+                <!-- 委託狀態 / 繳款方式 start -->
+                <div class="row g-2 ">
+                  <div class="col-12 mb-4">
+                    <!-- 交易方式 start -->
+                    <div class="row mb-4">
+                      <div class="col-lg-4  col-md-6  mb-2">
+                        <label for="" class="form-label">委託狀態</label>
+                        <div class="form-text">委託成功</div>
                       </div>
-                      <div class="col-lg-4 col-12 col-sm-4">
-                        <button disabled type="button" class="btn btn-debit">16 日</button>
-                      </div>
-                      <div class="col-lg-4 col-12 col-sm-4">
-                        <button disabled type="button" class="btn btn-debit">26 日</button>
+                      <div class="col-lg-4  col-md-6  mb-2">
+                        <label for="" class="form-label">繳款方式</label>
+                        <div class="form-text">自動扣款</div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <!-- 請選擇每月扣款日期按鈕 end-->
-                <!-- 扣款金額 start -->
-                <div class="row mb-4">
-                  <div class="col-lg-8  col-md-12  mb-2">
-                    <label for="" class="form-label">扣款金額</label>
-                    <div class="form-text">1000</div>
-                    <!-- <input disabled class="form-control " placeholder="請輸入金額2" type="number" name="" id="" value=""> -->
-                  </div>
-                </div>
-                <!-- 扣款金額 end -->
-                <!-- 加碼啟動 start-->
-                <div class="row mb-4">
-                  <div class="col-lg-8 mb-4">
-                    <label for="" class="form-label ">加碼啟動</label>
-                    <div class="row g-2">
-                      <div class="col-lg-6 pe-lg-4 pe-1 d-flex align-items-center">
-                        <span class="text-nowrap me-2 ">當報酬率低於 - </span>
-                        <div class="form-text">10</div>
-                        <!-- <input type="number" disabled class="form-control " placeholder="請輸入數值" id=""> -->
-                        <span class="text-nowrap ms-2 "> ％ </span>
+                    <!-- 委託狀態 / 繳款方式 end -->
+                    <!-- 請選擇每月扣款日期按鈕 start-->
+                    <div class="row mb-4">
+                      <div class="col-lg-8 mb-4">
+                        <label for="" class="form-label ">請選擇每月扣款日期</label>
+                        <div class="row g-3">
+                          <!-- 不能點擊狀態 -->
+                          <div class="col-lg-4 col-12 col-sm-4">
+                            <div class="form-check form-check-btn">
+                              <div class="btn">
+                                <span>6 日</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-12 col-sm-4">
+                            <div class="form-check form-check-btn">
+                              <div class="btn">
+                                <span>16 日</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-12 col-sm-4">
+                            <div class="form-check form-check-btn">
+                              <div class="btn">
+                                <span>26 日</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div class="col-lg-6 ps-lg-4 ps-1 d-flex align-items-center">
-                        <span class="text-nowrap me-3 ">扣款金調高為 </span>
+                    </div>
+                    <!-- 請選擇每月扣款日期按鈕 end-->
+                    <!-- 委託確認時間 start -->
+                    <div class="row mb-4">
+                      <div class="col-lg-8  col-md-12  mb-2">
+                        <label for="" class="form-label">委託確認時間</label>
+                        <div class="form-text">2022/01/19 10:32:01</div>
+                      </div>
+                    </div>
+                    <!-- 委託確認時間 end -->
+                    <!-- 扣款帳戶 start -->
+                    <div class="row mb-4">
+                      <div class="col-lg-8  col-md-12  mb-2">
+                        <label for="" class="form-label">扣款帳戶</label>
+                        <div class="form-text">013國泰世華商業銀行 光復分行 帳號：01508004XXXX</div>
+                      </div>
+                    </div>
+                    <!-- 扣款帳戶 end -->
+                    <!-- 扣款金額 start -->
+                    <div class="row mb-4">
+                      <div class="col-lg-8  col-md-12  mb-2">
+                        <label for="" class="form-label">扣款金額</label>
                         <div class="form-text">1000</div>
-                        <!-- <input type="number" disabled class="form-control " placeholder="請輸入金額" id=""> -->
-                        <span class="text-nowrap ms-2 "> 元 </span>
+                        <!-- <input disabled class="form-control " placeholder="請輸入金額2" type="number" name="" id="" value=""> -->
                       </div>
                     </div>
-                  </div>
-                </div>
-                <!-- 加碼啟動 end-->
-                <!-- 減碼啟動 start-->
-                <div class="row mb-4">
-                  <div class="col-lg-8 mb-4">
-                    <label for="" class="form-label ">減碼啟動</label>
-                    <div class="row g-2">
-                      <div class="col-lg-6 pe-lg-4 pe-1 d-flex align-items-center">
-                        <span class="text-nowrap me-2 ">當報酬率高於 +</span>
-                        <div class="form-text">10</div>
-                        <!-- <input disabled type="number" class="form-control " placeholder="請輸入數值" id=""> -->
-                        <span class="text-nowrap ms-2 "> ％ </span>
-                      </div>
-                      <div class="col-lg-6 ps-lg-4 ps-1 d-flex align-items-center">
-                        <span class="text-nowrap me-3 ">扣款金降低為 </span>
-                        <div class="form-text">1000</div>
-                        <!-- <input disabled type="number" class="form-control " placeholder="請輸入金額" id=""> -->
-                        <span class="text-nowrap ms-2 "> 元 </span>
+                    <!-- 扣款金額 end -->
+                    <!-- 加碼啟動 start-->
+                    <div class="row mb-4">
+                      <div class="col-lg-8 mb-4">
+                        <label for="" class="form-label ">加碼啟動</label>
+                        <div class="row g-2">
+                          <div class="col-lg-6 pe-lg-4 pe-1 d-flex align-items-center">
+                            <span class="text-nowrap me-2 ">當報酬率低於 - </span>
+                            <div class="form-text">10</div>
+                            <!-- <input type="number" disabled class="form-control " placeholder="請輸入數值" id=""> -->
+                            <span class="text-nowrap ms-2 "> ％ </span>
+                          </div>
+                          <div class="col-lg-6 ps-lg-4 ps-1 d-flex align-items-center">
+                            <span class="text-nowrap me-3 ">扣款金調高為 </span>
+                            <div class="form-text">1000</div>
+                            <!-- <input type="number" disabled class="form-control " placeholder="請輸入金額" id=""> -->
+                            <span class="text-nowrap ms-2 "> 元 </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                    <!-- 加碼啟動 end-->
+                    <!-- 減碼啟動 start-->
+                    <div class="row mb-4">
+                      <div class="col-lg-8 mb-4">
+                        <label for="" class="form-label ">減碼啟動</label>
+                        <div class="row g-2">
+                          <div class="col-lg-6 pe-lg-4 pe-1 d-flex align-items-center">
+                            <span class="text-nowrap me-2 ">當報酬率高於 +</span>
+                            <div class="form-text">10</div>
+                            <!-- <input disabled type="number" class="form-control " placeholder="請輸入數值" id=""> -->
+                            <span class="text-nowrap ms-2 "> ％ </span>
+                          </div>
+                          <div class="col-lg-6 ps-lg-4 ps-1 d-flex align-items-center">
+                            <span class="text-nowrap me-3 ">扣款金降低為 </span>
+                            <div class="form-text">1000</div>
+                            <!-- <input disabled type="number" class="form-control " placeholder="請輸入金額" id=""> -->
+                            <span class="text-nowrap ms-2 "> 元 </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 減碼啟動 end-->
                   </div>
                 </div>
-                <!-- 減碼啟動 end-->
-              </div>
-            </div>
-            <!-- 契約變更後資料狀態 end -->
-            <!-- 公開說明說 start-->
-            <div class="row">
-              <div class="col-12 mb-4">
-                <div class="card card-directions">
-                  <div class="list-square">
-                    <ul>
-                      <li>申購(轉申購)前請詳閱各基金公開說明書：本受益人同意上列交易內容無誤，且於申購前已取得並詳閱投信公司交付之簡式公開說明書或應受益人要求所提供之公開說明書。</li>
-                      <li class="list-num">基金投資風險預告書：受益人了解
+                <!-- 委託狀態 / 繳款方式 end -->
+                <!-- 公開說明說 start-->
+                <div class="row">
+                  <div class="col-12 mb-4">
+                    <div class="card card-directions">
+                      <div class="list-square">
                         <ul>
-                          <li>本次申購基金之內容、目標、投資方針、投資風險及受益人所享有之權利、相關資料與規定，該基金可能因市場價格波動，而對原投入之本金或收益有所減損
-                            ，且最大可能損失達原始投資金額 ，受益人已評估其潛在之風險後，
-                            自行作成獨立審慎之投資決定，願承擔該等投資風險，如有任何投資損失，概與本公司無涉；</li>
-                          <li>
-                            若申購之基金為配息型，該基金的配息可能由基金的收益或本金中支付。任何涉及由本金支出的部份，可能導致原始投資金額減損。該基金進行配息前未先扣除應負擔之相關費用。本公司於公司網站：www.FTFT.com.tw揭露各配息型基金近12個月內由本金支付配息之相關資料供查詢。
+                          <li>申購(轉申購)前請詳閱各基金公開說明書：本受益人同意上列交易內容無誤，且於申購前已取得並詳閱投信公司交付之簡式公開說明書或應受益人要求所提供之公開說明書。</li>
+                          <li class="list-num">基金投資風險預告書：受益人了解
+                            <ul>
+                              <li>本次申購基金之內容、目標、投資方針、投資風險及受益人所享有之權利、相關資料與規定，該基金可能因市場價格波動，而對原投入之本金或收益有所減損
+                                ，且最大可能損失達原始投資金額 ，受益人已評估其潛在之風險後，
+                                自行作成獨立審慎之投資決定，願承擔該等投資風險，如有任何投資損失，概與本公司無涉；</li>
+                              <li>
+                                若申購之基金為配息型，該基金的配息可能由基金的收益或本金中支付。任何涉及由本金支出的部份，可能導致原始投資金額減損。該基金進行配息前未先扣除應負擔之相關費用。本公司於公司網站：www.FTFT.com.tw揭露各配息型基金近12個月內由本金支付配息之相關資料供查詢。
+                              </li>
+                              <li>基金不受存款保險、保險安定基金或其他相關保障機制。(4)如因基金交易所生紛爭，受益人可向中華民國證券投資信託暨顧問商業同業公會或財團法人金融消費評議中心提出申訴。</li>
+                            </ul>
                           </li>
-                          <li>基金不受存款保險、保險安定基金或其他相關保障機制。(4)如因基金交易所生紛爭，受益人可向中華民國證券投資信託暨顧問商業同業公會或財團法人金融消費評議中心提出申訴。</li>
+                          <li class="list-num">
+                            以投資高收益債券為訴求之基金風險預告書：受益人決定申購(轉申購)以高收益債券為訴求之基金前，應審慎評估本身之財務狀況與風險承受能力是否適合此種基金商品，並充分瞭解下列特有風險：
+                            <ul>
+                              <li>
+                                信用風險：由於高收益債券之信用評等未達投資等級或未經信用評等，可能面臨債券發行機構違約不支付本金、利息或破產之風險；
+                              </li>
+                              <li>
+                                利率風險：由於債券易受利率之變動而影響其價格，故可能因利率上升導致債券價格下跌，而蒙受虧損之風險，高收益債亦然；
+                              </li>
+                              <li>
+                                流動性風險：高收益債券可能因市場交易不活絡而造成流動性下降，而有無法在短期內依合理價格出售的風險；
+                              </li>
+                              <li>投資人投資以高收益債券為訴求之基金不宜占其投資組合過高之比重，且不適合無法承擔相關風險之投資人；
+                              </li>
+                              <li>
+                                若高收益債券基金為配息型，基金的配息可能由基金的收益或本金中支付。任何涉及由本金支出的部份，可能導致原始投資金額減損。本基金進行配息前未先扣除應負擔之相關費用；
+                              </li>
+                              <li>基金可投資於美國 Rule 144A 債券，該債券屬私</li>
+                            </ul>
+                          </li>
                         </ul>
-                      </li>
-                      <li class="list-num">
-                        以投資高收益債券為訴求之基金風險預告書：受益人決定申購(轉申購)以高收益債券為訴求之基金前，應審慎評估本身之財務狀況與風險承受能力是否適合此種基金商品，並充分瞭解下列特有風險：
-                        <ul>
-                          <li>
-                            信用風險：由於高收益債券之信用評等未達投資等級或未經信用評等，可能面臨債券發行機構違約不支付本金、利息或破產之風險；
-                          </li>
-                          <li>
-                            利率風險：由於債券易受利率之變動而影響其價格，故可能因利率上升導致債券價格下跌，而蒙受虧損之風險，高收益債亦然；
-                          </li>
-                          <li>
-                            流動性風險：高收益債券可能因市場交易不活絡而造成流動性下降，而有無法在短期內依合理價格出售的風險；
-                          </li>
-                          <li>投資人投資以高收益債券為訴求之基金不宜占其投資組合過高之比重，且不適合無法承擔相關風險之投資人；
-                          </li>
-                          <li>
-                            若高收益債券基金為配息型，基金的配息可能由基金的收益或本金中支付。任何涉及由本金支出的部份，可能導致原始投資金額減損。本基金進行配息前未先扣除應負擔之相關費用；
-                          </li>
-                          <li>基金可投資於美國 Rule 144A 債券，該債券屬私</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 公開說明說 end-->
-            <!-- 公開說明說input  start-->
-            <div class="row">
-              <div class="col-12 mt-5 justify-content-center d-flex">
-                <div class="card card-agree">
-                  <div class="row justify-content-between">
-                    <div class="col-12 col-sm-10">
-                      <p>本人已確實詳閱此基金之公開說明書、近五年費用率及報酬率，<span></span> 以及投資(以高收益債券為訴求之)風險預告書內容，充份了解投資相關風險。</p>
-                    </div>
-                    <div class="col-12  col-sm-2 d-flex justify-content-end">
-                      <div class="form-check">
-                        <!-- 增加 disabled 則無法選取 -->
-                        <input type="checkbox" class="form-check-input" id="">
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- 公開說明說input  end-->
-            <div class="row  mt-5 justify-content-center">
-              <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center form-password">
-                <span class="text-nowrap me-2 "> 請輸入交易密碼 </span>
-                <input type="password" class="form-control " id="">
-              </div>
-            </div>
-            <div class="row mt-5 pb-5  ">
-              <div class="col d-flex  justify-content-center">
-                <button type="button" class="btn btn-outline-secondary btn-width btn-height mx-1 mx-lg-2">上一步</button>
-                <button type="submit" class="btn btn-primary btn-width btn-height mx-1 mx-lg-2">下一步</button>
-              </div>
-            </div>
+                <!-- 公開說明說 end-->
+                <!-- 公開說明說input  start-->
+                <div class="row">
+                  <div class="col-12 mt-5 justify-content-center d-flex">
+                    <div class="card card-agree">
+                      <div class="row justify-content-between">
+                        <div class="col-12 col-sm-10">
+                          <p>本人已確實詳閱此基金之公開說明書、近五年費用率及報酬率，<span></span> 以及投資(以高收益債券為訴求之)風險預告書內容，充份了解投資相關風險。</p>
+                        </div>
+                        <div class="col-12  col-sm-2 d-flex justify-content-end">
+                          <div class="form-check">
+                            <!-- 增加 disabled 則無法選取 -->
+                            <input type="checkbox" class="form-check-input" id="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 公開說明說input  end-->
+                <!-- 注意事項 列表 start -->
+                <div class="list-num">
+                  <p>注意事項：</p>
+                  <ul>
+                    <li class="text-danger">若提醒您！若您選擇變更狀態為「停止扣款」，則此定期(不)定額契約所有扣款日均會停止扣款。</li>
+                    <li>
+                      由於定期(不)定額投資於基金淨值低時可以扣到較多的單位數，因此具有「平均投資成本」效果，且為了逹到您原先設定的理財目標(如退休金、子女教育金)，建議您持續定期(不)定額長期扣款！若您有任何基金投資理財問題，歡迎您來電富蘭克林華美基金專線：0800-088-899洽詢。
+                    </li>
+                  </ul>
+                </div>
+                <!-- 注意事項 列表 end -->
+                <div class="row  mt-5 justify-content-center">
+                  <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center form-password">
+                    <span class="text-nowrap me-2 "> 請輸入交易密碼 </span>
+                    <input type="password" class="form-control " id="">
+                  </div>
+                </div>
+                <div class="row mt-5 pb-5  ">
+                  <div class="col d-flex  justify-content-center">
+                    <button type="button"
+                      class="btn btn-outline-secondary btn-width btn-height mx-1 mx-lg-2">上一步</button>
+                    <button type="submit" class="btn btn-primary btn-width btn-height mx-1 mx-lg-2">下一步</button>
+                  </div>
+                </div>
           </form>
         </section>
-        <!-- ================================== -->
-        <!-- 2.4.1定期不定額 契約變更-資料異動頁 end -->
-        <!-- ================================== -->
+        <!-- ======================================================= -->
+        <!-- 2.4.1定期不定額 契約變更-資料異動頁 / stock-ontheway-1 
+          stock-ontheway1-2 / stock-ontheway2-1 /stock-ontheway2-2 / 
+          fund-change3-2 end -->
+        <!-- ======================================================= -->
       </div>
     </div>
   </main>

@@ -54,125 +54,230 @@
 
   input,
   select {
-    background-color: #e4eefd;
-    border: none;
+    // background-color: #e4eefd;
+    // border: none;
+    // background-color: #e9ecef;
     height: 2.5em;
 
     &:active,
     &:focus {
-      background-color: #e4eefd;
+      // background-color: #e4eefd;
+      // background-color: #e9ecef;
     }
   }
-  .form-text{
+
+  .form-text {
     padding: 0.5em 0.75em;
     border-radius: 0.25em;
+    height: 40px;
     margin-top: 0;
     color: #212529;
     font-size: 1rem;
     width: 100%;
-    background-color: #e9ecef;
-    // background-color: #e4eefd;
+    //background-color: #e9ecef;
+    background-color: #e4eefd;
+    border: 1px solid #00000020;
   }
-  .card-trade{
-    .card-header{
+
+  .card-trade {
+    .card-header {
       display: flex;
       justify-content: space-between;
       background-color: #fff;
       border-top: 5px solid $primary;
       align-items: center;
       padding: 0.25rem 1rem 0.25rem 3em;
+
+      input[type="checkbox"] {
+        border: 0px;
+        background: #e9ecef;
+      }
     }
-    .card-body{
+
+    .card-body {
       padding-left: 3em;
-      ul{
+
+      ul {
         padding-left: 0px;
         margin-bottom: 0px;
-        li{
+
+        li {
           color: #212529;
           margin-bottom: 0.5em;
-          &:last-child{
+
+          &:last-child {
             margin-bottom: 0em;
           }
         }
       }
     }
-    
-    input[type="checkbox"]{
+
+    input[type="checkbox"] {
       height: 50px;
       width: 50px;
       border-radius: 50%;
       margin-top: 0;
       // background-color: #fff;
     }
-    .title{
+
+    .title {
       font-size: 1.25rem;
       font-weight: 500;
-      
+
     }
-    .form-check-input:checked[type="checkbox"]{
+
+    .form-check-input:checked[type="checkbox"] {
       background-color: #e4eefd;
       background-image: url(../image/check_icon_blue.png);
     }
   }
-  .card-content{
-    background:#dddddd;
+
+  .card-content {
+    background: #dddddd;
     padding: 1.25em;
     font-weight: 500;
     border: 0px;
     height: 100%;
-    span{
-      padding:0 0.5em;
+
+    span {
+      padding: 0 0.5em;
     }
-    .card-body{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    padding: 0;
-   p{
-    margin-bottom: 0.25em;
-   }
-    ul{
-      padding-left: 0;
-      margin: 0;
-      color: #212529;  
-      li{
+
+    .card-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+
+      p {
         margin-bottom: 0.25em;
       }
-    }
+
+      ul {
+        padding-left: 0;
+        margin: 0;
+        color: #212529;
+
+        li {
+          margin-bottom: 0.25em;
+        }
+      }
     }
   }
-  .btn-debit{
-    border:1px solid #00000020;
+
+  .btn-debit {
+    border: 1px solid #00000020;
     width: 100%;
     background-color: #fff;
-    min-height:120px;
+    min-height: 120px;
     color: #6c757d;
     font-weight: 500;
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    input{
+
+    input {
       text-align: center;
       width: 100%;
       background: unset;
-     appearance: none;
-     
-      &:focus-visible{
-        outline:none;
+      appearance: none;
+
+      &:focus-visible {
+        outline: none;
       }
     }
-    &:hover{
+
+    &:hover {
       background: #e4eefd;
     }
   }
-  .btn-debit.active{
+
+  .btn-debit.active {
     background: #e4eefd;
-   //box-shadow: 0 0 0 0.2rem rgba(9, 62 ,141,0.25 );
+    //box-shadow: 0 0 0 0.2rem rgba(9, 62 ,141,0.25 );
     color: #212529;
   }
-  .card-disabled{
+
+  .form-check-btn {
+    padding: 0;
+    position: relative;
+    margin-bottom: 0;
+    input[type="checkbox"] {
+      width: 100%;
+      margin-left: 0;
+      background-color: #fff;
+      border: 1px solid #00000020;
+      min-height: 120px;
+    }
+
+    input:checked[type="checkbox"] {
+      // background-color: #e4eefd;
+      background-color: #e9ecef;
+      background-image: none;
+    }
+
+    label {
+      color: #6c757d;
+      font-weight: 500;
+      font-size: 1.2rem;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      top: 50px;
+
+      input {
+        width: 100%;
+        text-align: center;
+        background: unset;
+        position: absolute;
+        left: 0;
+        top: -10px;
+
+        &:focus-visible {
+          outline: 0;
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+      height: 120px;
+      // background: #e9ecef;
+      background: #e4eefd;
+      margin-top: 0.25em;
+      border: 1px solid #00000020;
+      color: #6c757d;
+      font-weight: 500;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: default;
+    }
+  }
+
+  .card-disabled {
     background: #f9f9f9;
+  }
+
+  .form-radio {
+    margin-top: 0em;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 0.5em;
+    }
+
+    input[type="radio"] {
+      height: 1em;
+    }
+  }
+
+  .form-control,.form-select {
+    &:disabled {
+      background-color: #e4eefd;
+    }
   }
 }
 
@@ -242,164 +347,227 @@
 
   }
 }
-.select-Date{
-  .select-title{
+
+.select-Date {
+  .select-title {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    @include media-breakpoint-up(sm) { width: 20px;}
+
+    @include media-breakpoint-up(sm) {
+      width: 20px;
+    }
 
   }
 
 }
-.step-list{
+
+.step-list {
   margin-bottom: 6em;
-  .step-group{
+
+  .step-group {
     display: flex;
     justify-content: space-between;
     position: relative;
-    &::after{
+
+    &::after {
       position: absolute;
       content: '';
       width: 80%;
-      top:45%;
+      top: 45%;
       left: 10%;
       height: 6px;
       background: #dee5ef;
     }
-    @include media-breakpoint-up(sm) { 
-      &::after{
+
+    @include media-breakpoint-up(sm) {
+      &::after {
         width: 90%;
         left: 5%;
       }
 
-     }
-   
+    }
+
   }
-  .step-2{
-    &:before{
+
+  .step-2 {
+    &:before {
       position: absolute;
       content: '';
       width: 50%;
-      top:45%;
+      top: 45%;
       height: 6px;
       background: $primary;
       z-index: 1;
     }
   }
-  .step-3{
-    &:before{
+
+  .step-3 {
+    &:before {
       position: absolute;
       content: '';
       width: 80%;
-      top:45%;
+      top: 45%;
       left: 10%;
       height: 6px;
       background: $primary;
       z-index: 1;
     }
-    @include media-breakpoint-up(sm) { 
-      &::before{
+
+    @include media-breakpoint-up(sm) {
+      &::before {
         width: 90%;
         left: 5%;
       }
 
-     }
+    }
   }
-  .step-item-1,.step-item-2,.step-item-3{
+
+  .step-item-1,
+  .step-item-2,
+  .step-item-3 {
     z-index: 1;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background: #dee5ef;
     position: relative;
-    &:after{
+
+    &:after {
       position: absolute;
       content: '設定購買方式';
-      top:60px;
+      top: 60px;
       white-space: nowrap;
       left: -20%;
-      
+
     }
   }
-  .step-item-1{
-    &:after{
+
+  .step-item-1 {
+    &:after {
       left: -50%;
     }
-   
+
   }
-  .step-item-2{
-    &:after{
-      content: '資料確認'; 
+
+  .step-item-2 {
+    &:after {
+      content: '資料確認';
     }
   }
-  .step-item-3{
-    &:after{
-      content: '完成交易'; 
+
+  .step-item-3 {
+    &:after {
+      content: '完成交易';
     }
   }
-  .active{
+
+  .active {
     background: no-repeat $primary url(../image/check_icon.png) center center;
     color: $primary;
   }
 
 }
-.step-changelist{
-  .step-item-1{
-    &:after{
+
+.step-changelist {
+  .step-item-1 {
+    &:after {
       content: '基金異動';
       left: -20%;
     }
   }
-  .step-item-3{
-    &:after{
-      content: '完成變更'; 
+
+  .step-item-3 {
+    &:after {
+      content: '完成變更';
     }
   }
 }
-.alert{
-padding: 0.25em 1rem;
+
+.alert {
+  padding: 0.25em 1rem;
 }
-.alert-danger{
+
+.alert-danger {
   background: $danger;
   color: #fff;
   text-align: center;
 }
-.card-directions{
+
+.card-directions {
   padding: 1.5em 2em;
   max-height: 400px;
   overflow-y: scroll;
   background: #ece8e8;
-  border:0px;
+  border: 0px;
+
   .list-square {
-    li{
+    li {
       margin-bottom: 1em;
       color: #212529;
     }
   }
 }
-.card-agree{
+
+.card-agree {
   padding: 1em 2em;
   width: 760px;
   display: flex;
   align-items: center;
-  .row{
+
+  .row {
     width: 100%;
   }
-  p{
-    span{
+
+  p {
+    span {
       display: none;
-      @include media-breakpoint-up(sm) { display: block;}
+
+      @include media-breakpoint-up(sm) {
+        display: block;
+      }
     }
   }
-  .form-check input{
+
+  .form-check input {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: 0px;
+    background-color: #e9ecef;
   }
+
   .form-check-input:checked[type="checkbox"] {
     background-color: $primary;
     background-image: url('../image/check_icon_white.png');
+  }
 }
+
+.select-bar {
+  align-items: flex-end;
+  background: #eaeaea;
+  border-radius: 0.25em;
+  padding: 1.5em 1em;
+
+  select,
+  input {
+    height: 42px;
+  }
+
+  .form-label {
+    color: $primary;
+  }
+
+  button {
+    width: 100%;
+    height: 4em;
+
+    @media (min-width: 768px) {
+      height: 42px;
+    }
+  }
+
 }
+
+.select-bar-trade {}

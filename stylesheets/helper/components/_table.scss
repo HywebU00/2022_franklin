@@ -415,7 +415,30 @@
 		}
 	}
 }
-
+.table-fundlist-change{
+	.thead{
+		th{
+			&:after{
+				top: 1.2em;
+				height: 1.5em;
+			}
+		}
+	}
+	
+	tbody{
+		 td span{
+			margin-left: 0.25em;
+		}
+		.tr-collapse{
+			padding-left: 0.5em !important; 
+		}
+	}
+	tbody .tfoot{
+		th,td{
+			font-weight: 400;
+		}
+	}
+}
 .table-observelist {
 	margin-top: 2em;
 	padding-bottom: 2em;
@@ -778,6 +801,19 @@
 		}
 		td,th{
 			text-align: center;
+		}
+	}
+}
+.table-history,.table-history-detail{
+	thead th{
+		text-align: center;
+	}
+	tbody tr{
+		td{
+			text-align: center;
+		}
+		span{
+			display: block;
 		}
 	}
 }

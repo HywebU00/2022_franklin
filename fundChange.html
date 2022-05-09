@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="stylesheets/all.min.css" />
-  <title>2022富蘭克林基金 finish_trade</title>
+  <title>2022富蘭克林基金 定期(不)定額契約變更2.4</title>
 </head>
 
 <body>
@@ -364,104 +364,184 @@
     </nav>
   </header>
   <main class="">
+    <!-- 廣告位置 -->
+    <!-- <section class="banner">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="image/ftft_banner.jpg">
+        <source media="(min-width: 992px)" src="image/ftft_banner.jpg"">
+        <source media=" (min-width: 576px)" srcset="image/ftft_banner_md.jpg">
+        <source media="(max-width: 575px)" srcset="image/ftft_banner_sm.jpg">
+        <img srcset="image/ftft_banner.jpg">
+      </picture>
+    </section> -->
     <div class="container ">
       <!-- Breadcrumb -->
-      <nav aria-label="breadcrumb">
+      <nav aria-label="breadcrumb" class="d-block d-md-flex">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item"><a href="#">Library</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Data</li>
+          <li class="breadcrumb-item"><a href="#">首頁</a></li>
+          <li class="breadcrumb-item"><a href="#">基金交易</a></li>
+          <li class="breadcrumb-item active" aria-current="page">買基金</li>
         </ol>
+        <ul class="function-list mb-4 mb-md-0">
+          <li>
+            <div class="form-findfund">
+              <input class=" form-control" type="text" placeholder="找基金">
+              <button><img src="image/search_icon_gray.png" alt=""></button>
+            </div>
+          </li>
+          <li><button class="btn ">回上頁</button></li>
+        </ul>
       </nav>
       <!-- Breadcrumb end -->
       <div class="container">
-        <!-- ================================== -->
-        <!-- 2.0.3定期不定額完成交易頁 start-->
-        <!-- ================================== -->
-        <section class="mb-5">
-          <div class="row step-list justify-content-center">
-            <!-- 完成步驟進度加上classname "step-2" 或 "step-3" -->
-            <!-- 已完成的步驟icon加上classname "active" -->
-            <div class="col-11 col-sm-8 step-group step-3">
-              <div class="step-item-1 active"></div>
-              <div class="step-item-2 active"></div>
-              <div class="step-item-3 active"></div>
-            </div>
-          </div>
-        </section>
-        <section class="mb-5">
-          <div class=" table-responsive  table-style-level">
+        <h1 class="h3 pb-4">定期(不)定額契約變更</h1>
+        <!-- 網路下單 select -->
+        <div class="col-12 col-md-9  col-lg-6  col-xl-4  ms-auto select-order select-order-list mb-4">
+          <select class="form-select me-0 me-sm-2 mb-sm-0 mb-4" aria-label="">
+            <option selected>請選擇交易類型</option>
+            <option value="1">單筆申購</option>
+            <option value="2">定期定額</option>
+            <option value="3">定期不定額</option>
+          </select>
+          <select class="form-select " aria-label="">
+            <option selected>選擇扣款狀態</option>
+            <option value="1">全部</option>
+            <option value="2">正常扣款</option>
+            <option value="3">停止扣款</option>
+          </select>
+        </div>
+        <!-- 網路下單 select end-->
+        <!-- table start -->
+        <section>
+          <div class="table-style-headerDeep table-fundlist table-fundlist-change table-responsive ">
             <div class="table-responsive-xl">
               <table class="table">
+                <thead class="thead">
+                  <tr>
+                    <th scope="col">委託書序號</th>
+                    <th scope="col">
+                      基金名稱
+                    </th>
+                    <th scope="col">
+                      原始申請日
+                    </th>
+                    <th scope="col">
+                      交易方式
+                    </th>
+                    <th scope="col">
+                      扣款期
+                    </th>
+                    <th scope="col">
+                      扣款金額
+                    </th>
+                    <th scope="col">
+                      扣款狀態
+                    </th>
+                    <th colspan="2" scope="col">
+                      交易
+                    </th>
+                  </tr>
+                </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">基金名稱</th>
-                    <td>第一富基金</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">交易方式</th>
+                    <td>
+                      <button class="btn fund-btn" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        01A0010746 <i class="bi bi-chevron-down"></i>
+                      </button></td>
+                    <td><a href="#">新世界股票基金</a></td>
+                    <td>20019/06/28</td>
                     <td>定期不定額</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">扣款日期</th>
-                    <td>6日 / 16日</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">出生日期</th>
-                    <td colspan="2">1999/11/07</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">台幣核印日期</th>
-                    <td>2022/01/18</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">每次扣款金額</th>
+                    <td><span>6日</span><span>16日</span></td>
                     <td>3,000</td>
+                    <td>正常扣款</td>
+                    <td class="d-flex justify-content-end"><select class="form-select "
+                        aria-label="Default select example">
+                        <option selected disabled>選擇交易類型</option>
+                        <option value="1">單筆申購</option>
+                        <option value="2">定期定額</option>
+                        <option value="3">定期不定額</option>
+                        <option value="4">賣出</option>
+                        <option value="5">轉申購</option>
+                      </select></td>
                   </tr>
                   <tr>
-                    <th scope="row">參考手續費</th>
-                    <td>10</td>
+                    <td colspan="8" class="py-0 tr-collapse">
+                      <div class="collapse" id="collapseExample1">
+                        <table class="table">
+                          <tbody>
+                            <tr>
+                              <th scope="row">加碼啟動報酬率</th>
+                              <td scope="col"><span class=""> -20%</span> </td>
+                              <th scope="row">加碼扣款金額</th>
+                              <td scope="col">3,000</td>
+                              <th scope="row">減碼啟動報酬率</th>
+                              <td scope="col"><span class="teb-danger"> +20%</span> </td>
+                              <th scope="row">減碼扣款金額</th>
+                              <td scope="col">1,000</td>
+                            </tr>
+                            <tr class="tfoot">
+                              <th scope="col" colspan="7">扣款帳號:<span>第一商業銀行 1666805XXXXX</span></th>
+                              <td scope="col">來源別 :<span> 網路</span></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
-                    <th scope="row">每月扣款總額</th>
-                    <td>6,000</td>
+                    <td> <button class="btn fund-btn" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        01A0010746 <i class="bi bi-chevron-down"></i>
+                      </button></td>
+                    <td><a href="#">策略高股息基金</a></td>
+                    <td>20019/06/28</td>
+                    <td>定期不定額</td>
+                    <td><span>6日</span><span>16日</span></td>
+                    <td>3,000</td>
+                    <td>正常扣款</td>
+                    <td class="d-flex justify-content-end"><select class="form-select "
+                        aria-label="Default select example">
+                        <option selected disabled>選擇交易類型</option>
+                        <option value="1">單筆申購</option>
+                        <option value="2">定期定額</option>
+                        <option value="3">定期不定額</option>
+                        <option value="4">賣出</option>
+                        <option value="5">轉申購</option>
+                      </select></td>
                   </tr>
                   <tr>
-                    <th scope="row">首次扣款日</th>
-                    <td>2022/3/6</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">每月扣款總額</th>
-                    <td>6,000</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">加碼起動</th>
-                    <td>當報酬率低於 -1% ，扣款金額調高為7000元</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">減碼起動</th>
-                    <td>當報酬率高於1.5%，扣款金額降為5,000元</td>
+                    <td colspan="8" class="py-0 tr-collapse">
+                      <div class="collapse" id="collapseExample2">
+                        <table class="table">
+                          <tbody>
+                            <tr>
+                              <th scope="row">加碼啟動報酬率</th>
+                              <td scope="col"><span class=""> -20%</span> </td>
+                              <th scope="row">加碼扣款金額</th>
+                              <td scope="col">3,000</td>
+                              <th scope="row">減碼啟動報酬率</th>
+                              <td scope="col"><span class="teb-danger"> +20%</span> </td>
+                              <th scope="row">減碼扣款金額</th>
+                              <td scope="col">1,000</td>
+                            </tr>
+                            <tr class="tfoot">
+                              <th scope="col" colspan="7">扣款帳號:<span>第一商業銀行 1666805XXXXX</span></th>
+                              <td scope="col">來源別 :<span> 網路</span></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-          <div class="list-disc">
-            <p>注意事項：</p>
-            <ul>
-              <li>如欲查詢當日網路交易紀錄及取消交易畫面執行取消交易，請至今日委託查詢/取消功能變更。</li>
-              <li>手續費會依加減碼功能啟動或定期(不)定額優惠活動而有所調整，實際的手續費請以交易確認書所載為準。</li>
-            </ul>
-          </div>
         </section>
-        <div class="col-12 d-flex mt-4 mb-5 justify-content-center">
-          <button type="submit" class="btn btn-primary btn-width mx-1 mx-lg-2">繼續選購基金</button>
-          <button type="button" class="btn btn-outline-secondary btn-width mx-1 mx-lg-2">今日委託查詢<br> 取消</button>
-        </div>
-        <!-- ================================== -->
-        <!-- 2.0.3定期不定額完成交易頁 start-->
-        <!-- ================================== -->
+        <!-- table end -->
       </div>
+    </div>
     </div>
   </main>
   <footer>
@@ -528,6 +608,8 @@
   <script src="js/bootstrap.bundle.js"></script>
   <!-- apexcharts -->
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <!-- 廣告圖片大小 -->
+  <script src="js/picturefill.js"></script>
   <!-- 全站同用的ＪＳ -->
   <script src="js/ftft.js"></script>
 </body>
