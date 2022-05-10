@@ -397,10 +397,9 @@
       <!-- 基金交易電子對帳單查詢結果頁 BillQuery_qry /ConfirmationQuery_qry start -->
       <!-- ================================================================ -->
       <div class="container mt-3">
-        <h1 class="h3 pb-2">基金交易確認書查詢</h1>
         <!-- 歷史交易查詢 start -->
-        <section>
-          <div class="row mb-4 select-bar select-bar-trade g-2">
+        <section class="">
+          <div class="row mb-4 select-bar g-2">
             <div class="col-lg-5 col-sm-12 mb-3 mb-lg-0 col-12">
               <label class="form-label" for="">查詢交易起迄期間</label>
               <div class="row g-2 select-Date">
@@ -424,121 +423,32 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-5 col-sm-12 col-12">
+            <div class="col-lg-3 col-sm-12 col-12">
               <div class="row g-2 ">
-                <label class="form-label" for="">基金名稱</label>
+                <label class="form-label" for="">查詢交易類型</label>
+                <div class="col-12 mt-0 d-flex align-items-center mb-3 mb-lg-0">
+                  <select class="form-select">
+                    <option selected>查詢交易類型</option>
+                    <option value="1">選擇交易類型單筆申購</option>
+                    <option value="2">定期(不)定額</option>
+                    <option value="3">基金買回</option>
+                    <option value="4">基金轉申購</option>
+                    <option value="5">收益分配</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-12 col-12">
+              <div class="row g-2 ">
+                <label class="form-label" for="">交易狀態</label>
                 <div class="col-12 mt-0 d-flex  align-items-center mb-3 mb-lg-0">
                   <select class="form-select">
-                    <option selected>選擇基金</option>
-                    <option value="00">所有基金</option>
-                    <option value="01">第一富基金</option>
-                    <option value="02">富蘭克林全球債券組合基金－累積型</option>
-                    <option value="04">富蘭克林全球債券組合基金－分配型(本基金之配息來源可能為本金)</option>
-                    <option value="37">富蘭克林全球債券組合基金－累積型－美元</option>
-                    <option value="38">富蘭克林全球債券組合基金－分配型－美元(本基金之配息來源可能為本金)</option>
-                    <option value="03">坦伯頓全球股票組合基金－Ａ類型</option>
-                    <option value="05">新世界股票基金</option>
-                    <option value="39">新世界股票基金－美元</option>
-                    <option value="40">新世界股票基金－人民幣</option>
-                    <option value="06">中華基金</option>
-                    <option value="07">新興趨勢傘型基金之天然資源組合基金</option>
-                    <option value="08">新興趨勢傘型基金之新興市場股票組合基金</option>
-                    <option value="09">新興趨勢傘型基金之積極回報債券組合基金－累積型(本基金有相當比重投資於非投資等級之高風險債券)</option>
-                    <option value="10">新興趨勢傘型基金之積極回報債券組合基金－分配型(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="41">新興趨勢傘型基金之積極回報債券組合基金－累積型－美元(本基金有相當比重投資於非投資等級之高風險債券)</option>
-                    <option value="42">新興趨勢傘型基金之積極回報債券組合基金－分配型－美元(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="43">新興趨勢傘型基金之積極回報債券組合基金－累積型－人民幣(本基金有相當比重投資於非投資等級之高風險債券)</option>
-                    <option value="44">新興趨勢傘型基金之積極回報債券組合基金－分配型－人民幣(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="11">中國消費基金</option>
-                    <option value="29">中國消費基金－人民幣</option>
-                    <option value="32">中國消費基金－美元</option>
-                    <option value="12">高科技基金</option>
-                    <option value="13">傳產基金</option>
-                    <option value="14">全球高收益債券基金－Ａ累積型(本基金主要係投資於非投資等級之高風險債券)</option>
-                    <option value="15">全球高收益債券基金－Ｂ分配型(本基金主要係投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="19">全球高收益債券基金－Ａ累積型－美元(本基金主要係投資於非投資等級之高風險債券)</option>
-                    <option value="20">全球高收益債券基金－Ｂ分配型－美元(本基金主要係投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="21">全球高收益債券基金－Ａ累積型－澳幣(本基金主要係投資於非投資等級之高風險債券)</option>
-                    <option value="22">全球高收益債券基金－Ｂ分配型－澳幣(本基金主要係投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="25">全球高收益債券基金－Ａ累積型－人民幣(本基金主要係投資於非投資等級之高風險債券)</option>
-                    <option value="26">全球高收益債券基金－Ｂ分配型－人民幣(本基金主要係投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="33">全球高收益債券基金－Ａ累積型－南非幣(本基金主要係投資於非投資等級之高風險債券)</option>
-                    <option value="34">全球高收益債券基金－Ｂ分配型－南非幣(本基金主要係投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="60">全球高收益債券基金－Ｃ分配型(本基金主要係投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="61">全球高收益債券基金－Ｃ分配型－美元(本基金主要係投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="62">全球高收益債券基金－Ｃ分配型－人民幣(本基金主要係投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="97">全球高收益債券基金－ＮＣ分配型(本基金主要係投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="98">全球高收益債券基金－ＮＣ分配型－美元(本基金主要係投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="99">全球高收益債券基金－ＮＣ分配型－人民幣(本基金主要係投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="100">全球高收益債券基金－ＮＣ分配型－南非幣(本基金主要係投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="16">貨幣市場基金</option>
-                    <option value="17">全球投資級債券基金－累積型</option>
-                    <option value="18">全球投資級債券基金－分配型(本基金之配息來源可能為本金)</option>
-                    <option value="45">全球投資級債券基金－累積型－美元</option>
-                    <option value="46">全球投資級債券基金－分配型－美元(本基金之配息來源可能為本金)</option>
-                    <option value="113">全球投資級債券基金－ＮＢ分配型(本基金之配息來源可能為本金)</option>
-                    <option value="23">中國Ａ股基金</option>
-                    <option value="30">中國Ａ股基金－人民幣</option>
-                    <option value="35">中國Ａ股基金－美元</option>
-                    <option value="101">中國Ａ股基金－Ｎ類型</option>
-                    <option value="102">中國Ａ股基金－Ｎ類型－人民幣</option>
-                    <option value="103">中國Ａ股基金－Ｎ類型－美元</option>
-                    <option value="104">中國Ａ股基金－Ｎ類型－南非幣</option>
-                    <option value="24">中國高收益債券基金(本基金主要係投資於非投資等級之高風險債券)</option>
-                    <option value="31">中國高收益債券基金－人民幣(本基金主要係投資於非投資等級之高風險債券)</option>
-                    <option value="36">中國高收益債券基金－ 美元(本基金主要係投資於非投資等級之高風險債券)</option>
-                    <option value="27">全球成長基金</option>
-                    <option value="28">全球成長基金－美元</option>
-                    <option value="47">多重資產收益基金－累積型(本基金有相當比重投資於非投資等級之高風險債券)</option>
-                    <option value="48">多重資產收益基金－分配型(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="49">多重資產收益基金－累積型－美元(本基金有相當比重投資於非投資等級之高風險債券)</option>
-                    <option value="50">多重資產收益基金－分配型－美元(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="51">多重資產收益基金－累積型－人民幣(本基金有相當比重投資於非投資等級之高風險債券)</option>
-                    <option value="52">多重資產收益基金－分配型－人民幣(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="53">多重資產收益基金－累積型－南非幣(本基金有相當比重投資於非投資等級之高風險債券)</option>
-                    <option value="54">多重資產收益基金－分配型－南非幣(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="55">亞太平衡基金－累積型(本基金有相當比重投資於非投資等級之高風險債券)</option>
-                    <option value="56">亞太平衡基金－分配型(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="57">亞太平衡基金－累積型－美元(本基金有相當比重投資於非投資等級之高風險債券)</option>
-                    <option value="58">亞太平衡基金－分配型－美元(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="59">亞太平衡基金－分配型－人民幣(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="64">策略高股息基金－累積型</option>
-                    <option value="65">策略高股息基金－分配型(本基金之配息來源可能為本金)</option>
-                    <option value="66">策略高股息基金－累積型－美元</option>
-                    <option value="67">策略高股息基金－分配型－美元(本基金之配息來源可能為本金)</option>
-                    <option value="69">目標2027組合基金</option>
-                    <option value="70">目標2027組合基金－美元</option>
-                    <option value="71">目標2037組合基金</option>
-                    <option value="72">目標2037組合基金－美元</option>
-                    <option value="73">目標2047組合基金</option>
-                    <option value="74">目標2047組合基金－美元</option>
-                    <option value="75">全球醫療保健基金</option>
-                    <option value="76">全球醫療保健基金－美元</option>
-                    <option value="77">特別股收益基金－Ａ累積型</option>
-                    <option value="78">特別股收益基金－Ｂ分配型(本基金之配息來源可能為本金)</option>
-                    <option value="79">特別股收益基金－ＮＢ分配型(本基金之配息來源可能為本金)</option>
-                    <option value="80">特別股收益基金－Ａ累積型－美元</option>
-                    <option value="81">特別股收益基金－Ｂ分配型－美元(本基金之配息來源可能為本金)</option>
-                    <option value="82">特別股收益基金－ＮＢ分配型－美元(本基金之配息來源可能為本金)</option>
-                    <option value="83">特別股收益基金－Ｂ分配型－人民幣(本基金之配息來源可能為本金)</option>
-                    <option value="84">特別股收益基金－ＮＢ分配型－人民幣(本基金之配息來源可能為本金)</option>
-                    <option value="85">特別股收益基金－Ｂ分配型－南非幣(本基金之配息來源可能為本金)</option>
-                    <option value="86">特別股收益基金－ＮＢ分配型－南非幣(本基金之配息來源可能為本金)</option>
-                    <option value="87">新興國家固定收益基金－Ａ累積型(本基金有相當比重投資於非投資等級之高風險債券)</option>
-                    <option value="88">新興國家固定收益基金－Ｂ分配型(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="89">新興國家固定收益基金－ＮＢ分配型(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="90">新興國家固定收益基金－Ａ累積型－美元(本基金有相當比重投資於非投資等級之高風險債券)</option>
-                    <option value="91">新興國家固定收益基金－Ｂ分配型－美元(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="92">新興國家固定收益基金－ＮＢ分配型－美元(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="93">新興國家固定收益基金－Ｂ分配型－人民幣(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="94">新興國家固定收益基金－ＮＢ分配型－人民幣(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="95">新興國家固定收益基金－Ｂ分配型－南非幣(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="96">新興國家固定收益基金－ＮＢ分配型－南非幣(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</option>
-                    <option value="105">新興國家固定收益基金－Ａ累積型－人民幣(本基金有相當比重投資於非投資等級之高風險債券)</option>
-                    <option value="117">AI新科技基金</option>
-                    <option value="119">AI新科技基金－美元</option>
-                    <option value="121">AI新科技基金－人民幣</option>
-                    <option value="130">富蘭克林華美全球潔淨能源ETF基金</option>
+                    <option selected>選擇交易狀態</option>
+                    <option value="1">全部委託輸入成功</option>
+                    <option value="2">委託處理中</option>
+                    <option value="3">交易成功</option>
+                    <option value="4">交易失敗</option>
+                    <option value="5">取消交易</option>
                   </select>
                 </div>
               </div>
@@ -565,38 +475,39 @@
           </div>
           <!-- 庫存現值 start -->
           <section class="mb-5">
-            <h2 class="h4 py-2">單筆申購</h2>
+            <h2 class="h4 py-2">庫存現值</h2>
             <div class=" table-responsive table-style-border table-list table-buylist">
               <div class="table-responsive-xl">
                 <table class="table">
                   <thead class="">
                     <tr>
-                      <th scope="col">申購日期</th>
                       <th scope="col">基金名稱</th>
                       <th scope="col">計價幣別</th>
                       <th scope="col">單位數</th>
                       <th scope="col">申購淨值淨值日期</th>
-                      <th scope="col">申購價款</th>
-                      <th scope="col">申購手續費</th>
-                      <th scope="col">申購總額</th>
-                      <th scope="col">交易方式</th>
+                      <th scope="col">市價總值原幣報酬率</th>
+                      <th scope="col">總投資金額平均單位成本</th>
+                      <th scope="col">未實現損益</th>
+                      <th scope="col">單筆現值原幣報酬率</th>
+                      <th scope="col">定期(不)定額現值原幣報酬率</th>
+                      <th scope="col">資產現值</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>2022/01/23</td>
-                      <td>新世界股票基金</td>
+                      <td class="text-nowrap">貨幣市場基金</td>
                       <td>新台幣</td>
-                      <td class="text-end">336.3</td>
-                      <td class="text-end">8.92
-                        2022/01/23</td>
-                      <td class="text-end">3,000</td>
-                      <td>0</td>
-                      <td>3,000</td>
-                      <td>定期不定額</td>
+                      <td class="text-end">64.1</td>
+                      <td class="text-end">15.47 2022/01/31</td>
+                      <td class="text-end">992<br>-0.80%</td>
+                      <td class="text-end">1,000<br>15.60</td>
+                      <td>-8</td>
+                      <td>-<br>-</td>
+                      <td class="text-end">992<br>-0.80%</td>
+                      <td>992</td>
                     </tr>
                     <tr class="tfoot">
-                      <td colspan="8" class="text-end">合計 4,000</td>
+                      <td colspan="9" class="text-end"><span class="fw-bold">合計</span> 4,000</td>
                       <td>992</td>
                     </tr>
                   </tbody>
@@ -607,6 +518,7 @@
           <!-- 庫存現值 end -->
           <!-- 單筆申購 start -->
           <section class="mb-5">
+            <h1 class="h3 pb-2">交易明細</h1>
             <h2 class="h4 py-2">申購交易明細</h2>
             <div class=" table-responsive table-style-border table-list ">
               <div class="table-responsive-xl">
@@ -643,6 +555,38 @@
           <!-- 定期(不)定額扣款明細 start -->
           <section class="mb-5">
             <h2 class="h4 py-2">定期(不)定額扣款明細</h2>
+            <div class=" table-responsive table-style-border table-list ">
+              <div class="table-responsive-xl">
+                <table class="table">
+                  <thead class="">
+                    <tr>
+                      <th class="text-center" scope="col">申購日期</th>
+                      <th class="text-center" scope="col">基金名稱</th>
+                      <th class="text-center" scope="col">計價幣別</th>
+                      <th class="text-center" scope="col">單位數</th>
+                      <th class="text-center" scope="col">申購淨值淨值日期</th>
+                      <th class="text-center" scope="col">申購價款</th>
+                      <th class="text-center" scope="col">申購手續費</th>
+                      <th class="text-center" scope="col">申購總額</th>
+                      <th class="text-center" scope="col">交易方式</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">2022/01/23</td>
+                      <td class="text-center">中國消費基金</td>
+                      <td class="text-center">新台幣</td>
+                      <td class="text-center ">336.3</td>
+                      <td class="text-center">8.92 2022/01/23</td>
+                      <td class="text-center">3,000</td>
+                      <td class="text-center">0</td>
+                      <td class="text-center">3,000</td>
+                      <td class="text-center">定期不定額</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
             <div class=" table-responsive table-style-border table-list ">
               <div class="table-responsive-xl">
                 <table class="table">
@@ -762,7 +706,7 @@
                       <th scope="col" class="text-center">郵匯費補收/遞延手續費</th>
                       <th scope="col" class="text-center">買回淨額</th>
                       <th cope="col" class="text-center">平均單位成本總投資成本</th>
-                      <th cope="col"  class="text-center">實現損益報酬率</th>
+                      <th cope="col" class="text-center">實現損益報酬率</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -770,14 +714,14 @@
                       <td class="text-center">2021/02/18</td>
                       <td class="text-center text-nowrap">新世界股票基金</td>
                       <td class="text-center">新台幣</td>
-                      <td class="text-center">8,097.2</td>
+                      <td class="text-end">8,097.2</td>
                       <td class="text-center">11.94 2021/02/19</td>
-                      <td class="text-center">96,68110</td>
+                      <td class="text-end">96,68110</td>
                       <td class="text-center">0</td>
-                      <td class="text-center">300</td>
-                      <td class="text-center">96,651</td>
-                      <td class="text-center">12.35100,000</td>
-                      <td  class="text-center">-3.35%</td>
+                      <td class="text-center">30 <br>0</td>
+                      <td class="text-end">96,651</td>
+                      <td class="text-end">12.35<br>100,000</td>
+                      <td class="text-end">-3,349<br>-3.35%</td>
                     </tr>
                   </tbody>
                 </table>
@@ -793,7 +737,7 @@
                 <table class="table">
                   <thead class="">
                     <tr>
-                      <th scope="col" class="text-center">交易序號</th>                 
+                      <th scope="col" class="text-center">交易序號</th>
                       <th scope="col" class="text-center">基金名稱</th>
                       <th scope="col" class="text-center">計價幣別</th>
                       <th scope="col" class="text-center">單位淨值(元)</th>
@@ -838,7 +782,23 @@
         <!-- 查詢結果 end -->
         <!-- 注意事項 列表 start -->
         <section>
-          <div class="list-num">
+          <div class="list-disc">
+            <p>注意事項：</p>
+            <ul>
+              <li>本功能僅提供半年內基金交易電子對帳單查詢。</li>
+              <li>
+                以上資料內容如有不符，應以本公司基金受益人名簿記載為準，受益人之權益必然充份保障。
+              </li>
+              <li>若您對上述資訊有任何的疑問，歡迎您來電至客服中心0800-088-899，我們將有專人為您服務！</li>
+              <li>由於高收益債券之信用評等未達投資等級或未經信用評等，且對利率變動的敏感度甚高，故本基金可能會因利率上升、市場流動性下降，或債券發行機構違約不支付本金、利息或破產而蒙受虧損。本基金不適合無法承擔相關風險之投資人。投資人投資以高收益債券為訴求之基金不宜占其投資組合過高之比重。此外，本基金可投資於美國Rule 144A 債券，該債券屬私募性質，較可能發生流動性不足，財務訊息揭露不完整或因價格不透明導致波動性較大之風險，本基金可投資Rule 144A債券之比重限制及相關風險，請詳閱基金公開說明書。</li>
+              <li><a href="#">「新興趨勢傘型基金之新興市場股票組合基金」</a> 合併換算說明請點此。</li>
+            </ul>
+          </div>
+        </section>
+        <!-- 注意事項 列表 end -->
+        <!-- 注意事項 列表 start -->
+        <section>
+          <div class="list-disc">
             <p>注意事項：</p>
             <ul>
               <li>您曾經下單的委託記錄，將會永久保存以供您查詢。若您欲得知當日委託處理進度，請至《刪單及查詢》下之《今日委託查詢/取消》項目查詢。</li>
@@ -854,193 +814,6 @@
       <!-- ================================================================ -->
       <!-- 基金交易電子對帳單查詢結果頁 BillQuery_qry/ConfirmationQuery_qry end -->
       <!-- ================================================================ -->
-
-      <div class="container mt-3">
-        <!-- 歷史交易查詢 start -->
-        <section class="mb-5">
-          <div class="row mb-4 select-bar g-2">
-            <div class="col-lg-5 col-sm-12 mb-3 mb-lg-0 col-12">
-              <label class="form-label" for="">查詢交易起迄期間</label>
-              <div class="row g-2 select-Date">
-                <div class="col-12 col-sm-3 d-flex align-items-center mb-sm-0 mb-2">
-                  <input type="text" class="datepicker_input form-control" placeholder="選擇日期" required aria-label="">
-                </div>
-                <div class="col-sm-1 select-title mt-0 "><span class="pc-text"> ~ </span><span
-                    class="mobile-text">至</span></div>
-                <div class="col-12 col-sm-3 d-flex align-items-center">
-                  <input type="text" class="datepicker_input form-control" placeholder="選擇日期" required aria-label="">
-                </div>
-                <div class="col-12 col-lg-5 d-flex align-items-center mb-3 mb-md-0">
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>選擇區間</option>
-                    <option value="1">今日</option>
-                    <option value="2">一週內</option>
-                    <option value="3">本月</option>
-                    <option value="4">半年</option>
-                    <option value="5">一年</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-12 col-12">
-              <div class="row g-2 ">
-                <label class="form-label" for="">查詢交易類型</label>
-                <div class="col-12 mt-0 d-flex align-items-center mb-3 mb-lg-0">
-                  <select class="form-select">
-                    <option selected>查詢交易類型</option>
-                    <option value="1">選擇交易類型單筆申購</option>
-                    <option value="2">定期(不)定額</option>
-                    <option value="3">基金買回</option>
-                    <option value="4">基金轉申購</option>
-                    <option value="5">收益分配</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-sm-12 col-12">
-              <div class="row g-2 ">
-                <label class="form-label" for="">交易狀態</label>
-                <div class="col-12 mt-0 d-flex  align-items-center mb-3 mb-lg-0">
-                  <select class="form-select">
-                    <option selected>選擇交易狀態</option>
-                    <option value="1">全部委託輸入成功</option>
-                    <option value="2">委託處理中</option>
-                    <option value="3">交易成功</option>
-                    <option value="4">交易失敗</option>
-                    <option value="5">取消交易</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="col col-lg-2 d-flex justify-content-center">
-              <button class="btn btn-primary">
-                <span>查 詢</span>
-                <img class="" src="image/search_icon_white.png" alt="">
-              </button>
-            </div>
-          </div>
-        </section>
-        <!-- 歷史交易查詢 end -->
-        <!-- 查詢結果 start -->
-        <section>
-          <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2 class="h4 ">查詢結果</h2>
-            <div class="d-flex  ">
-              <nav>
-                <ul class="function-list">
-                  <li><button class="btn">簡易列表</button>
-                  </li>
-                  <li> <button class="btn">詳細列表</button></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="mb-4 table-responsive table-style-border table-list table-history">
-            <div class="table-responsive-xl">
-              <table class="table">
-                <thead class="">
-                  <tr>
-                    <th scope="col">交易序號</th>
-                    <th scope="col">基金名稱</th>
-                    <th scope="col">委託金額(元)</th>
-                    <th scope="col">成交單位</th>
-                    <th scope="col">手續費(元)</th>
-                    <th scope="col">總價款(元)</th>
-                    <th scope="col">委託時間</th>
-                    <th scope="col">交易狀態</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>20220301A0018</td>
-                    <td class="text-nowrap">貨幣市場基金</td>
-                    <td>5,000,000</td>
-                    <td>484,646.40</td>
-                    <td>0</td>
-                    <td>5,000,000</td>
-                    <td>2022/03/01
-                      <span>14:33:12</span>
-                    </td>
-                    <td>交易成功</td>
-                  </tr>
-                  <tr>
-                    <td>20220301A0018</td>
-                    <td class="text-nowrap">貨幣市場基金</td>
-                    <td>5,000,000</td>
-                    <td>484,646.40</td>
-                    <td>0</td>
-                    <td>5,000,000</td>
-                    <td>2022/03/01
-                      <span>14:33:12</span>
-                    </td>
-                    <td>交易成功</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="mb-4 table-responsive table-style-border table-list table-history-detail">
-            <div class="table-responsive-xl">
-              <table class="table">
-                <thead class="">
-                  <tr>
-                    <th scope="col">交易序號</th>
-                    <th scope="col">基金名稱</th>
-                    <th scope="col">計價幣別</th>
-                    <th scope="col">委託金額(元)</th>
-                    <th scope="col">單位淨值(元)</th>
-                    <th scope="col">成交單位</th>
-                    <th scope="col">手續費(元)</th>
-                    <th scope="col">總價款(元)</th>
-                    <th scope="col">委託時間</th>
-                    <th scope="col">收單日期</th>
-                    <th scope="col">繳款方式</th>
-                    <th scope="col">交易狀態</th>
-                    <th scope="col">交易別</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>20220301A0018</td>
-                    <td class="text-nowrap">貨幣市場基金</td>
-                    <td>新臺幣</td>
-                    <td>5,000,000</td>
-                    <td>10.3168<span>(2022/03/01)</span></td>
-                    <td>484,646.40</td>
-                    <td>0</td>
-                    <td>5,000,000</td>
-                    <td>2022/03/01
-                      <span>14:33:12</span>
-                    </td>
-                    <td>2022/03/01</td>
-                    <td>自動扣款</td>
-                    <td>交易成功</td>
-                    <td>網路</td>
-                  </tr>
-                  <tr>
-                    <td>20220301A0018</td>
-                    <td class="text-nowrap">貨幣市場基金</td>
-                    <td>新臺幣</td>
-                    <td>5,000,000</td>
-                    <td>10.3168<span>(2022/03/01)</span></td>
-                    <td>484,646.40</td>
-                    <td>0</td>
-                    <td>5,000,000</td>
-                    <td>2022/03/01
-                      <span>14:33:12</span>
-                    </td>
-                    <td>2022/03/01</td>
-                    <td>自動扣款</td>
-                    <td>交易成功</td>
-                    <td>網路</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-        <!-- 查詢結果 end -->
-      </div>
     </div>
   </main>
   <footer>

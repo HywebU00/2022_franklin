@@ -817,3 +817,43 @@
 		}
 	}
 }
+
+.table-income{
+	.td-table{
+		
+		width: 100%;
+		tbody tr{
+			background-color: #eaeaea;
+		}
+		td{
+			&:first-child ,&:last-child{
+				// border-left: 0px;
+				border-right: 0px;
+			}
+		}
+		.text-width{
+			width: 80px;
+			display: inline-block;
+		}
+	}
+	thead{
+		tr{
+			th{
+				width: 200px;
+				min-width: 200px;
+				background: #fff;
+			}
+		}
+	}
+	tbody {
+		
+		tr {
+			background-color: #f9f9f9;
+			td{
+				width: 200px;
+			}
+		}
+		
+	
+	}
+}
