@@ -386,108 +386,111 @@
       </nav>
       <!-- Breadcrumb end -->
       <!-- tab -->
-      <ul class="tab nav nav-pills mb-4" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#invest" type="button"
-            role="tab" aria-controls="pills-home" aria-selected="true">基金投資組合</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#observe"
-            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">觀察基金</button>
-        </li>
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <!-- 投資基金 -->
-        <div class="tab-pane fade " id="invest" role="tabpanel" aria-labelledby="pills-home-tab">
-          ...
-        </div>
-        <div class="tab-pane fade show active" id="observe" role="tabpanel" aria-labelledby="pills-profile-tab">
-          <!-- 觀察基金 -->
-          <section>
-            <div class="table-style-headerDeep table-observelist table-responsive ">
-              <div class="table-responsive-xl">
-                <table class="table">
-                  <thead class="">
-                    <tr>
-                      <th scope="col">基金名稱</th>
-                      <!-- 點擊後 呈現不同的資料排列狀態 -->
-                      <th scope="col"><button class="btn">投資市值 <img src="image/arrow.png" alt=""></button></th>
-                      <!-- <th scope="col"><button class="btn">投資市值 <img src="image/arrow-up.png" alt=""></button></th>
-                    <th scope="col"><button class="btn">投資市值 <img src="image/arrow-down.png" alt=""></button></th> -->
-                      <th scope="col"><button class="btn">成本 <img src="image/arrow.png" alt=""></button></th>
-                      <!-- <th scope="col"><button class="btn">成本 <img src="image/arrow-up.png" alt=""></button></th>
-                    <th scope="col"><button class="btn">成本 <img src="image/arrow-down.png" alt=""></button></th> -->
-                      <th scope="col"><button class="btn">未實現損益 <img src="image/arrow.png" alt=""></button></th>
-                      <!-- <th scope="col"><button class="btn">未實現損益 <img src="image/arrow-up.png" alt=""></button></th>
-                    <th scope="col"><button class="btn">未實現損益 <img src="image/arrow-down.png" alt=""></button></th> -->
-                      <th scope="col"><button class="btn">報酬率 <img src="image/arrow.png" alt=""></button></th>
-                      <!-- <th scope="col"><button class="btn">報酬率 <img src="image/arrow-up.png" alt=""></button></th>
-                    <th scope="col"><button class="btn">報酬率 <img src="image/arrow-down.png" alt=""></button></th> -->
-                      <th scope="col">交易</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>AI新科技基金</td>
-                      <td>累積型</td>
-                      <td>新台幣</td>
-                      <td>80.06(02/23)</td>
-                      <td><span><i class="bi bi-caret-down-fill text-success"></i> </span> 1.08</td>
-                      <td class="d-flex justify-content-end"><select class="form-select "
-                          aria-label="Default select example">
-                          <option selected disabled>選擇交易類型</option>
-                          <option value="1">單筆申購</option>
-                          <option value="2">定期定額</option>
-                          <option value="3">定期不定額</option>
-                        </select>
-                      </td>
-                      <td>
-                        <!-- 點擊蒐藏 增加 “active” 的 class name -->
-                        <button class="btn btn-like"><i class="bi bi-suit-heart-fill  active"></i></button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>特別股收益基金</td>
-                      <td>累積型</td>
-                      <td>新台幣</td>
-                      <td>80.06(02/23)</td>
-                      <td><span><i class="bi bi-caret-down-fill text-success"></i> </span> 1.08</td>
-                      <td class="d-flex justify-content-end"><select class="form-select "
-                          aria-label="Default select example">
-                          <option selected disabled>選擇交易類型</option>
-                          <option value="1">單筆申購</option>
-                          <option value="2">定期定額</option>
-                          <option value="3">定期不定額</option>
-                        </select>
-                      </td>
-                      <td><button class="btn btn-like"><i class="bi bi-suit-heart-fill  active"></i></button></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>全球高收益債基金</td>
-                      <td>累積型</td>
-                      <td>新台幣</td>
-                      <td>80.06(02/23)</td>
-                      <td><span><i class="bi bi-caret-down-fill text-success"></i> </span> 1.08</td>
-                      <td class="d-flex justify-content-end"><select class="form-select "
-                          aria-label="Default select example">
-                          <option selected disabled>選擇交易類型</option>
-                          <option value="1">單筆申購</option>
-                          <option value="2">定期定額</option>
-                          <option value="3">定期不定額</option>
-                        </select>
-                      </td>
-                      <td><button class="btn btn-like"><i class="bi bi-suit-heart-fill  active"></i></button></i>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+      <div class="container">
+        <ul class="tab nav nav-pills mb-4" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#invest" type="button"
+              role="tab" aria-controls="pills-home" aria-selected="true">基金投資組合</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#observe"
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">觀察基金</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <!-- 投資基金 -->
+          <div class="tab-pane fade " id="invest" role="tabpanel" aria-labelledby="pills-home-tab">
+            ...
+          </div>
+          <div class="tab-pane fade show active" id="observe" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <!-- 觀察基金 -->
+            <section>
+              <div class="table-style-headerDeep table-observelist table-responsive ">
+                <div class="table-responsive-xl">
+                  <table class="table">
+                    <thead class="">
+                      <tr>
+                        <th scope="col">基金名稱</th>
+                        <!-- 點擊後 呈現不同的資料排列狀態 -->
+                        <th scope="col"><button class="btn">投資市值 <img src="image/arrow.png" alt=""></button></th>
+                        <!-- <th scope="col"><button class="btn">投資市值 <img src="image/arrow-up.png" alt=""></button></th>
+                      <th scope="col"><button class="btn">投資市值 <img src="image/arrow-down.png" alt=""></button></th> -->
+                        <th scope="col"><button class="btn">成本 <img src="image/arrow.png" alt=""></button></th>
+                        <!-- <th scope="col"><button class="btn">成本 <img src="image/arrow-up.png" alt=""></button></th>
+                      <th scope="col"><button class="btn">成本 <img src="image/arrow-down.png" alt=""></button></th> -->
+                        <th scope="col"><button class="btn">未實現損益 <img src="image/arrow.png" alt=""></button></th>
+                        <!-- <th scope="col"><button class="btn">未實現損益 <img src="image/arrow-up.png" alt=""></button></th>
+                      <th scope="col"><button class="btn">未實現損益 <img src="image/arrow-down.png" alt=""></button></th> -->
+                        <th scope="col"><button class="btn">報酬率 <img src="image/arrow.png" alt=""></button></th>
+                        <!-- <th scope="col"><button class="btn">報酬率 <img src="image/arrow-up.png" alt=""></button></th>
+                      <th scope="col"><button class="btn">報酬率 <img src="image/arrow-down.png" alt=""></button></th> -->
+                        <th scope="col">交易</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>AI新科技基金</td>
+                        <td>累積型</td>
+                        <td>新台幣</td>
+                        <td>80.06(02/23)</td>
+                        <td><span><i class="bi bi-caret-down-fill text-success"></i> </span> 1.08</td>
+                        <td class="d-flex justify-content-end"><select class="form-select "
+                            aria-label="Default select example">
+                            <option selected disabled>選擇交易類型</option>
+                            <option value="1">單筆申購</option>
+                            <option value="2">定期定額</option>
+                            <option value="3">定期不定額</option>
+                          </select>
+                        </td>
+                        <td>
+                          <!-- 點擊蒐藏 增加 “active” 的 class name -->
+                          <button class="btn btn-like"><i class="bi bi-suit-heart-fill  active"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>特別股收益基金</td>
+                        <td>累積型</td>
+                        <td>新台幣</td>
+                        <td>80.06(02/23)</td>
+                        <td><span><i class="bi bi-caret-down-fill text-success"></i> </span> 1.08</td>
+                        <td class="d-flex justify-content-end"><select class="form-select "
+                            aria-label="Default select example">
+                            <option selected disabled>選擇交易類型</option>
+                            <option value="1">單筆申購</option>
+                            <option value="2">定期定額</option>
+                            <option value="3">定期不定額</option>
+                          </select>
+                        </td>
+                        <td><button class="btn btn-like"><i class="bi bi-suit-heart-fill  active"></i></button></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>全球高收益債基金</td>
+                        <td>累積型</td>
+                        <td>新台幣</td>
+                        <td>80.06(02/23)</td>
+                        <td><span><i class="bi bi-caret-down-fill text-success"></i> </span> 1.08</td>
+                        <td class="d-flex justify-content-end"><select class="form-select "
+                            aria-label="Default select example">
+                            <option selected disabled>選擇交易類型</option>
+                            <option value="1">單筆申購</option>
+                            <option value="2">定期定額</option>
+                            <option value="3">定期不定額</option>
+                          </select>
+                        </td>
+                        <td><button class="btn btn-like"><i class="bi bi-suit-heart-fill  active"></i></button></i>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
       </div>
+      
       <!-- tab end -->
     </div>
   </main>

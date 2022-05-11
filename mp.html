@@ -384,389 +384,391 @@
         </ol>
       </nav>
       <!-- Breadcrumb end -->
-      <!-- tab -->
-      <ul class="tab nav nav-pills mb-4" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#invest"
-            type="button" role="tab" aria-controls="pills-home" aria-selected="true">基金投資組合</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#observe" type="button"
-            role="tab" aria-controls="pills-profile" aria-selected="false">觀察基金</button>
-        </li>
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <!-- 投資基金 -->
-        <div class="tab-pane fade show active" id="invest" role="tabpanel" aria-labelledby="pills-home-tab">
-          <!-- chart section -->
-          <section>
-            <div class="row justify-content-center">
-              <div class="col-md-6 col-xl-4">
-                <div class="" id="chart"></div>
-                <div class="table-combination table-responsive-sm">
-                  <table class="table ">
-                    <tr class="table-primary-tab active">
-                      <th>股票型</th>
-                      <td>50,000</td>
-                      <td>50%</td>
-                    </tr>
-                    <tr class="table-secondary-tab">
-                      <th>債券型</th>
-                      <td>50,000</td>
-                      <td>30%</td>
-                    </tr>
-                    <tr class="table-info-tab">
-                      <th>平衡型</th>
-                      <td>15,000</td>
-                      <td>15%</td>
-                    </tr>
-                    <tr class="table-danger-tab">
-                      <th>貨幣型</th>
-                      <td>5,000</td>
-                      <td>5%</td>
-                    </tr>
+      <div class="container">
+        <!-- tab -->
+        <ul class="tab nav nav-pills mb-4" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#invest"
+              type="button" role="tab" aria-controls="pills-home" aria-selected="true">基金投資組合</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#observe"
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">觀察基金</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <!-- 投資基金 -->
+          <div class="tab-pane fade show active" id="invest" role="tabpanel" aria-labelledby="pills-home-tab">
+            <!-- chart section -->
+            <section>
+              <div class="row justify-content-center">
+                <div class="col-md-6 col-xl-4">
+                  <div class="" id="chart"></div>
+                  <div class="table-combination table-responsive-sm">
+                    <table class="table ">
+                      <tr class="table-primary-tab active">
+                        <th>股票型</th>
+                        <td>50,000</td>
+                        <td>50%</td>
+                      </tr>
+                      <tr class="table-secondary-tab">
+                        <th>債券型</th>
+                        <td>50,000</td>
+                        <td>30%</td>
+                      </tr>
+                      <tr class="table-info-tab">
+                        <th>平衡型</th>
+                        <td>15,000</td>
+                        <td>15%</td>
+                      </tr>
+                      <tr class="table-danger-tab">
+                        <th>貨幣型</th>
+                        <td>5,000</td>
+                        <td>5%</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <div class="" id="chart2"></div>
+                  <div class="table-combination table-responsive-sm">
+                    <table class="table ">
+                      <tr class="table-primary-tab active">
+                        <th>新台幣</th>
+                        <td>50,000</td>
+                        <td>50%</td>
+                      </tr>
+                      <tr class="table-secondary-tab">
+                        <th>美元</th>
+                        <td>50,000</td>
+                        <td>30%</td>
+                      </tr>
+                      <tr class="table-info-tab">
+                        <th>日圓</th>
+                        <td>15,000</td>
+                        <td>15%</td>
+                      </tr>
+                      <tr class="table-danger-tab">
+                        <th>人民幣</th>
+                        <td>5,000</td>
+                        <td>5%</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <div class="" id="chart3"></div>
+                  <div class="table-combination table-responsive-sm">
+                    <table class="table ">
+                      <tr class="table-primary-tab active">
+                        <th>AI新科技基金</th>
+                        <td>50,000</td>
+                        <td>50%</td>
+                      </tr>
+                      <tr class="table-secondary-tab">
+                        <th>特別股收益基金</th>
+                        <td>50,000</td>
+                        <td>30%</td>
+                      </tr>
+                      <tr class="table-info-tab">
+                        <th>全球高收益債券基金全球高收益債券基金</th>
+                        <td>15,000</td>
+                        <td>15%</td>
+                      </tr>
+                      <tr class="table-danger-tab">
+                        <th>新世界股票基金</th>
+                        <td>5,000</td>
+                        <td>5%</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-end ">
+                  <p class="pt-3 pb-4 text-secondary">統計圖表為參考現值依新台幣計價</p>
+                </div>
+              </div>
+            </section>
+            <!-- chart section end-->
+            <!-- table start -->
+            <section>
+              <div class="table-style-headerDeep table-fundlist table-responsive ">
+                <div class="table-responsive-xl">
+                  <table class="table">
+                    <thead class="thead">
+                      <tr>
+                        <th scope="col" colspan="2">幣別：新台幣</th>
+                        <th scope="col">
+                          <div class="">投資市值</div>
+                          <div class="">新台幣<span>1,100,000</span></div>
+                        </th>
+                        <th scope="col">
+                          <div>成本</div>
+                          <div class="">新台幣<span>1,100,000</span></div>
+                        </th>
+                        <th scope="col">
+                          <div class="">未實現損益</div>
+                          <div class="">新台幣<span>1,100,000</span></div>
+                        </th>
+                        <th scope="col">
+                          <div class="">投報率</div>
+                          <div class="">8%</div>
+                        </th>
+                      </tr>
+                      </tr>
+                    </thead>
+                    <thead class="subthead">
+                      <tr>
+                        <th scope="col">基金名稱</th>
+                        <!-- 點擊後 呈現不同的資料排列狀態 -->
+                        <th scope="col"><button class="btn">投資市值 <img src="image/arrow.png" alt=""></button></th>
+                        <!-- <th scope="col"><button class="btn">投資市值 <img src="image/arrow-up.png" alt=""></button></th>
+                      <th scope="col"><button class="btn">投資市值 <img src="image/arrow-down.png" alt=""></button></th> -->
+                        <th scope="col"><button class="btn">成本 <img src="image/arrow.png" alt=""></button></th>
+                        <!-- <th scope="col"><button class="btn">成本 <img src="image/arrow-up.png" alt=""></button></th>
+                      <th scope="col"><button class="btn">成本 <img src="image/arrow-down.png" alt=""></button></th> -->
+                        <th scope="col"><button class="btn">未實現損益 <img src="image/arrow.png" alt=""></button></th>
+                        <!-- <th scope="col"><button class="btn">未實現損益 <img src="image/arrow-up.png" alt=""></button></th>
+                      <th scope="col"><button class="btn">未實現損益 <img src="image/arrow-down.png" alt=""></button></th> -->
+                        <th scope="col"><button class="btn">報酬率 <img src="image/arrow.png" alt=""></button></th>
+                        <!-- <th scope="col"><button class="btn">報酬率 <img src="image/arrow-up.png" alt=""></button></th>
+                      <th scope="col"><button class="btn">報酬率 <img src="image/arrow-down.png" alt=""></button></th> -->
+                        <th scope="col">交易</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td> <button class="btn fund-btn" data-bs-toggle="collapse" href="#collapseExample1"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            AI新科技基金 <i class="bi bi-chevron-down"></i>
+                          </button></td>
+                        <td>1,100,000</td>
+                        <td>1,100,000</td>
+                        <td></td>
+                        <td><span><i class="bi bi-caret-down-fill text-success"></i> </span> 8%</td>
+                        <td class="d-flex justify-content-end"><select class="form-select "
+                            aria-label="Default select example">
+                            <option selected disabled>選擇交易類型</option>
+                            <option value="1">單筆申購</option>
+                            <option value="2">定期定額</option>
+                            <option value="3">定期不定額</option>
+                            <option value="4">賣出</option>
+                            <option value="5">轉申購</option>
+                          </select></td>
+                      </tr>
+                      <tr>
+                        <td colspan="6 " class="py-0 tr-collapse">
+                          <div class="collapse" id="collapseExample1">
+                            <div class="row g-0">
+                              <div class="col-8">
+                                <table class="table">
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">單位數</th>
+                                      <td scope="col">600</td>
+                                      <th scope="col">原幣報酬率</th>
+                                      <td scope="col"><span class="teb-danger"> +20%</span> </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">最新淨值</th>
+                                      <td scope="col">9.51(3/2)</td>
+                                      <th scope="col">單筆現值</th>
+                                      <td scope="col">40,000 </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">市價總值</th>
+                                      <td scope="col">60,000</td>
+                                      <th scope="col">原幣報酬率</th>
+                                      <td scope="col"><span class="teb-danger"> +25%</span> </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">總投資金額</th>
+                                      <td scope="col">50,000</td>
+                                      <th scope="col">定期(不)定額現值</th>
+                                      <td scope="col"><span>20,000</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">平均單位成本</th>
+                                      <td scope="col">120</td>
+                                      <th scope="col">資產現值</th>
+                                      <td scope="col">60,000</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">未實現損益</th>
+                                      <td scope="col">10,000</td>
+                                      <th scope="col">配息金額</th>
+                                      <td scope="col">1,000</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="col-4 justify-content-end d-flex mt-5  pe-4">
+                                <button class="btn btn-light" data-bs-toggle="modal"
+                                  data-bs-target="#StopModal">停利停損</button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> <button class="btn fund-btn" data-bs-toggle="collapse" href="#collapseExample2"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            特別股收益基金 <i class="bi bi-chevron-down"></i>
+                          </button></td>
+                        <td>1,100,000</td>
+                        <td>1,100,000</td>
+                        <td></td>
+                        <td><span><i class="bi bi-caret-up-fill text-danger"></i> </span> 8%</td>
+                        <td class="d-flex justify-content-end"><select class="form-select "
+                            aria-label="Default select example">
+                            <option selected disabled>選擇交易類型</option>
+                            <option value="1">單筆申購</option>
+                            <option value="2">定期定額</option>
+                            <option value="3">定期不定額</option>
+                            <option value="4">賣出</option>
+                            <option value="5">轉申購</option>
+                          </select></td>
+                      </tr>
+                      <tr>
+                        <td colspan="6 " class="py-0 tr-collapse">
+                          <div class="collapse" id="collapseExample2">
+                            <div class="row g-0">
+                              <div class="col-8">
+                                <table class="table">
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">單位數</th>
+                                      <td scope="col">600</td>
+                                      <th scope="col">原幣報酬率</th>
+                                      <td scope="col"><span class="teb-danger"> +20%</span> </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">最新淨值</th>
+                                      <td scope="col">9.51(3/2)</td>
+                                      <th scope="col">單筆現值</th>
+                                      <td scope="col">40,000 </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">市價總值</th>
+                                      <td scope="col">60,000</td>
+                                      <th scope="col">原幣報酬率</th>
+                                      <td scope="col"><span class="teb-danger"> +25%</span> </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">總投資金額</th>
+                                      <td scope="col">50,000</td>
+                                      <th scope="col">定期(不)定額現值</th>
+                                      <td scope="col"><span>20,000</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">平均單位成本</th>
+                                      <td scope="col">120</td>
+                                      <th scope="col">資產現值</th>
+                                      <td scope="col">60,000</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">未實現損益</th>
+                                      <td scope="col">10,000</td>
+                                      <th scope="col">配息金額</th>
+                                      <td scope="col">1,000</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="col-4 justify-content-end d-flex mt-5  pe-4">
+                                <button class="btn btn-light " data-bs-toggle="modal"
+                                  data-bs-target="#StopModal">停利停損</button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> <button class="btn fund-btn" data-bs-toggle="collapse" href="#collapseExample3"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            全球高收益債基金 <i class="bi bi-chevron-down"></i>
+                          </button></td>
+                        <td>1,100,000</td>
+                        <td>1,100,000</td>
+                        <td></td>
+                        <td><span><i class="bi bi-caret-down-fill text-success"></i> </span> 8%</td>
+                        <td class="d-flex justify-content-end"><select class="form-select"
+                            aria-label="Default select example">
+                            <option selected disabled>選擇交易類型</option>
+                            <option value="1">單筆申購</option>
+                            <option value="2">定期定額</option>
+                            <option value="3">定期不定額</option>
+                            <option value="4">賣出</option>
+                            <option value="5">轉申購</option>
+                          </select></td>
+                      </tr>
+                      <tr>
+                        <td colspan="6 " class="py-0 tr-collapse">
+                          <div class="collapse" id="collapseExample3">
+                            <div class="row g-0">
+                              <div class="col-8">
+                                <table class="table">
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">單位數</th>
+                                      <td scope="col">600</td>
+                                      <th scope="col">原幣報酬率</th>
+                                      <td scope="col"><span class="teb-danger"> +20%</span> </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">最新淨值</th>
+                                      <td scope="col">9.51(3/2)</td>
+                                      <th scope="col">單筆現值</th>
+                                      <td scope="col">40,000 </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">市價總值</th>
+                                      <td scope="col">60,000</td>
+                                      <th scope="col">原幣報酬率</th>
+                                      <td scope="col"><span class="teb-danger"> +25%</span> </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">總投資金額</th>
+                                      <td scope="col">50,000</td>
+                                      <th scope="col">定期(不)定額現值</th>
+                                      <td scope="col"><span>20,000</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">平均單位成本</th>
+                                      <td scope="col">120</td>
+                                      <th scope="col">資產現值</th>
+                                      <td scope="col">60,000</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">未實現損益</th>
+                                      <td scope="col">10,000</td>
+                                      <th scope="col">配息金額</th>
+                                      <td scope="col">1,000</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="col-4 justify-content-end d-flex mt-5  pe-4">
+                                <button class="btn btn-light " data-bs-toggle="modal"
+                                  data-bs-target="#StopModal">停利停損</button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
                   </table>
                 </div>
               </div>
-              <div class="col-md-6 col-xl-4">
-                <div class="" id="chart2"></div>
-                <div class="table-combination table-responsive-sm">
-                  <table class="table ">
-                    <tr class="table-primary-tab active">
-                      <th>新台幣</th>
-                      <td>50,000</td>
-                      <td>50%</td>
-                    </tr>
-                    <tr class="table-secondary-tab">
-                      <th>美元</th>
-                      <td>50,000</td>
-                      <td>30%</td>
-                    </tr>
-                    <tr class="table-info-tab">
-                      <th>日圓</th>
-                      <td>15,000</td>
-                      <td>15%</td>
-                    </tr>
-                    <tr class="table-danger-tab">
-                      <th>人民幣</th>
-                      <td>5,000</td>
-                      <td>5%</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <div class="col-md-6 col-xl-4">
-                <div class="" id="chart3"></div>
-                <div class="table-combination table-responsive-sm">
-                  <table class="table ">
-                    <tr class="table-primary-tab active">
-                      <th>AI新科技基金</th>
-                      <td>50,000</td>
-                      <td>50%</td>
-                    </tr>
-                    <tr class="table-secondary-tab">
-                      <th>特別股收益基金</th>
-                      <td>50,000</td>
-                      <td>30%</td>
-                    </tr>
-                    <tr class="table-info-tab">
-                      <th>全球高收益債券基金全球高收益債券基金</th>
-                      <td>15,000</td>
-                      <td>15%</td>
-                    </tr>
-                    <tr class="table-danger-tab">
-                      <th>新世界股票基金</th>
-                      <td>5,000</td>
-                      <td>5%</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col d-flex justify-content-end ">
-                <p class="pt-3 pb-4 text-secondary">統計圖表為參考現值依新台幣計價</p>
-              </div>
-            </div>
-          </section>
-          <!-- chart section end-->
-          <!-- table start -->
-          <section>
-            <div class="table-style-headerDeep table-fundlist table-responsive ">
-              <div class="table-responsive-xl">
-                <table class="table">
-                  <thead class="thead">
-                    <tr>
-                      <th scope="col" colspan="2">幣別：新台幣</th>
-                      <th scope="col">
-                        <div class="">投資市值</div>
-                        <div class="">新台幣<span>1,100,000</span></div>
-                      </th>
-                      <th scope="col">
-                        <div>成本</div>
-                        <div class="">新台幣<span>1,100,000</span></div>
-                      </th>
-                      <th scope="col">
-                        <div class="">未實現損益</div>
-                        <div class="">新台幣<span>1,100,000</span></div>
-                      </th>
-                      <th scope="col">
-                        <div class="">投報率</div>
-                        <div class="">8%</div>
-                      </th>
-                    </tr>
-                    </tr>
-                  </thead>
-                  <thead class="subthead">
-                    <tr>
-                      <th scope="col">基金名稱</th>
-                      <!-- 點擊後 呈現不同的資料排列狀態 -->
-                      <th scope="col"><button class="btn">投資市值 <img src="image/arrow.png" alt=""></button></th>
-                      <!-- <th scope="col"><button class="btn">投資市值 <img src="image/arrow-up.png" alt=""></button></th>
-                    <th scope="col"><button class="btn">投資市值 <img src="image/arrow-down.png" alt=""></button></th> -->
-                      <th scope="col"><button class="btn">成本 <img src="image/arrow.png" alt=""></button></th>
-                      <!-- <th scope="col"><button class="btn">成本 <img src="image/arrow-up.png" alt=""></button></th>
-                    <th scope="col"><button class="btn">成本 <img src="image/arrow-down.png" alt=""></button></th> -->
-                      <th scope="col"><button class="btn">未實現損益 <img src="image/arrow.png" alt=""></button></th>
-                      <!-- <th scope="col"><button class="btn">未實現損益 <img src="image/arrow-up.png" alt=""></button></th>
-                    <th scope="col"><button class="btn">未實現損益 <img src="image/arrow-down.png" alt=""></button></th> -->
-                      <th scope="col"><button class="btn">報酬率 <img src="image/arrow.png" alt=""></button></th>
-                      <!-- <th scope="col"><button class="btn">報酬率 <img src="image/arrow-up.png" alt=""></button></th>
-                    <th scope="col"><button class="btn">報酬率 <img src="image/arrow-down.png" alt=""></button></th> -->
-                      <th scope="col">交易</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td> <button class="btn fund-btn" data-bs-toggle="collapse" href="#collapseExample1" role="button"
-                          aria-expanded="false" aria-controls="collapseExample">
-                          AI新科技基金 <i class="bi bi-chevron-down"></i>
-                        </button></td>
-                      <td>1,100,000</td>
-                      <td>1,100,000</td>
-                      <td></td>
-                      <td><span><i class="bi bi-caret-down-fill text-success"></i> </span> 8%</td>
-                      <td class="d-flex justify-content-end"><select class="form-select "
-                          aria-label="Default select example">
-                          <option selected disabled>選擇交易類型</option>
-                          <option value="1">單筆申購</option>
-                          <option value="2">定期定額</option>
-                          <option value="3">定期不定額</option>
-                          <option value="4">賣出</option>
-                          <option value="5">轉申購</option>
-                        </select></td>
-                    </tr>
-                    <tr>
-                      <td colspan="6 " class="py-0 tr-collapse">
-                        <div class="collapse" id="collapseExample1">
-                          <div class="row g-0">
-                            <div class="col-8">
-                              <table class="table">
-                                <tbody>
-                                  <tr>
-                                    <th scope="row">單位數</th>
-                                    <td scope="col">600</td>
-                                    <th scope="col">原幣報酬率</th>
-                                    <td scope="col"><span class="teb-danger"> +20%</span> </td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">最新淨值</th>
-                                    <td scope="col">9.51(3/2)</td>
-                                    <th scope="col">單筆現值</th>
-                                    <td scope="col">40,000 </td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">市價總值</th>
-                                    <td scope="col">60,000</td>
-                                    <th scope="col">原幣報酬率</th>
-                                    <td scope="col"><span class="teb-danger"> +25%</span> </td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">總投資金額</th>
-                                    <td scope="col">50,000</td>
-                                    <th scope="col">定期(不)定額現值</th>
-                                    <td scope="col"><span>20,000</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">平均單位成本</th>
-                                    <td scope="col">120</td>
-                                    <th scope="col">資產現值</th>
-                                    <td scope="col">60,000</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">未實現損益</th>
-                                    <td scope="col">10,000</td>
-                                    <th scope="col">配息金額</th>
-                                    <td scope="col">1,000</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                            <div class="col-4 justify-content-end d-flex mt-5  pe-4">
-                              <button class="btn btn-light" data-bs-toggle="modal"
-                                data-bs-target="#StopModal">停利停損</button>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td> <button class="btn fund-btn" data-bs-toggle="collapse" href="#collapseExample2" role="button"
-                          aria-expanded="false" aria-controls="collapseExample">
-                          特別股收益基金 <i class="bi bi-chevron-down"></i>
-                        </button></td>
-                      <td>1,100,000</td>
-                      <td>1,100,000</td>
-                      <td></td>
-                      <td><span><i class="bi bi-caret-up-fill text-danger"></i> </span> 8%</td>
-                      <td class="d-flex justify-content-end"><select class="form-select "
-                          aria-label="Default select example">
-                          <option selected disabled>選擇交易類型</option>
-                          <option value="1">單筆申購</option>
-                          <option value="2">定期定額</option>
-                          <option value="3">定期不定額</option>
-                          <option value="4">賣出</option>
-                          <option value="5">轉申購</option>
-                        </select></td>
-                    </tr>
-                    <tr>
-                      <td colspan="6 " class="py-0 tr-collapse">
-                        <div class="collapse" id="collapseExample2">
-                          <div class="row g-0">
-                            <div class="col-8">
-                              <table class="table">
-                                <tbody>
-                                  <tr>
-                                    <th scope="row">單位數</th>
-                                    <td scope="col">600</td>
-                                    <th scope="col">原幣報酬率</th>
-                                    <td scope="col"><span class="teb-danger"> +20%</span> </td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">最新淨值</th>
-                                    <td scope="col">9.51(3/2)</td>
-                                    <th scope="col">單筆現值</th>
-                                    <td scope="col">40,000 </td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">市價總值</th>
-                                    <td scope="col">60,000</td>
-                                    <th scope="col">原幣報酬率</th>
-                                    <td scope="col"><span class="teb-danger"> +25%</span> </td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">總投資金額</th>
-                                    <td scope="col">50,000</td>
-                                    <th scope="col">定期(不)定額現值</th>
-                                    <td scope="col"><span>20,000</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">平均單位成本</th>
-                                    <td scope="col">120</td>
-                                    <th scope="col">資產現值</th>
-                                    <td scope="col">60,000</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">未實現損益</th>
-                                    <td scope="col">10,000</td>
-                                    <th scope="col">配息金額</th>
-                                    <td scope="col">1,000</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                            <div class="col-4 justify-content-end d-flex mt-5  pe-4">
-                              <button class="btn btn-light " data-bs-toggle="modal"
-                                data-bs-target="#StopModal">停利停損</button>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td> <button class="btn fund-btn" data-bs-toggle="collapse" href="#collapseExample3" role="button"
-                          aria-expanded="false" aria-controls="collapseExample">
-                          全球高收益債基金 <i class="bi bi-chevron-down"></i>
-                        </button></td>
-                      <td>1,100,000</td>
-                      <td>1,100,000</td>
-                      <td></td>
-                      <td><span><i class="bi bi-caret-down-fill text-success"></i> </span> 8%</td>
-                      <td class="d-flex justify-content-end"><select class="form-select"
-                          aria-label="Default select example">
-                          <option selected disabled>選擇交易類型</option>
-                          <option value="1">單筆申購</option>
-                          <option value="2">定期定額</option>
-                          <option value="3">定期不定額</option>
-                          <option value="4">賣出</option>
-                          <option value="5">轉申購</option>
-                        </select></td>
-                    </tr>
-                    <tr>
-                      <td colspan="6 " class="py-0 tr-collapse">
-                        <div class="collapse" id="collapseExample3">
-                          <div class="row g-0">
-                            <div class="col-8">
-                              <table class="table">
-                                <tbody>
-                                  <tr>
-                                    <th scope="row">單位數</th>
-                                    <td scope="col">600</td>
-                                    <th scope="col">原幣報酬率</th>
-                                    <td scope="col"><span class="teb-danger"> +20%</span> </td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">最新淨值</th>
-                                    <td scope="col">9.51(3/2)</td>
-                                    <th scope="col">單筆現值</th>
-                                    <td scope="col">40,000 </td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">市價總值</th>
-                                    <td scope="col">60,000</td>
-                                    <th scope="col">原幣報酬率</th>
-                                    <td scope="col"><span class="teb-danger"> +25%</span> </td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">總投資金額</th>
-                                    <td scope="col">50,000</td>
-                                    <th scope="col">定期(不)定額現值</th>
-                                    <td scope="col"><span>20,000</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">平均單位成本</th>
-                                    <td scope="col">120</td>
-                                    <th scope="col">資產現值</th>
-                                    <td scope="col">60,000</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">未實現損益</th>
-                                    <td scope="col">10,000</td>
-                                    <th scope="col">配息金額</th>
-                                    <td scope="col">1,000</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                            <div class="col-4 justify-content-end d-flex mt-5  pe-4">
-                              <button class="btn btn-light " data-bs-toggle="modal"
-                                data-bs-target="#StopModal">停利停損</button>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </section>
-          <!-- table end -->
+            </section>
+            <!-- table end -->
+          </div>
+          <div class="tab-pane fade " id="observe" role="tabpanel" aria-labelledby="pills-profile-tab">
+          </div>
         </div>
-        <div class="tab-pane fade " id="observe" role="tabpanel" aria-labelledby="pills-profile-tab">
-        </div>
+        <!-- tab end -->
       </div>
-      <!-- tab end -->
     </div>
   </main>
   <footer>
