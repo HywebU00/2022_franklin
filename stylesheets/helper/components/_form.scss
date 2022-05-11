@@ -57,23 +57,32 @@
     // background-color: #e4eefd;
     // border: none;
     // background-color: #e9ecef;
-    height: 2.5em;
+    //height: 2.5em;
+    padding: 0.5em 0.75em;
 
-    &:active,
-    &:focus {
-      // background-color: #e4eefd;
-      // background-color: #e9ecef;
-    }
+    // &:active,
+    // &:focus {
+    //   background-color: #e4eefd;
+    //   background-color: #e9ecef;
+    // }
+  }
+
+  .form-check-input {
+    padding: 0.5em;
   }
 
   .form-text {
     padding: 0.5em 0.75em;
     border-radius: 0.25em;
-    height: 40px;
+    // height: 40px;
     margin-top: 0;
     color: #212529;
     font-size: 1rem;
     width: 100%;
+    // overflow: hidden;
+    // white-space: nowrap;
+    // text-overflow: ellipsis;
+
     //background-color: #e9ecef;
     background-color: #e4eefd;
     border: 1px solid #00000020;
@@ -92,8 +101,9 @@
         border: 0px;
         background: #e9ecef;
         cursor: pointer;
-        &:hover{
-          background-color: darken( #e9ecef, 3%);
+
+        &:hover {
+          background-color: darken(#e9ecef, 3%);
           transition: all .6s;
         }
       }
@@ -175,7 +185,7 @@
     width: 100%;
     background-color: #fff;
     min-height: 120px;
-    color: $gray-600;//#6c757d;
+    color: $gray-600; //#6c757d;
     font-weight: 500;
     font-size: 1.2rem;
     display: flex;
@@ -208,6 +218,7 @@
     padding: 0;
     position: relative;
     margin-bottom: 0;
+
     input[type="checkbox"] {
       width: 100%;
       margin-left: 0;
@@ -215,8 +226,9 @@
       border: 1px solid #00000020;
       min-height: 120px;
       cursor: pointer;
-      &:hover{
-        background-color: lighten( #e9ecef, 3%);
+
+      &:hover {
+        background-color: lighten(#e9ecef, 3%);
         transition: all .6s;
       }
     }
@@ -228,7 +240,7 @@
     }
 
     label {
-      color: $gray-600;//#646464;//#6c757d;
+      color: $gray-600; //#646464;//#6c757d;
       font-weight: 500;
       font-size: 1.2rem;
       position: absolute;
@@ -258,7 +270,7 @@
       background: #e4eefd;
       margin-top: 0.25em;
       border: 1px solid #00000020;
-      color:$gray-600;//#6c757d;
+      color: $gray-600; //#6c757d;
       font-weight: 500;
       font-size: 1.2rem;
       display: flex;
@@ -284,7 +296,8 @@
     }
   }
 
-  .form-control,.form-select {
+  .form-control,
+  .form-select {
     &:disabled {
       background-color: #e4eefd;
     }
@@ -547,8 +560,9 @@
     border: 0px;
     background-color: #e9ecef;
     cursor: pointer;
-    &:hover{
-      background-color: darken( #e9ecef, 10%);
+
+    &:hover {
+      background-color: darken(#e9ecef, 10%);
       transition: all .6s;
     }
   }
@@ -556,7 +570,7 @@
   .form-check-input:checked[type="checkbox"] {
     background-color: $primary;
     background-image: url('../image/check_icon_white.png');
-   
+
   }
 }
 
@@ -570,9 +584,11 @@
   input {
     height: 42px;
   }
-  .select-date{
+
+  .select-date {
     margin-top: 0px;
   }
+
   .form-label {
     color: $primary;
     margin-top: 0;
@@ -588,6 +604,35 @@
   }
 
 }
+
+.card-changeTrade-pc {
+  display: none;
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+}
+
+.card-changeTrade-mb {
+  .accordion-item{
+    border-radius: 0px;
+  } 
+  display: block;
+  // .accordion-button:not(.collapsed){
+  //   background:$primary;
+  //   color: #fff;
+  // }
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+
+  h2 button {
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: $primary;
+  }
+}
+
 // .bi-printer{
 //   font-size: 1.2em;
 // }

@@ -51,14 +51,22 @@ nav{
                 width: 200px;
             }
         }
+        li{
+            &:first-child{
+                .btn{
+                    margin-left: 0;
+                }
+            }
+        }
         .btn{
-            white-space: nowrap;
+            // white-space: nowrap;
             cursor: pointer;
             background-color: lighten(#dfdfdf, 8%);
             border:1px solid #dfdfdf;
             color:#777;
             padding: 0.5em 1em;
             margin-left: 0.5em;
+            
             @include media-breakpoint-up(sm) { 
                 padding: 0.5em 1.8em;
              }

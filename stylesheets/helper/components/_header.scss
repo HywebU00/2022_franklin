@@ -413,7 +413,7 @@
 
 		li {
 			display: flex;
-			align-items: center;
+			align-items: start;
 			border-bottom: 1px solid #4b76af;
 			color: #fff;
 			padding: 0.7em 0;
@@ -428,6 +428,7 @@
 				margin: 0 0.5em;
 				display: inline-block;
 			}
+			@include media-breakpoint-up(sm) { align-items: center; }
 		}
 	}
 
