@@ -91,6 +91,11 @@
       input[type="checkbox"] {
         border: 0px;
         background: #e9ecef;
+        cursor: pointer;
+        &:hover{
+          background-color: darken( #e9ecef, 3%);
+          transition: all .6s;
+        }
       }
     }
 
@@ -170,7 +175,7 @@
     width: 100%;
     background-color: #fff;
     min-height: 120px;
-    color: #6c757d;
+    color: $gray-600;//#6c757d;
     font-weight: 500;
     font-size: 1.2rem;
     display: flex;
@@ -209,6 +214,11 @@
       background-color: #fff;
       border: 1px solid #00000020;
       min-height: 120px;
+      cursor: pointer;
+      &:hover{
+        background-color: lighten( #e9ecef, 3%);
+        transition: all .6s;
+      }
     }
 
     input:checked[type="checkbox"] {
@@ -218,7 +228,7 @@
     }
 
     label {
-      color: #6c757d;
+      color: $gray-600;//#646464;//#6c757d;
       font-weight: 500;
       font-size: 1.2rem;
       position: absolute;
@@ -248,7 +258,7 @@
       background: #e4eefd;
       margin-top: 0.25em;
       border: 1px solid #00000020;
-      color: #6c757d;
+      color:$gray-600;//#6c757d;
       font-weight: 500;
       font-size: 1.2rem;
       display: flex;
@@ -536,11 +546,17 @@
     border-radius: 50%;
     border: 0px;
     background-color: #e9ecef;
+    cursor: pointer;
+    &:hover{
+      background-color: darken( #e9ecef, 10%);
+      transition: all .6s;
+    }
   }
 
   .form-check-input:checked[type="checkbox"] {
     background-color: $primary;
     background-image: url('../image/check_icon_white.png');
+   
   }
 }
 
@@ -554,9 +570,12 @@
   input {
     height: 42px;
   }
-
+  .select-date{
+    margin-top: 0px;
+  }
   .form-label {
     color: $primary;
+    margin-top: 0;
   }
 
   button {
@@ -570,4 +589,4 @@
 
 }
 
-.select-bar-trade {}
+// .select-bar-trade {}
