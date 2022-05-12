@@ -429,6 +429,17 @@
 		 td span{
 			margin-left: 0.25em;
 		}
+		// tr{
+		// 	&:nth-child(1){
+		// 		td{
+		// 			&:nth-child(2){
+		// 				display: flex;
+		// 				justify-content: end;
+		// 				text-align: start;
+		// 			}
+		// 		}
+		// 	}
+		// }
 		.tr-collapse{
 			padding-left: 0.5em !important; 
 		}
@@ -693,7 +704,7 @@
 	}
 }
 
-.table-buylist {
+.table-buylist,.table-stock {
 	.th-minwidth {
 		th {
 			min-width: 200px;
@@ -824,11 +835,16 @@
 		width: 100%;
 		tbody tr{
 			background-color: #eaeaea;
+			border-bottom:1px solid #cecece;
 		}
 		td{
+			&:first-child{
+				border-left:1px solid #cecece ;
+			}
 			&:first-child ,&:last-child{
 				// border-left: 0px;
 				border-right: 0px;
+			
 			}
 		}
 		.text-width{
@@ -842,6 +858,11 @@
 				width: 200px;
 				min-width: 200px;
 				background: #fff;
+				&:nth-child(3){
+					width: auto;
+					min-width: auto;
+
+				}
 			}
 		}
 	}
@@ -856,4 +877,16 @@
 		
 	
 	}
+}
+
+.table-stock{
+.tfoot{
+	td{
+		&:last-child{
+			min-width: 150px;
+		}
+
+	}
+}
+
 }
