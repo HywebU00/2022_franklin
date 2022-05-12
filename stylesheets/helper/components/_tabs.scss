@@ -1,12 +1,14 @@
 .tab {
 	
 	.nav-item {
+		
 		.nav-link {
 			color: $primary;
 			font-weight: 500;
 			border-bottom: 4px solid #fff;
 			border-radius: 0;
 			padding-bottom: 0.3em;
+			min-width: 6rem;
 		}
 
 		.nav-link.active {
@@ -15,6 +17,8 @@
 		}
 	}
 }
-// .tab-list{
-// 	padding: 0 1rem;
-// }
+.tab-list{
+	.tab {
+		margin-left: 1rem;
+	}
+}
