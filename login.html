@@ -31,7 +31,7 @@
           <div class="row g-2 row-cols-2">
             <div class="col ">
               <label class="d-none" for="">Email address</label>
-              <input type="text" class="form-control h-100" id="" placeholder="請輸入帳號" required />
+              <input type="text" class="form-control h-100" id="" placeholder="請輸入帳號" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" required />
             </div>
             <div class="col ">
               <button class="btn btn-lg btn-danger w-100" type="submit">
@@ -40,14 +40,14 @@
             </div>
             <div class="col  input-password">
               <label class="d-none" for="">Password</label>
-              <input type="password" class="form-control h-100" id="" placeholder="請輸入密碼" required />
+              <input type="password" class="form-control h-100" id="" placeholder="請輸入密碼" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" required />
               <!-- 輸入密碼點及時出現不同icon -->
               <i class="btn-eye bi bi-eye-fill bi-eye"></i>
               <!-- <i class="bi bi-eye-fill"></i> -->
             </div>
             <div class="col">
               <button class="btn btn-lg btn-primary w-100" type="submit">
-                立即開戶
+                <a href="https://etrade.ftft.com.tw/open/#/index">立即開戶</a>
               </button>
             </div>
             <div class="col-12 col-md-6 ">
@@ -103,7 +103,19 @@
   </main>
   <footer>
     <div class="container">
-      <div class="row justify-content-between mb-4 border-bottom mt-3">
+      <div class="list">
+        <ul class="">
+          <li><a href="https://www.ftft.com.tw/CustomerServiceFAQ/OpenAccount"  target=_blank>常見問題</a></li>
+          <li><a href="https://www.ftft.com.tw/Bulletin/1000823_RSP/con_E.htm" target=_blank>最新優惠</a></li>
+          <li><a href="webservice@ftftfund.com.tw" target=_blank>客戶服務信箱</a></li>
+          <li><a href="https://www.ftft.com.tw/" target=_blank>富蘭克林華美投信理財網</a></li>
+        </ul>
+        <div class="phone-num">
+          <p>申請諮詢專線</p>
+          <span>0800-088-899</span>
+        </div>
+      </div>
+      <div class="row justify-content-between mb-3 border-bottom mt-3">
         <div
           class="d-flex list-logo col-xl-6 col-12 col-md-6 align-items-center justify-content-center justify-content-xl-start ">
           <div class="row justify-content-start ">
@@ -123,6 +135,7 @@
         <div class="col-xl-6 col-12 col-md-6 ps-0 ps-xl-2">
           <div class="d-flex justify-content-start mb-2 ms-2 m-md-0 justify-content-md-end align-items-center">
             <img src="image/SMALL.gif" alt="" />
+            <a class="protect-link" href="https://www.ftft.com.tw/Privacy" target=_blank>隱私權保護政策</a>
           </div>
         </div>
       </div>
@@ -131,6 +144,11 @@
       </p>
     </div>
   </footer>
+  <!-- 廣告按鈕 -->
+  <!-- <button class="btn btn-message" type="button">
+    <a href="">最新<br>消息</a>
+  </button> -->
+    <!-- 廣告按鈕 -->
   <script src="js/bootstrap.bundle.js"></script>
   <!-- 廣告圖片大小 -->
   <script src="js/picturefill.js"></script>
