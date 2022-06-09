@@ -537,7 +537,7 @@
 	}
 }
 
-.table-style-level {
+.table-style-level ,.table-style-invest{
 
 	th,
 	.th {
@@ -591,8 +591,13 @@
 
 	}
 }
-
-
+.table-style-invest{
+th{
+	width: 300px;
+	max-width: 300px;
+	white-space: unset;
+}
+}
 .table-explain {
 
 

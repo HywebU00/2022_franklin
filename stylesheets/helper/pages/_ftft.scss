@@ -240,7 +240,7 @@ label.form-label {
     }
 }
 
-.content-trend {
+.content-trend ,.content-user {
     background: #eaeaea;
     border-top: 0px;
 
@@ -248,7 +248,11 @@ label.form-label {
         padding-left: 0em;
     }
 }
-
+.content-user{
+    ul{
+        margin-bottom: 0;
+    }
+}
 .card-info {
     min-width: 300px;
     overflow-x: scroll;
