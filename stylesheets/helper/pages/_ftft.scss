@@ -293,3 +293,10 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+.accordion{
+    .accordion-item{
+        strong{
+            line-height: 1.5em;
+        }
+    }
+}
