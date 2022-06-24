@@ -1,0 +1,2754 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylesheets/all.min.css" />
+  <title>2022富蘭克林基金temp</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-light navbar-expand-lg nav-default fixed-top">
+      <!-- container-fluid -->
+      <div class="container ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex nav-mobile">
+          <a class="navbar-brand" href="#">
+            <img src="image/ftft-logo.png" alt="" />
+          </a>
+          <ul class="align-items-center">
+            <li class="nav-item">
+              <button class="btn search-mobile popover-mobile-search">
+                <img class="search" src="image/search_icon.png" alt="">
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#userModal">
+                <img src="image/user_icon.png" alt="">
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" data-link="mail-allow2.html">
+                我的資產
+              </a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row g-3 container mx-auto">
+                  <div class="col-lg-3 col-12 col-md-6">
+                    <div class="col-megamenu">
+                      <h6 class="title"><a href="#">我的資產</a></h6>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-12 col-md-6">
+                    <div class="col-megamenu">
+                      <h6 class="title"><a href="#">基金交易確認書查詢</a></h6>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-12 col-md-6">
+                    <div class="col-megamenu">
+                      <h6 class="title"><a href="#">基金交易電子對帳單查詢</a></h6>
+                    </div>
+                  </div>
+                </div><!-- end row -->
+              </div>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">基金交易</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row g-3 container mx-auto">
+                  <div class="col-lg-3 col-6">
+                    <div class="col-megamenu">
+                      <h6 class="title"><a href="#">買基金</a></h6>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="col-megamenu">
+                      <h6 class="title"><a href="#">賣基金</a></h6>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="col-megamenu">
+                      <h6 class="title"><a href="#">轉申購</a></h6>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="col-megamenu">
+                      <h6 class="title"><a href="#">定期(不)定額契約變更</a></h6>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="col-megamenu">
+                      <h6 class="title"><a href="#">在途交易</a></h6>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="col-megamenu">
+                      <h6 class="title"><a href="#">歷史交易</a></h6>
+                    </div>
+                  </div>
+                </div><!-- end row -->
+              </div>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">我的帳戶</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row g-3 container mx-auto">
+                  <div class="col-lg-3 col-6">
+                    <div class="col-megamenu">
+                      <h6 class="title"><a href="#">個人基本資料查詢</a></h6>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="col-megamenu">
+                      <h6 class="title"><a href="#">理性性向查詢與修改(KYC)</a></h6>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="col-megamenu">
+                      <h6 class="title"><a href="#">受益人資料變更</a></h6>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="col-megamenu">
+                      <h6 class="title"><a href="#">紅利點數</a></h6>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="col-megamenu">
+                      <h6 class="title"><a href="#">密碼變更</a></h6>
+                      <ul class="list-subtitle">
+                        <li><a href="#">密碼會員變更</a></li>
+                        <li><a href="#">密碼交易變更</a></li>
+                        <li><a href="#">忘記交易密碼</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div><!-- end row -->
+              </div>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link nav-toggle" href="#">常見問題</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-user ms-auto align-items-center">
+            <li class="nav-item">
+              <div class="search">
+                <input type="text">
+                <button class="btn"><img src="image/search_icon.png" alt=""></button>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link popover-dismiss" tabindex="0" role="button" data-bs-toggle="popover"
+                data-bs-trigger="focus" title="Dismissible popover">
+                <img src="image/user_icon.png" alt="">
+              </a></li>
+            <li class="nav-item">
+              <div class="btn btn-outline-primary">登出</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="">
+    <div class="container ">
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+      <!-- Breadcrumb end -->
+      <h1 class="h3 pb-2">常見問題</h1>
+      <!-- tab -->
+      <ul class="tab nav nav-pills mb-4" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#password"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">個人帳號與密碼</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#bonus" type="button"
+            role="tab" aria-controls="pills-profile" aria-selected="false">紅利點數</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#operate" type="button"
+            role="tab" aria-controls="pills-profile" aria-selected="false">網路交易操作</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#explain" type="button"
+            role="tab" aria-controls="pills-profile" aria-selected="false">基金交易說明</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="tab-pane fade active show" id="password" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <section class="mb-5">
+            <h2 class="h5 py-2">網路交易帳戶</h2>
+            <div class="tab-pane fade show active" role="tabpanel">
+              <div class="accordion accordion-flush" id="accordion1">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+                      <strong> Q: 如何變更「富蘭克林華美投信基金網路交易」個人基本資料或帳戶資料呢？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse1" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordion1">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul class="">
+                          <li>
+                            若您欲變更個人基本資料（包含：戶籍地址、通訊地址、聯絡電話、E-mail電子郵件信箱及原留印鑑等）請下載 <a href="#">受益人開戶印鑑卡基本資料變更申請書</a> 的第一頁
+                            <a href="#">「受益人印鑑變更/掛失暨基本資料異動申請書」</a>
+                            。
+                          </li>
+                          <li>若您欲變更銀行帳戶資料，請下載 <a href="#">受益人開戶印鑑卡基本資料變更申請書</a> 的第二頁 <a href="#">「受益人帳戶資料異動申請書」</a> 。
+                            表單填妥完成須加蓋原留印鑑及檢附相關證明文件，並請以掛號方式郵寄至：106台北市忠孝東路四段87號12樓 富蘭克林華美投信客戶服務中心
+                            收。提醒您，請詳閱申請書相關細項說明，並依變更項目檢附相關文件。當您辦理扣款帳戶變更時，若新扣款帳戶尚未完成核印前，本公司仍以原扣款帳號辦理扣款作業。
+                          </li>
+                          <li>您亦可來電富蘭克林華美投信基金專線︰0800-088-899索取申請表格。</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong> Q: 在「富蘭克林華美投信理財網」進行下單安全嗎？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion1">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            本網站交易流程經過嚴謹設計，作業流程與內控內稽經會計師、金管會嚴格審查，並符合傳輸層安全協議TLS之安全標準。TLS(Transport Layer
+                            Security)為應用於瀏覽器與網路交易主機間的資料安全傳輸協定，可保護訊息完整性及身分辨識，確保交易資料在網際網路上傳遞時，不會被駭客中途攔截解讀或被擅自修改資料，防止第三人經由網路窺知傳輸之任何訊息。目前TLS技術已被大部份的Web
+                            Server及Browser廣泛使用，您可安心使用。
+                          </li>
+                          <li>本網站為TWCA安全認證過之安全認證網站，使用TWCA
+                            SSL伺服器數位憑證之安全加密等級，其安全加密等級，視瀏覽器所能提供的強度，最少可達到128位元。有關個人資料的蒐集、處理、利用，本公司依個人資料保護法第8條第1項之規定，制訂蒐集個人資料告知事項及隱私權保護政策，
+                            <a href="#">詳細內容請點此瀏覽</a> 。</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 如果收不到富蘭克林華美投信寄送的EDM，該怎麼辦？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion1">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            提醒您，若使用Yahoo!奇摩或Gmail等信箱來收取電子對帳單或各式通知信函，可能會產生信件被歸類到垃圾信件匣中，或者直接被阻擋。建議您按照Yahoo!奇摩或Gmail等信箱的設定程序，將富蘭克林華美投信E-mail給您的電子郵件設定為「非垃圾郵件」，或將富蘭克林華美投信的發報信箱webservice@mail.ftft.com.tw加入您的准許收信名單或通訊錄，以確保您的E-mail信箱正常收信
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="mb-5">
+            <h2 class="h5 py-2">網路登入密碼/交易密碼</h2>
+            <div class="tab-pane fade show active" role="tabpanel">
+              <div class="accordion accordion-flush" id="accordion2">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapseOne">
+                      <strong> Q:「網路登入密碼」與「交易密碼」有何不同？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse4" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordion2">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul class="">
+                          <li>
+                            網路登入密碼：當您線上註冊完成後會立即收到此密碼，供您登入 <a href="#">【基金交易平台】</a>
+                            查詢開戶進度以及日後相關交易資訊時使用。若您同時擁有本公司境內及境外網路交易帳戶，則網路登入密碼為同一組。
+                          </li>
+                          <li>
+                            交易密碼：當您的開戶文件審核完成暨指定扣款銀行核印完成後，即可分別收到『境內基金網路交易密碼』與『境外基金網路交易密碼』二組“初始交易密碼”，請將該密碼分別進行首次使用變更後即可於網路下單時使用(包含境內基金與境外基金線上申購、買回、轉申購、定期定額、取消交易等功能)。
+                          </li>
+                          <li>提醒您：若您為紙本及傳真交易戶申請網路交易權限，您的網路登入密碼及交易密碼將於開戶完成後一併寄發至您開戶留存的電子信箱。</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong> Q: 首次使用「網路登入密碼」及「交易密碼」一定要作密碼變更嗎？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion2">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            您收到的「網路登入密碼」及「交易密碼」皆是由系統依亂數產生核發，當您首次持初始密碼進入 <a href="#">【基金交易平台】</a>
+                            時，系統將會自動導引進行線上密碼變更，請立即變更初始密碼，以保障交易安全。
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q:「網路登入密碼」與「交易密碼」設定規則為何？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion2">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            當您進行初始網路登入密碼以及初始交易密碼變更時，請設定6～12碼英文字母或阿拉伯數字，並留意英文字母大小寫視為不同。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 登入「富蘭克林華美投信理財網」，離開操作頁面是否需要登出？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordion2">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            為維護您個人權益及網路交易使用安全，請務必於離開「富蘭克林華美投信理財網」操作頁面時，點選網頁右上方『帳號登出』之功能。若您於操作頁面閒置超過二十分鐘，系統將會自動登出，以確保網路交易安全。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </section>
+          <section class="mb-5">
+            <h2 class="h5 py-2">忘記密碼/密碼被鎖定</h2>
+            <div class="tab-pane fade show active" role="tabpanel">
+              <div class="accordion accordion-flush" id="accordion3">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse8" aria-expanded="true" aria-controls="collapseOne">
+                      <strong> Q: 若忘記密碼或密碼被鎖定該怎麼辦？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse8" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordion3">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul class="">
+                          <li>
+                            網路登入密碼 (用於登入交易平台及官網會員登入)：如果您忘記密碼為何，請進入 <a href="#">【基金交易專區】</a> 點選「忘記會員密碼」，輸入身分證字號（或營利事業統一編號），系統會提供您開戶時預設的「忘記密碼提示語」。若仍想不起密碼，則需輸入您開戶註冊時登錄的電子郵件信箱及出生年月日，我們將補發新的密碼至您的E-mail信箱，請您持新的登入密碼登入並依系統引導進行密碼變更。
+                          </li>
+                          <li>
+                            境內基金交易密碼/境外基金交易密碼：如果您忘記密碼為何，請登入 <a href="#">【境內基金交易專區】</a> 或 <a href="#">【境外基金交易專區】</a> ，至「我的帳戶」中的「密碼變更」，選擇「忘記交易密碼」，並輸入身分證字號（或營利事業統一編號）獲得「忘記密碼提示語」。若仍想不起密碼，則需輸入您開戶註冊時登錄的電子郵件信箱，我們會將新的「初次使用密碼」寄至您的電子郵件信箱，當您收到密碼時，可自行於本系統登入後進行身份驗證，或來電富蘭克林華美投信基金專線：0800-088-899進行身分驗證，完成驗證後即可重新啟動交易功能。
+                          </li>
+                          <li>提醒您，如果輸入錯誤的密碼超過3次，或當您在線上申請「補發新交易密碼」後，本公司系統將會自動鎖住您的帳戶，您將暫時無法在網路上進行申購、買回以及轉換等基金交易，待您於收到新的「交易密碼」後，可於線上進行身分驗證或來電本公司完成線上身分確認之網路交易啟用程序，系統將恢復網路交易功能。</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>       
+              </div> 
+            </div>
+          </section>
+        </div>
+        <div class="tab-pane fade " id="bonus" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <section class="mb-5">
+            <h2 class="h5 py-2">如何使用紅利</h2>
+            <div  class="tab-pane fade show active" role="tabpanel">
+              <div  class="accordion accordion-flush" id="accordion4">
+                <div  class="accordion-item">
+                  <h2  class="accordion-header" id="headingOne">
+                    <button   class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse17" aria-expanded="true" aria-controls="collapseOne">
+                      <strong> Q: 什麼是紅利點數？如何取得？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse17" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordion4">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul class="">
+                          <li>
+                            只要透過富蘭克林華美投信網路交易平台單筆或定期定額申購基金（不含轉申購及貨幣型基金申購），即可獲得紅利點數回饋，將可直接折抵基金手續費。
+                            <p> 1.境內基金：贈送紅利點數規則如下</p>
+                            <div class=" table-responsive table-style-level table-explain table-faq">
+                              <div class="table-responsive-xl">
+                                <table class="table ">
+                                  <thead class="">
+                                    <th class="text-center">幣別</th>
+                                    <th class="text-center">台幣</th>
+                                    <th class="text-center">美元</th>
+                                    <th class="text-center">人民幣</th>                          
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">申購金額(元)</th>
+                                      <td>1,000</td>                            
+                                      <td>25</td>
+                                      <td>200</td>                                    
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">紅利點數</th>
+                                      <td>1</td>                            
+                                      <td>1</td>
+                                      <td>1</td>                                    
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <p> 2.境外基金：贈送紅利點數規則如下</p>
+                            <div class=" table-responsive table-style-level table-explain table-faq">
+                              <div class="table-responsive-xl">
+                                <table class="table ">
+                                  <thead class="">
+                                    <th class="text-center">幣別</th>
+                                    <th class="text-center">台幣</th>
+                                    <th class="text-center">美元</th>
+                                    <th class="text-center">人民幣</th>                          
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">申購金額(元)</th>
+                                      <td>1,000</td>                            
+                                      <td>25</td>
+                                      <td>2,500</td>                                    
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">紅利點數</th>
+                                      <td>1</td>                            
+                                      <td>1</td>
+                                      <td>1</td>                                    
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <p> 3.參與富蘭克林華美投信理財網所舉辦的各項活動，也有機會獲得紅利點數回饋。</p>
+                          </li>                  
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button  class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong> Q: 紅利點數如何使用？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion4">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            紅利點數僅限於透過富蘭克林華美投信網路交易平台使用，可折抵單筆申購手續費及轉申購(限境外)交易，書面及傳真申購恕不適用。紅利點數使用規定如下：
+                            <div class="list-num">
+                              <ul>
+                                <li>
+                                  <p>境內基金：投資人可自行選擇是否使用紅利點數折抵手續費，折抵規則如下：</p>
+                                  <div class=" table-responsive table-style-level table-explain table-faq">
+                                    <div class="table-responsive-xl">
+                                      <table class="table ">
+                                        <thead class="">
+                                          <th class="text-center">幣別</th>
+                                          <th class="text-center">台幣</th>
+                                          <th class="text-center">美元</th>
+                                          <th class="text-center">人民幣</th>                          
+                                        </thead>
+                                        <tbody>                         
+                                          <tr>
+                                            <th scope="row">紅利點數</th>
+                                            <td>1</td>                            
+                                            <td>30</td>
+                                            <td>5</td>                                    
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">折抵手續費(元)</th>
+                                            <td>1</td>                            
+                                            <td>1</td>
+                                            <td>1</td>                                    
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <p>境外基金：投資人可自行選擇是否使用紅利點數折抵手續費，選擇部分折抵手續費時，須依系統提供之折抵級距計算，恕無法指定折抵點數或金額，唯本公司手續費最低仍需收取0.3%，折抵規則如下：</p>
+                                  <div class=" table-responsive table-style-level table-explain table-faq">
+                                    <div class="table-responsive-xl">
+                                      <table class="table ">
+                                        <thead class="">
+                                          <th class="text-center">幣別</th>
+                                          <th class="text-center">台幣</th>
+                                          <th class="text-center">美元</th>
+                                          <th class="text-center">人民幣</th>                          
+                                        </thead>
+                                        <tbody>                         
+                                          <tr>
+                                            <th scope="row">紅利點數</th>
+                                            <td>1</td>                            
+                                            <td>30</td>
+                                            <td>1</td>                                    
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">折抵手續費(元)</th>
+                                            <td>1</td>                            
+                                            <td>1</td>
+                                            <td>3</td>                                    
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        <li>【境內暨境外紅利使用注意事項】
+                          <div class="list-num">
+                            <ul>
+                              <li>境內、外紅利點數可共同使用。</li>
+                              <li>當使用紅利點數折抵手續費時，若該筆交易因銀行存款餘額不足導致扣款失敗，紅利點數將會退還。</li>
+                              <li>可使用之紅利點數若不足以折抵全部的單筆申購手續費，差額部分將直接由指定扣款帳戶內與申購價金一併扣除。</li>
+                            </ul>
+                          </div>
+                        </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 如果單筆申購手續費超過紅利點數，還可以使用嗎？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion4">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            可以，以境內基金為例，如您這次單筆申購手續費為100元，而紅利點數只有50點，在您申購扣款時，會將多出的手續費差額50元與申購價金直接由您指定扣款帳戶中扣除。
+                          </li>
+                          <li>境外基金單筆申購，投資人可自行選擇是否使用紅利點數折抵手續費，選擇部分折抵手續費時，須依系統提供之折抵級距計算，恕無法指定折抵點數或金額，唯本公司手續費最低仍需收取0.3%。</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 我有紅利點數，但這次網路交易單筆申購不想使用，可以保留到下次嗎？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion4">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                          可以，若您有尚未到期的紅利點數庫存，可以於交易時選擇是否使用紅利點數折抵手續費。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 那裡可以查詢紅利點數累積明細？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion4">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            請登入富蘭克林華美投信網路交易後，至「基金下單 ＞ 刪單及查詢 ＞ 紅利積點查詢」專區，可查詢您紅利點數使用及累積的紀錄。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 那裡可以查詢紅利點數累積明細？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion4">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            提醒您，若使用Yahoo!奇摩或Gmail等信箱來收取電子對帳單或各式通知信函，可能會產生信件被歸類到垃圾信件匣中，或者直接被阻擋。建議您按照Yahoo!奇摩或Gmail等信箱的設定程序，將富蘭克林華美投信E-mail給您的電子郵件設定為「非垃圾郵件」，或將富蘭克林華美投信的發報信箱webservice@mail.ftft.com.tw加入您的准許收信名單或通訊錄，以確保您的E-mail信箱正常收信
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 何時可以收到網路交易獲得的紅利點數？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion4">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            當網路交易單筆申購或定期定額申購，系統將於基金交易確認書寄發後自動匯入紅利點數。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse24" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 紅利點數是否有其他使用限制？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse24" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion4">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            在您使用紅利點數時，請特別留意以下事項。
+                            <div class="list-num">
+                              <ul>
+                                  <li>由基金申購所獲得之紅利點數無使用期限，而參與各項活動所獲得之紅利點數使用期限則依各活動內容而定。</li>
+                                  <li>紅利點數依點數到期日的先後順序折抵，再以先進先出法扣除。</li>
+                                  <li>紅利點數僅限受益人本人使用，不得轉讓他人或合併計算，亦無法折換現金</li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="tab-pane fade " id="operate" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <section class="mb-5">
+            <h2 class="h5 py-2">申購須知</h2>
+            <div class="tab-pane fade show active" role="tabpanel">
+              <div class="accordion accordion-flush" id="accordion5">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse24" aria-expanded="true" aria-controls="collapseOne">
+                      <strong> Q:「富蘭克林華美投信網路交易帳戶」的交易時間為何？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse24" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordion5">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul class="">
+                          <li>
+                            富蘭克林華美投信網路交易帳戶是24小時自動化理財交易服務系統，讓您隨時想投資都能夠暢行無阻。
+                            <div class="list-num">
+                              提醒您：
+                              <ul>
+                                <li>單筆申購交易截止時間：貨幣市場型基金每營業日11:00以前；其餘各類型基金每營業日16:00以前，超過上述交易時間則視為次一營業日之交易。</li>
+                                 <li>各類型基金之定期定額申購、轉申購、買回、定期定額異動交易截止時間：每營業日16:00以前，超過上述交易時間則視為次一營業日之交易。</li>
+                                <li>委託輸入若是在例假日或是休市、無報價期間，亦視為次一營業日之交易。</li>
+                              </ul>
+
+                            </div>
+                          </li>
+                          
+                           <li><a href="#">前往【基金交易平台】</a> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse25" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong> Q: 在「富蘭克林華美投信網路交易帳戶」可申購所有富蘭克林華美投信旗下的系列基金嗎？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse25" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion5">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            您可透過富蘭克林華美投信網路交易帳戶申購富蘭克林華美投信系列基金
+                          </li>                        
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse26" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 登入「富蘭克林華美投信網路交易帳戶」，離開操作頁面是否需要登出？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse26" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion5">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            為維護您個人權益及網路交易使用安全性，請您務必於離開「富蘭克林華美投信網路交易帳戶」操作頁面時，點選網頁右上方「登出」之功能。若您離開操作頁面超過二十分鐘，系統將會自動登出，於您方便使用「富蘭克林華美投信網路交易帳戶」時，請您重新登入。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse27" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 透過「富蘭克林華美投信網路交易帳戶」進行基金交易，有何特殊情況會使交易視為次日交易？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse27" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion5">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            如遇天災或不可抗拒之因素而停止交易，該日委託視為次營業日有效委託，客戶亦可自行至「基金下單」＞「變更及刪單」＞「今日委託查詢/取消」頁面查詢或刪除此項交易。
+                          </li>
+                            <li>如因轉帳機構之電腦轉帳系統故障或有其它不可抗力事故，未能於本授權書所定日期進行轉帳付款作業時，扣款人同意順延至轉帳機構之電腦修復正常運作或不可抗力事故消失營業日進行轉帳付款作業。</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse28" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 申購富蘭克林華美投信系列基金後會收到受益憑證嗎？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse28" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion5">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            本公司己於民國96年12月26日進行實體受益憑證轉換無實體受益憑證作業，若投資人申購富蘭克林華美投信系列基金後不會收到受益憑證。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse29" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 申購富蘭克林華美投信系列基金之前，你們如何交付公開說明書給我？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse29" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion5">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                           若您透過 <a href="#">【基金交易平台】</a> 進行基金網路申購時，請直接點選您欲申購之基金別，請務必於「閱讀公開說明書」欄位點選並詳閱簡式/一般基金公開說明書。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse30" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 申購富蘭克林華美投信系列基金，除基金申購手續費之外還需支付哪些費用？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse30" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion5">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            基金申購時除申購手續費外，基金經理費及保管費係由基金公司於每日結算基金淨值時自動扣除，投資者不需另外支付。若您申購基金未屆滿14日即辦理買回，則應支付短線交易買回費用；關於各基金費用之說明，詳請參閱各基金公開說明書之規範。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse31" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 什麼是短線交易規範？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse31" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion5">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            本公司短線交易防制措施，適用目前發行之所有基金（不包含貨幣市場基金）。「短線交易」係指持有本公司基金，未屆滿14日(含)者，應支付買回價金之百分之零點二(0.2%)之買回費用；買回費用計算至新台幣「元」，不足壹元者四捨五入。
+                            上述「未屆滿14日」係指：以「請求買回之書面或其他約定方式到達經理公司或其代理機構次一營業日」之日期減去「申購日」之日期，小於14日(含)者。                            
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="mb-5">
+            <h2 class="h5 py-2">單筆申購</h2>
+            <div class="tab-pane fade show active" role="tabpanel">
+              <div class="accordion accordion-flush" id="accordion6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse32" aria-expanded="true" aria-controls="collapseOne">
+                      <strong> Q:「富蘭克林華美投信網路交易帳戶」單筆申購的交易時間為何？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse32" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordion6">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul class="">                        
+                          <li>富蘭克林華美投信網路交易帳戶是24小時自動化理財交易服務系統，讓您隨時想投資都能夠暢行無阻。提醒您：如果您的委託交易時間是在每營業日的16:00以前（貨幣市場基金、美元及人民幣級別基金為每營業日11:00以前）委託完成，則視為當期營業日之交易；如果是在每營業日的16:00以後（貨幣市場基金、美元及人民幣計價基金為每營業日11:00以後）委託完成，則視為次一營業日之交易；委託輸入若是在例假日或是休市、無報價期間，亦視為次一營業日之交易。
+                          </li>                         
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse33" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong> Q: 透過「富蘭克林華美投信網路交易帳戶」單筆申購基金，最低申購金額為何？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse33" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion6">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            透過網路單筆申購基金時，最低投資金額為新台幣3,000元，配息型基金最低投資金額為新台幣100,000元；輸入申購金額以新台幣千元為累加單位。
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse34" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 在「富蘭克林華美投信網路交易帳戶」單筆申購基金的手續費為何？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse34" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion6">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            股票型基金（含股票組合基金）及債券型基金單筆申購手續費率最高為0.8%，債券組合型基金最高為0.4%，比原牌告之手續費率優惠許多。
+                          </li>
+                          <li> <a href="#">查詢【申購費率】</a> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse35" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 透過「富蘭克林華美投信網路交易帳戶」申購、買回基金，其當日交易金額上為何？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse35" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion6">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            目前受金管會的規定限制，規定每一投資人每日透過網路交易之申購或買回價金均各以新台幣3000萬元為上限(包含交易當日進行扣款之定期定額金額)。若您所輸入的申購、買回金額超過限制標準，則不予受理，請調整輸入之申購金額或買回單位數；申購金額上限包含申購手續費金額，買回金額上限則以輸入交易日前兩個營業日(T-2日)之基金淨值為計算標準。
+                            註：唯部份銀行自動扣款金額規定不在此限，敬請投資人依照您所屬之約定扣款銀行規定為準。                            
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse36" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 透過「富蘭克林華美投信網路交易帳戶」單筆申購，何時要繳交申購價金？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse36" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion6">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            請於辦理申購委託當日下午15:30前，確認指定扣款帳戶已存足申購總價金（含申購手續費），方能完成交易。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse37" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 申購富蘭克林華美投信系列基金，申購淨值是以哪一天計算以及如何計算基金單位數？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse37" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion6">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            非貨幣市場型基金-只要您於營業日當天16:00前下單交易完成，該營業日當天收盤之基金淨值即為基金申購之淨值；但海外型基金因時差的影響，申購日之淨值必須於次日才會公佈。基金單位數之計算方式為：申購金額除以申購日淨值，即可得知申購所得之單位數。（單位數計算至小數點以下第一位四捨五入）。
+                            貨幣市場型基金-只要您於營業日當天11:00前下單交易完成，該營業日當天收盤之基金淨值即為基金申購之淨值。基金單位數之計算方式為：申購金額除以申購日淨值，即可得知申購所得之單位數（單位數計算至小數點以下第二位四捨五入）。
+                            
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse38" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 如何知道網路下單委託單筆申購是否交易成功？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse38" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion6">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            在您委託單筆申購成功後，扣款銀行將於當日進行扣款作業，待銀行確實從您的約定扣款帳戶扣到款項及基金淨值公佈後，才可進行計算該申購之單位數。故您的基金單筆申購交易結果通知信將於申購完成後次1~2個營業日以E-mail方式寄出；若您申購的基金為國內股票型基金亦可於申購日起次二營業日後於網路交易帳戶中查詢；海外型基金可於申購日起次三個營業日後於網路交易帳戶中查詢
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse39" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 透過「富蘭克林華美投信理網路交易帳戶」進行單筆申購交易，有何特殊情況會使交易視為次日交易？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse39" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion6">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            如遇天災或不可抗拒之因素而停止交易，該日委託視為次營業日有效委託，客戶亦可自行至「基金下單」＞「刪單及查詢」＞「今日委託查詢/取消」頁面查詢或刪除此項交易。
+                          </li>
+                          <li>
+                            如因轉帳機構之電腦轉帳系統故障或有其它不可抗力事故，未能於本授權書所定日期進行轉帳付款作業時，扣款人同意順延至轉帳機構之電腦修復正常運作或不可抗力事故消失營業日進行轉帳付款作業。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse40" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 什麼是短線交易規範？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse40" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion6">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            本公司短線交易防制措施，適用目前發行之所有基金（不包含貨幣市場基金）。「短線交易」係指持有本公司基金，未屆滿14日(含)者，應支付買回價金之百分之零點二(0.2%)之買回費用；買回費用計算至新台幣「元」，不足壹元者四捨五入。
+                            上述「未屆滿14日」係指：以「請求買回之書面或其他約定方式到達經理公司或其代理機構次一營業日」之日期減去「申購日」之日期，小於14日(含)者。                            
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse41" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 什麼是短線交易規範？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse41" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion6">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>本公司短線交易防制措施，適用目前發行之所有基金（不包含貨幣市場基金）。「短線交易」係指持有本公司基金，未屆滿14日(含)者，應支付買回價金之百分之零點二(0.2%)之買回費用；買回費用計算至新台幣「元」，不足壹元者四捨五入。
+                          上述「未屆滿14日」係指：以「請求買回之書面或其他約定方式到達經理公司或其代理機構次一營業日」之日期減去「申購日」之日期，小於14日(含)者。
+                          </li>
+                  
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse42" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 透過「富蘭克林華美投信網路交易帳戶」委託單筆申購下單後可否取消？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse42" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion6">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            非貨幣市場型基金-若您於每營業日16:00以前的委託交易，均可在您下單的當日16:00以前取消委託，您可點選「基金下單」＞「刪單及查詢」＞「今日委託查詢/取消」＞「單筆申購」畫面，查詢當日委託狀況並進行取消交易。若超過16:00則此筆委託將顯示於「基金下單」＞「刪單及查詢」＞「歷史委託查詢」畫面並顯示為委託處理中，即無法取消委託交易。
+                          </li>
+                          <li>貨幣市場型基金-若您於每營業日11:00以前的委託交易，均可在您下單的當日11:00以前取消委託，您可點選「基金下單」＞「刪單及查詢」＞「今日委託查詢/取消」＞「單筆申購」畫面，查詢當日委託狀況並進行取消交易。若超過11:00則此筆委託將顯示於「基金下單」＞「刪單及查詢」＞「歷史委託查詢」畫面並顯示為委託處理中，即無法取消委託交易。</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse43" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 如何知道取消單筆申購交易是否完成？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse43" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion6">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            您可進入富蘭克林華美投信網路交易帳戶後，點選「基金下單」＞「刪單及查詢」＞「今日委託查詢/取消」＞「單筆申購」畫面，查詢當日委託狀況，若該筆委託狀態顯示【取消委託成功】即代表該委託取消交易成功。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="mb-5">
+            <h2 class="h5 py-2">定期(不)定額申購</h2>
+            <div class="tab-pane fade show active" role="tabpanel">
+              <div class="accordion accordion-flush" id="accordion7">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse44" aria-expanded="true" aria-controls="collapseOne">
+                      <strong> Q:「富蘭克林華美投信網路交易帳戶」定期(不)定額申購的交易時間為何？委託有效日為何？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse44" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordion7">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul class="">
+                      <li>富蘭克林華美投信網路交易帳戶是24小時自動化理財交易服務系統，讓您隨時想投資都能夠暢行無阻。提醒您：如果您的委託交易時間是在每營業日的16:00以前委託輸入，則視為該營業日之交易；如果是在每營業日的16:00以後委託輸入，則視為次一營業日之交易；委託輸入若是在例假日或是休市、無報價期間，亦視為次一營業日之交易。定期(不)定額申購委託有效日為當期扣款前5個營業日16:00前，逾時則待次月開始扣款。</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse45" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong> Q: 透過「富蘭克林華美投信網路交易帳戶」申購、買回基金，其當日交易金額上為何？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse45" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion7">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            目前受金管會的規定限制，規定每一投資人每日透過網路交易之申購或買回價金均各以新台幣3000萬元為上限(包含交易當日進行扣款之定期定額金額)。若您所輸入的申購、買回金額超過限制標準，則不予受理，請調整輸入之申購金額或買回單位數；申購金額上限包含申購手續費金額，買回金額上限則以輸入交易日前兩個營業日(T-2日)之基金淨值為計算標準。
+                          </li>
+                          <li>註：唯部份銀行自動扣款金額規定不在此限，敬請投資人依照您所屬之約定扣款銀行規定為準。</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse46" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 定期(不)定額最低申購金額為何？網路申購定期(不)定額的手續費為多少？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse46" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion7">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            定期(不)定額扣款金額不得低於新台幣3,000元，且扣款金額需以千元為單位累加；手續費率為0.5%，若為優惠專案期間申請，則以優惠專案之優惠費率計算。
+                          </li>
+                          <li> <a href="#">查詢【申購費率】</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse47" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 透過網路下單投資定期(不)定額扣款日為何？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse47" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion7">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            與書面方式申購定期(不)定額相同，扣款日期同為每月6日、16日及26日，您亦可複選扣款日。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse48" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 若透過網路下單申請定期(不)定額，並想於當月份順利扣款，則需於多久前下單完成呢？我應在多久前把扣款金額存入帳戶中？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse48" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion7">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            請您在委託扣款日之前5個營業日16:00前提出委託申請，逾時則順延至次一扣款日扣款。 
+                          </li>
+                          <li>請務必於約定扣款日之前一營業日15:30前確定指定扣款帳戶之金額（申購總價款，含手續費）是否足夠，以避免扣款失敗。</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse49" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 定期(不)定額扣款後，何時可知道是否扣款成功？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse49" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion7">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            國內股票型基金將於實際扣款日之次1個營業日（T+1日），以電子郵件寄發「境內基金－定期(不)定額申購交易結果通知」至您約定的電子郵件信箱。
+                          </li>
+                           <li>海外股票、債券型（含組合型）基金將於實際扣款日之次2個營業日（T+2日），以電子郵件寄發「境內基金－定期(不)定額申購交易結果通知」至您約定的電子郵件信箱</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse50" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 我是網路交易定期(不)定額扣款戶，該如何透過網路變更定期(不)定額扣款內容？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse50" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion7">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            若您欲變更定期(不)定額交易方式、扣款金額、扣款日期、加(減)碼啟動報酬率/金額，皆可直接登入「富蘭克林華美投信網路交易帳戶」後至「基金下單」＞「定期投資法」＞「契約變更」＞「扣款相關功能」「定期(不)定額變更」點選「可變更」畫面做修改，但若您欲變更定期(不)定額扣款銀行帳號，則須以書面方式辦理。提醒您：為保障投資人權益，若您欲變更定期(不)定額扣款的銀行，由於銀行必須重新核印，則請您填寫「受益人開戶印鑑卡基本資料變更申請書」及「全國性繳費（稅）業務指定扣款轉帳授權書」，並請詳細填寫您欲變更的扣款銀行資料，蓋上扣款銀行開戶印鑑及本公司開戶之原留印鑑。以掛號方式郵寄至：106台北市忠孝東路四段87號12樓　富蘭克林華美投信　客戶服務中心　收。我們將檢核您的申請文件並送交銀行核印無誤後，方能開始由新約定帳號進行扣款。
+                          <div class="list-num">
+                            <ul>
+                              <li>變更交易方式：可選擇定期定額或定期不定額扣款</li>
+                              <li>變更定期(不)定額扣款日：將扣款日改為每月6日、16日、26日，並可複選扣款日。</li>
+                              <li>變更定期(不)定額(基準)扣款金額：每次扣款金額須在3,000元以上，並以千元為單位累加。</li>
+                              <li>變更定期不定額加(減)碼啟動報酬率/金額：每次扣款金額至少須在3,000元以上，並以千元為單位設定加(減)碼金額。可彈性依您的資金運用狀況，靈活變更定期不定額加減碼設定。</li>
+                            </ul>
+                          </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse51" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 如何透過「富蘭克林華美投信網路交易帳戶」停止扣款或恢復扣款定期定額契約呢？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse51" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion7">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            請在「基金下單」＞「定期投資法」＞「契約變更」＞「扣款相關功能」中，於您所想變更的定期定額交易契約，點選「停止扣款」/「恢復扣款」按鍵，並於確認畫面中輸入交易密碼，點選「確定送出」即可。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse52" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 我曾透過實體（書面）方式申購定期定額且目前仍正常扣款中，若現在申辦網路交易服務，該定期定額未來可否透過網路交易進行契約異動？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse52" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion7">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            可以的，只要您實體（書面）申請的定期定額契約，仍正常扣款中，則待您網路交易服務申請完成後，亦可透過網路進行定期定額扣款金額、扣款日期等異動。惟您欲變更定期定額扣款銀行帳號，則仍須以書面方式辦理。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse53" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 如何取消當日之定期定額委託交易？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse53" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion7">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            若您為營業日16:00以前之定期定額委託，請至「基金下單」＞「刪單及查詢」＞「今日委託查詢/取消」＞「定期定額申購」，勾選欲取消的項目，按下「下一步」後依系統指示之流程操作，您將看到定期定額申購委託取消交易已生效的畫面。
+                          </li>
+                          <li>
+                            若您為營業日16:00以後之欲取消定期定額委託，請至「基金下單」＞「定期投資法」＞「契約變更」＞「扣款相關功能」項目辦理「停止扣款」。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse54" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 如何知道取消定期定額委託交易是否完成？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse54" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion7">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            您可進入富蘭克林華美投信網路交易帳戶後，點選「基金下單」＞「刪單及查詢」＞「今日委託查詢/取消」＞「定期定額申購」畫面，查詢當日委託狀況，若該筆委託狀態顯示【取消委託成功】即代表該委託取消交易成功。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse55" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 網路申請定期定額契約變更或停止扣款/恢復扣款何時生效？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse55" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion7">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            在您完成定期定額契約變更後系統會自動幫您帶出生效日，您應在扣款日之前5個營業日16:00前提出，您的委託變更方可生效，逾時則順延至次一扣款日生效。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse56" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 定期定額扣款帳號存款不足時，會有哪些影響？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse56" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion7">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            若您扣款帳戶不足以提供當次扣款金額（含手續費），則會造成當月扣款交易失敗。若連續三次扣款失敗將會自動終止扣款且不得申請恢復扣款，而您在該筆原契約享有的手續費優惠費率也將被取消不再適用。若欲恢復該筆定期定額契約者，請您重新下單定期定額申購。
+提醒您：您亦可至「基金下單」＞「查詢」＞「歷史委託查詢」確認您的每次扣款狀態是否成功。
+
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse57" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 透過「富蘭克林華美投信理網路交易帳戶」進行定期定額申購交易，有何特殊情況會使交易視為次日交易？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse57" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion7">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            如遇天災或不可抗拒之因素而停止交易，該日委託視為次日有效委託，客戶亦可自行至「基金下單」＞「刪單及查詢」＞「今日委託查詢/取消」頁面查詢或刪除此項交易。
+                          </li>
+                          <li>
+                            如因轉帳機構之電腦轉帳系統故障或有其它不可抗力事故，未能於本授權書所定日期進行轉帳付款作業時，扣款人同意順延至轉帳機構之電腦修復正常運作或不可抗力事故消失營業日進行轉帳付款作業。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse58" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 定期定額投資基金所累積的持有單位數，可以透過網路進行買回或轉申購嗎？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse58" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion7">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            可以。請至「基金下單」點選「買回」或「轉換」，並依系統指示之流程操作。請注意，辦理您現有之定期定額單位數之買回或轉申購，不代表「停止扣款」，若只是買回或轉申購已在某段時間所定期定額申購的累積單位數，定期定額仍會持續扣款原基金。若要停止定期定額扣款，請至「基金下單」＞「定期投資法」＞「契約變更」＞「扣款相關功能」項目選擇欲變更契約於變更交易狀態點選「停止扣款」，並依系統指示之流程操作完成，即可設定暫停扣款。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="mb-5">
+            <h2 class="h5 py-2">買回 / 轉申購</h2>
+            <div class="tab-pane fade show active" role="tabpanel">
+              <div class="accordion accordion-flush" id="accordion8">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse59" aria-expanded="true" aria-controls="collapseOne">
+                      <strong> Q: 透過「富蘭克林華美投信網路交易帳戶」網路委託之買回與轉申購基金是否有時間限制？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse59" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordion8">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul class="">
+                         <li>
+                          富蘭克林華美投信網路交易帳戶是24小時自動化理財交易服務系統，讓您隨時想投資都能夠暢行無阻。提醒您：如果您的委託交易時間是在每營業日的16:00以前委託輸入，則視為該營業日之交易；如果是在每營業日的16:00以後委託輸入，則視為次一營業日之交易；委託輸入若是在例假日或是休市、無報價期間，亦視為次一營業日之交易。
+                         </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse60" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong> Q: 透過「富蘭克林華美投信網路交易帳戶」申購、買回基金，其當日交易金額上為何？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse60" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion8">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            目前受金管會的規定限制，規定每一投資人每日透過網路交易之申購或買回價金均各以新台幣3000萬元為上限(包含交易當日進行扣款之定期定額金額)。若您所輸入的申購、買回金額超過限制標準，則不予受理，請調整輸入之申購金額或買回單位數；申購金額上限包含申購手續費金額，買回金額上限則以輸入交易日前兩個營業日(T-2日)之基金淨值為計算標準。
+                          </li>
+                          <li>註：唯部份銀行自動扣款金額規定不在此限，敬請投資人依照您所屬之約定扣款銀行規定為準。</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse61" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 透過「富蘭克林華美投信網路交易帳戶」網路委託買回的淨值是以哪一天計算？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse61" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion8">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            各基金買回淨值計算日請參考 <a href="#">【淨值計算說明】</a> 。提醒您：如果您的買回申請時間是在每營業日的16:00以前委託輸入，則視為該營業日之交易；如果是在每營業日的16:00以後委託輸入，則視為次一營業日之交易。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse62" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 我如何知道我的買回與轉申購當日委託下單是否成功呢？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse62" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion8">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            您可在營業日16:00以前至「基金下單」＞「刪單及查詢」＞「今日委託查詢/取消」＞「買回」或「轉申購」，查詢當日買回與轉申購情形。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse63" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 可以取消買回與轉申購交易嗎？幾點前應完成取消交易？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse63" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion8">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            請點選「基金下單」＞「刪單及查詢」＞「今日委託查詢/取消」＞「買回」或「轉申購」，選擇您欲取消的交易項目，並勾選您所要取消的交易委託單號，確認後點選「下一步」，依照系統指示指示操作，完成後您亦可進入「今日委託查詢/取消」畫面，查詢當日委託取消狀況；若該筆委託狀態顯示【取消委託成功】即代表該委託取消交易成功。
+                          </li>
+                          <li>
+                            提醒您：當日基金買回或轉申購，於交易日16:00前皆可執行取消動作，若逾時則無法取消。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse64" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 透過「富蘭克林華美投信網路交易帳戶」委託買回後何時會收到買回款項？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse64" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion8">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            買回款項必須在買回日起依信託契約約定之營業日內給付，而買回款項將匯入您本人約定之匯款帳號，而實際入款日，依各基金作業時間而有所不同。網路下單買回時，系統會自動幫您帶出買回款項入帳日期；您亦可於申請日16:00之後於「基金下單」＞「查詢」＞「歷史委託查詢」中查詢該次基金買回款項入帳日期。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse65" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q:「富蘭克林華美投信網路交易帳戶」之網路交易買回／轉申購單位數有限制嗎？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse65" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion8">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            有的。依各基金公開說明書之規定而有所不同。
+                            <div class="list-num">
+                              <ul>
+                                <li>股票（組合）型基金及債券（組合）基金-累積型之買回與轉申購所剩餘單位數不得低於20單位數，若預計剩餘單位數將低於20，則請一併買回或轉申購。而每筆買回或轉申購交易最少委託數量為20單位數。</li>
+                                <li>債券（組合）型基金-分配型之買回與轉申購所剩餘單位數不得低於10,000單位數，若預計剩餘單位數將低於10,000，則請一併買回或轉申購。而債券（組合）型基金-分配型每筆買回或轉申購交易最少委託數量為20單位數。</li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse66" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 「富蘭克林華美投信網路交易帳戶」之基金網路交易可以做部份買回／轉申購嗎？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse66" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion8">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            可以。您可以做部份買回／轉申購，依各基金公開說明書之規定而有所不同。
+                            <div class="list-num">
+                              <ul>
+                                <li>股票（組合）型基金部份買回與轉申購所剩餘單位數不得低於20單位數，若預計剩餘單位數將低於20，則需全部買回或轉申購。股票型基金每筆買回或轉申購交易最少委託數量為20單位數。若單筆基金庫存低於300單位數，則不得部分買回。</li>
+                                <li>債券（組合）型基金—累積型部份買回與轉申購所剩餘單位數不得低於20單位數，若預計剩餘單位數將低於20，則需全部買回或轉申購。債券（組合）型基金—累積型每筆買回或轉申購交易最少委託數量為20單位數。若單筆基金庫存低於1,000單位數，則不得部分買回。</li>
+                                  <li>債券（組合）型基金—分配型部份買回與轉申購所剩餘單位數不得低於10,000單位數，若預計剩餘單位數將低於10,000，則需全部買回或轉申購。債券（組合）型基金—分配型每筆買回或轉申購交易最少委託數量為20單位數。若單筆基金庫存低於10,000單位數，則不得部分買回。轉申購之買入基金若為債券（組合）型基金—分配型，單支基金買回現值需達最低100,000元，才予以轉申購。</li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse67" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 我是網路定期(不)定額客戶，想透過「富蘭克林華美投信網路交易帳戶」申請買回，但網頁上沒有可指定定期(不)定額買回的欄位，我該如何申請贖回呢？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse67" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion8">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            無論您原先是單筆申購或定期(不)定額申購之客戶，在買回時並沒有再作區分，若您欲透過「富蘭克林華美投信網路交易帳戶」申請買回，則均在「基金下單」＞「買回」中進行買回申請，且買回之單位數以先進先出為計算基準。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse68" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 我如何知道網路下單委託買回與轉申購申請是否交易成功？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse68" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion8">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            我們將在您申請買回或轉申購當日，以E-mail方式寄發「買回委託」或「轉申購委託」通知，另在實際完成買回或轉申購後約5個營業日內（依個別基金實際交易日而定）E-mail交付「買回或轉申購交易結果通知信」。您亦可至「基金下單」＞「刪單及查詢」＞「歷史委託查詢」，查詢買回或轉申購的交易狀態。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse69" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 網路委託買回時發現買回匯款帳號有誤時應如何處理？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse69" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion8">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            請您務必於申請開立富蘭克林華美投信網路交帳戶時，確實填寫本人之買回帳號。若於日後申請委託買回交易時發現買回匯款帳號有誤，請填寫「受益人開戶印鑑卡基本資料變更申請書」變更網路交易買回帳號，並加蓋原留印鑑，立即先以傳真方式通知本公司，並來電洽詢富蘭克林華美投信基金專線：0800-088-899直接按9，由專人為您處理，待資料確認無誤後，須將該申請書正本郵寄回本公司辦理，等本公司收到正本無誤後始能完成變更。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse70" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 透過「富蘭克林華美投信理網路交易帳戶」進行買回／轉申購交易，有何特殊情況會使交易視為次日交易？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse70" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion8">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            如遇天災或不可抗拒之因素而停止交易，該日委託視為次營業日有效委託，客戶亦可自行至「基金下單」＞「刪單及查詢」＞「今日委託查詢/取消」頁面查詢或刪除此項交易。
+                          </li>
+                            <li>
+                              如因轉帳機構之電腦轉帳系統故障或有其它不可抗力事故，未能於本授權書所定日期進行轉帳付款作業時，扣款人同意順延至轉帳機構之電腦修復正常運作或不可抗力事故消失營業日進行轉帳付款作業。
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse71" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 透過「富蘭克林華美投信網路交易帳戶」買回基金，是否有短線交易規定其費率如何收取？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse71" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion8">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            本公司短線交易防制措施，適用目前發行之所有基金（不包含貨幣市場基金）。「短線交易」係指持有本公司基金，未屆滿14日(含)者，應支付買回價金之百分之零點二(0.2%)之買回費用；買回費用計算至新台幣「元」，不足壹元者四捨五入。
+                          </li>
+                          <li>
+                            上述「未屆滿14日」係指：以「請求買回之書面或其他約定方式到達經理公司或其代理機構次一營業日」之日期減去「申購日」之日期，小於14日(含)者
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse72" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 透過「富蘭克林華美投信網路交易帳戶」轉申購基金，轉申購手續費為多少？如何收取？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse72" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion8">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            債券（組合）型基金轉申購至股票（組合）型基金手續費率為0.2%；貨幣市場型基金：轉申購其它類型基金，以單筆申購優惠手續費率再打對折計算。其他類型基金轉申購手續費率為零。轉申購手續費將從買回價金中以內扣方式收取。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse74" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 透過「富蘭克林華美投信網路交易帳戶」轉申購基金時，轉申購的淨值如何計算？</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse74" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion8">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            辦理轉申購基金，申請買回基金之買回付款日即為轉申購基金之申購淨值日，轉同檔基金及國內股票型基金互轉(第一富、高科技)則以買回日(T+1)之淨值為申購淨值日，其餘未盡事項悉依本公司相關規定辦理。各基金買回淨值計算日請參考 <a href="#">【淨值計算說明】</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="tab-pane fade " id="explain" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <section class="mb-5">
+            <h2 class="h5 py-2">定期(不)定額申購</h2>
+            <div class="tab-pane fade show active" role="tabpanel">
+              <div class="accordion accordion-flush" id="accordion9">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse75" aria-expanded="true" aria-controls="collapseOne">
+                      <strong> Q: 欲辦理定期(不)定額自動扣款服務，備齊申請文件後，約何時才能開始進行定期(不)定額扣款投資基金? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse75" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordion9">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul class="">
+                          <li>
+                            當富蘭克林華美投信收到您的定期(不)定額申請文件後，我們將儘快將您的扣款帳號資料送交於您指定之扣款銀行進行帳號及印鑑的核對，而送件及核印的時間約需20天，待核印完成後，將寄發首次扣款通知書並於您所指定的扣款日期進行扣款投資。因此若您計劃於6月26日進行扣款，您需要於6月6日以前將相關資料郵寄至富蘭克林華美投信，以利核印之作業流程。
+                          </li>                      
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse76" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong> Q: 定期(不)定額需何時存入款項？若當月份存款不足，對每月定期(不)定額投資有何影響? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse76" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion9">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            扣款人需於扣款日前一營業日下午3:30前，將扣款金額(含手續費)存入扣款帳戶。若您扣款銀行中的存款不足，則會造成當月扣款交易失敗，即無法順利扣款申購基金，若連續三次扣款不成功者，本公司即自動停止此扣款約定且原享有之手續費優惠將會取消。
+                          </li>                        
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse77" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 定期(不)定額約定扣款日若剛好遇到例假日，申購淨值該如何計價? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse77" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion9">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            定期(不)定額基金扣款日（申購日）如該日為國定假日，則順延以次一營業日為申購日淨值計價。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse78" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 富蘭克林華美投信系列基金定期(不)定額最低投資金額為多少? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse78" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion9">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            定期(不)定額投資最低金額為三仟元(含)以上，並以仟元為累加單位，但經理公司得以促銷專案調整最低申購金額。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse79" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 申購富蘭克林華美投信系列基金定期(不)定額要支付的費用有哪些? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse79" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion9">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            定期(不)定額申購，手續費用的部份您可點選【申購費率】查詢，本公司將不定期推出申購優惠方案，歡迎您來電洽詢。
+                          </li>
+                          <li><a href="#">查詢【申購費率】</a> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse80" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 富蘭克林華美投信系列基金定期(不)定額扣款日有幾個選擇? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse80" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion9">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            有6日、16日、26日三種扣款日期可選擇。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse81" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 若定期(不)定額申請暫停扣款或終止扣款，基金單位數是否需做全數買回? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse81" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion9">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            若定期(不)定額申請暫停扣款或終止扣款時，基金單位數可保留不需立即進行買回。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse82" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 定期(不)定額申購之投資人如欲變更扣款日期或變更扣款金額應如何辦理? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse82" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion9">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            您可以來電索取或至富蘭克林華美投信網站【客戶服務-下載表單-交易表單-定期(不)定額異動】下載「境內定期(不)定額申購暨轉帳付款授權變更申請書」，填妥您欲變更的定期(不)定額選項，蓋上原留印鑑後，將正本寄達富蘭克林華美投信辦理。請您於原扣款日前七個營業日將正本寄達本公司，本公司將審核資料確認無誤後，即可於當次按新約定之選項進行扣款投資。(此變更方式無法採用傳真方式辦理)。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse83" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 如何辦理定期(不)定額暫停扣款、停止扣款、恢復扣款? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse83" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion9">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            您可以來電索取或至富蘭克林華美投信網站【客戶服務-下載表單-交易表單-定期(不)定額異動】下載 <a href="#">「境內定期(不)定額申購暨轉帳付款授權變更申請書」</a> ，填妥您欲變更的定期(不)定額選項，蓋上原留印鑑後，將正本寄達富蘭克林華美投信辦理。請您於原扣款日前七個營業日將正本寄達本公司，本公司將審核資料確認無誤後，即可於當次按新約定之選項進行扣款投資。(此變更方式無法採用傳真方式辦理)。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse84" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 如何辦理定期(不)定額扣款帳戶變更? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse84" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion9">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            您可以來電索取或至富蘭克林華美投信網站【客戶服務-下載表單-交易表單-定期(不)定額異動】下載  <a href="#">「境內定期(不)定額申購暨轉帳付款授權變更申請書」</a> ，勾選「扣款帳戶變更」選項，並重新填寫該表格之 <a href="#">「定期(不)定額轉帳付款授權書」</a> ，蓋上原留印鑑及新扣款銀行帳戶印鑑後，將正本寄達本公司，本公司將待扣款銀行核印完成後即可自新扣款銀行帳戶進行扣款投資。(此變更方式無法採用傳真方式辦理)。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="mb-5">
+            <h2 class="h5 py-2">單筆申購</h2>
+            <div class="tab-pane fade show active" role="tabpanel">
+              <div class="accordion accordion-flush" id="accordion10">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse85" aria-expanded="true" aria-controls="collapseOne">
+                      <strong> Q: 申購富蘭克林華美投信系列基金單筆申購要支付的費用有哪些? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse85" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordion10">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul class="">
+                          <li>
+                            辦理旗下系列基金申購時，您需額外支付的費用為申購手續費，經理費及保管費都已經從基金內扣繳，投資人不需另行支付。單筆申購手續費用部分，您可點選【申購費率】查詢，本公司將不定期推出申購優惠方案，歡迎您來電洽詢。
+                          </li>
+                            <li> <a href="#">查詢【申購費率】</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse86" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong> Q: 申購富蘭克林華美投信系列基金如何繳交申購價款？以及如何辦理申購手續? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse86" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion10">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            您可以採用銀行電匯、ATM轉帳、支票等三種方式支付申購價款；詳細申購手續請參考申購流程的網頁。
+                          </li>
+                          <li><a href="#">了解【申購流程】</a></li>
+                          <li><a href="#">查詢【申購費率】</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse87" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 富蘭克林華美投信系列基金最低投資金額為多少? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse87" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion10">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            單筆投資最低投資金額為三仟元(含)以上;定期(不)定額投資最低投資金額為三仟元(含)以上，部份基金最低為二仟元(含)以上，且經理公司得以促銷專案調整最低申購金額。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse88" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 購買富蘭克林華美投信系列基金後，投資人將會收到何種憑據? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse88" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion10">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            目前主要提供的憑據有：「受益權單位交易確認書」於基金交易完成後十個營業日內寄發給客戶；而「交易對帳單」則於每月月中寄發給投資人。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse89" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 申購富蘭克林華美投信系列基金後會收到受益憑證嗎? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse89" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion10">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            本公司己於民國96年12月26日進行實體受益憑證轉換無實體受益憑證作業，若投資人申購富蘭克林華美投信系列基金後不會收到受益憑證。基金改由無實體憑證發行後，並不會改變現行申購及買回等相關作業。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse90" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 申購富蘭克林華美投信系列基金後，多久能取得受益權單位申購確認書? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse90" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion10">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            若於基金募集成立前申購之客戶，將於基金成立日起30天內，以郵寄方式將申購確認書寄送至受益人之通訊處。若於基金募集成立後申購之客戶，將於申購日起之十個營業日，以郵寄方式將申購確認書寄送至受益人之通訊處 。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse91" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 申購富蘭克林華美投信系列基金，申購淨值是以哪一天計算以及如何計算基金單位數?</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse91" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion10">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            股票型、平衡型以及組合型基金，只要您於營業日當天下單交易完成，當天收盤公佈之基金淨值即為基金申購之淨值；但海外型基金因時差的影響，申購日之淨值必須於次日才會公佈。
+基金單位數之計算方式為：申購金額除以申購日淨值，即可得知申購所得之單位數（計算至小數點以下第一位四捨五入） 。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse92" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 投資人在富蘭克林華美投信系列基金募集期間申購該基金，則其基金之經理費及保管費，是依基金成立日或基金申購日起算? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse92" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion10">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            基金經理費及保管費均是從成立日起才計算，且從基金淨值中直接扣除，投資人不須要再另行支付。而每一檔基金之基金經理費與基金保管費亦盡不相同，詳細費用規定可詳閱公開說明書。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="mb-5">
+            <h2 class="h5 py-2">買回/轉申購</h2>
+            <div class="tab-pane fade show active" role="tabpanel">
+              <div class="accordion accordion-flush" id="accordion11">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button  class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse93" aria-expanded="true" aria-controls="collapseOne">
+                      <strong> Q: 如何申請基金買回? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse93" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordion11">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul class="">
+                          <li>
+                            <p>您可以採用傳真交易服務、親洽（富蘭克林華美投信或代理買回機構）以及郵寄方式，於營業時間內辦理基金回買手續；若領有受益憑證之投資人，辦理基金買回時須將受益憑證繳回富蘭克林華美投信，方可辦理基金買回申請。</p>
+                            <div class="table-style-level table-faq">
+                              <div class="row g-0 row-cols-1 ">
+                                <div class="col">
+                                  <div class="row row-cols-1 g-0">
+                                    <div class="col d-flex">
+                                      <div class="th">傳真交易服務</div>
+                                      <div class="td border-top">您必須已申請傳真交易服務的功能，方可採用傳真交易辦理。辦理基金買回時，請填妥基金買回申請書並蓋妥印鑑，傳真至富蘭克林華美投信，經向服務人員確認後即可完成基金買回手續。</div>
+                                    </div>
+                                    <div class="col d-flex">
+                                      <div class="th">親洽(富蘭克林<br>華美投信或代理買回機構)：</div>
+                                      <div class="td">請攜帶身分證正本並填妥買回申請書並蓋妥印鑑後，經服務人員確認資料無誤即可完成基金買回手續。</div>
+                                    </div>
+                                    <div class="col d-flex">
+                                      <div class="th">郵寄方式</div>
+                                      <div class="td">填妥買回申請書並蓋妥印鑑後，將資料郵寄至富蘭克林華美投信。該次買回申請將以申請文件寄達富蘭克林華美投信並經本公司確認文件備齊後，始以當日為基金買回申請日。</div>
+                                    </div>
+                                  </div>
+                                </div>              
+                              </div>
+                            </div>
+                          </li>                        
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse94" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong> Q: 買回的淨值是以哪一天計算? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse94" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion11">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            各基金買回淨值計算日請參考 <a href="#">【淨值計算說明】</a>
+                          </li>              
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse95" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 買回價金之領取方式有幾種? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse95" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion11">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            您可以在填寫 <a href="#">「境內基金申購/買回(轉申購)申請書」</a> 上勾選您欲領取買回價金的方式，您可以選擇以匯款的方式匯至受益人本人之銀行帳戶或選擇以開立受益人抬頭之禁止背書轉讓支票郵寄至受益人之通訊地。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse96" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 買回基金要支付那些費用? 何時可拿到價款? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse96" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion11">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            申請買回時，買回價金之給付方式若選擇以郵寄或匯款者，其所需之郵資或匯費，將由保管機構自買回價金中逕予扣除；買回款項必須按照信託契約規定的營業日內給付，而買回款項將依您的指示直接匯入指定帳號。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse97" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 富蘭克林華美投信系列基金轉申購時的費用及淨值如何計算? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse97" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion11">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            辦理轉申購基金，申請買回基金之買回付款日即為轉申購基金之申購淨值日，轉同檔基金及國內股票型基金互轉(第一富、高科技、傳產基金)則以買回日(T+1)之淨值為申購淨值日，其餘未盡事項悉依本公司相關規定辦理。各基金買回淨值計算日請參考 <a href="#">【淨值計算說明】</a> ，轉申購手續費請參考 <a href="#">【申購費率說明】</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse98" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 部份買回、部份轉申購有無最低庫存單位數的限制? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse98" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion11">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            股票(組合)型基金，若庫存低於300單位數，則不得部份買回。申請轉申購/買回最少委託數量為20單位，若剩餘單位數低於20單位，則需全數買回。
+                          </li>
+                          <li>債券(組合)型基金-累積型，若庫存低於1000單位數，則不得部份買回。申請轉申購/買回最少委託數量為20單位，若剩餘單位數低於20單位，則需全數買回。</li>
+                          <li>債券(組合)型基金-分配型，若庫存低於10000單位數，則不得部份買回。申請轉申購/買回最少委託數量為20單位，若剩餘單位數低於10000單位，則需全數買回。</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse99" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 買回(轉申購)富蘭克林華美投信系列基金後，投資人將會收到何種憑據? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse99" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion11">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            目前主要提供的憑據有：「受益權單位買回確認書」於基金交易完成後十個營業日內寄發給客戶；而轉申購之投資人將會分別收到「受益權單位交易確認書」及「受益權單位買回確認書」
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse100" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 什麼是短線交易規範? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse100" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion11">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            本公司短線交易防制措施:適用目前發行之所有基金。本公司「短線交易」係指持有本基金，未屆滿14日(含)者，應支付買回價金之百分之零點二(0.2%)之買回費用；買回費用計算至新台幣「元」，不足壹元者不予收取，滿壹元以上者四捨五入。上述「未屆滿14日」係指：以「請求買回之書面或其他約定方式到達經理公司或其代理機構次一營業日」之日期減去「申購日」之日期，小於14日(含)者。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="mb-5">
+            <h2 class="h5 py-2">查詢淨值/報酬率</h2>
+            <div class="tab-pane fade show active" role="tabpanel">
+              <div class="accordion accordion-flush" id="accordion12">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse101" aria-expanded="true" aria-controls="collapseOne">
+                      <strong> Q: 我想看過去一個月每天的淨值變化？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse101" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordion12">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul class="">                       
+                          <li>若您想在本網站中查詢基金淨值，除了首頁正下方最新淨值的公佈外，現在您可於基金總覽/基金淨值單元中，點選歷史淨值查詢基金過去三十日淨值及漲跌變化。若您欲查詢更長時間之淨值表現，麻煩請您與我們的客服人員聯繫，客服專線0800-088-899，將有專人為您服務。</li>
+                          <li> <a href="#">查詢【基金淨值】</a> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse102" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong> Q: 是否有提供各基金的淨值走勢圖？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse102" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion12">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            請於頁面上方選項點選「基金總覽」／「基金淨值」／「投信基金」，進入頁面後點選欲查詢之基金名稱，於基金資料頁面後，點選「淨值走勢」後即可查詢。
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse103" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 如何查詢各基金歷史淨值高低點？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse103" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion12">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            若您要查詢基金歷史淨值高低點，請點選進入基金總覽/基金淨值，點選欲查詢的基金後，點選「淨值走勢」，並選擇欲查詢的區間後，頁面上即會出現您選擇區間的最高淨值與最低淨值，當您點選線圖中任何一點時，上方會顯示參考日期與淨值，若您重新設定起迄區間，這兩項數值即會更新。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse104" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 富蘭克林旗下基金報酬率要在哪查詢？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse104" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion12">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            在富蘭克林華美投信理財網中，於「基金報酬率」單元中 有公佈即時的基金報酬率資訊。
+                            若您想比較富蘭克林旗下所有基金的各區間報酬率，請點選進入「基金總覽」/「基金報酬率」，此單元提供富蘭克林旗下基金 成立至今、3、6個月及一年、二年、三年、五年、十年等各區間之累積報酬率。(台幣計價)
+                            
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse105" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 我想點選友善列印淨值走勢圖 (五年)，為什麼列印出來的圖卻看不到曲線？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse105" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion12">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            請您於「淨值走勢」/ 選擇「友善列印」頁面點選「工具」/「網際網路選項」/「進階」請將「列印」下列印背景的色彩及影像選項打勾，按下「套用」並「確定」 即可正常列印。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse106" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 哪裡可以查到基金之歷史配息紀錄？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse106" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion12">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            請您點選基金總覽，點選欲查詢的配息基金後，點選「歷史配息記錄」，就可以查詢的到該基金之歷史配息紀錄。
+                          </li>
+                          <li> <a href="#">查詢【基金配息資訊】</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse107" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 哪裡可以查到配息的日程？ </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse107" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion12">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            您可參考該基金配息日程表的網頁。
+                          </li>
+                          <li> <a href="#">查詢【基金配息資訊】</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+            </div>
+          </section>
+          <section class="mb-5">
+            <h2 class="h5 py-2">收益分配</h2>
+            <div class="tab-pane fade show active" role="tabpanel">
+              <div class="accordion accordion-flush" id="accordion13">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse108" aria-expanded="true" aria-controls="collapseOne">
+                      <strong> Q: 目前富蘭克林華美投信旗下基金，哪幾檔有提供收益分配(配息)? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse108" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordion13">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul class="">
+                          <li>
+                            目前有多檔基金提供收益分配（配息），例如「富蘭克林華美富蘭克林全球債券組合基金-分配型(本基金之配息來源可能為本金)」、「富蘭克林華美新興趨勢傘型基金之積極回報債券組合基金-分配型(本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)」、「富蘭克林華美全球高收益債券基金-分配型(本基金主要係投資於非投資等級之高風險債券且基金之配息來源可能為本金)」、「富蘭克林華美全球投資級債券基金-分配(本基金之配息來源可能為本金)」….等基金，您可至網頁中查詢所有基金的最新配息資訊。
+                          </li>                          
+                          <li> <a href="#">查詢【基金配息資訊】</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse109" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong> Q: 提供收益分配的基金，是否會開放定期(不)定額？單筆投資金額最低為多少?</strong>
+                    </button>
+                  </h2>
+                  <div id="collapse109" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion13">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            目前富蘭克林華美投信系列基金有提供收益分配的基金，皆是月配及年配的方式，而配息發放方式僅提供現金配息(PD)方式發放收益分配(配息)。
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse110" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 要如何知道各檔基金的配息是採月配還是季配? 收益分配(配息)發放方式是否也有現金配息(PD)或分配單位數(RD)的二種選擇? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse110" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion13">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            目前富蘭克林華美投信系列基金有提供收益分配的基金，皆是月配及年配的方式，而配息發放方式僅提供現金配息(PD)方式發放收益分配(配息)。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse111" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 收益分配(配息)有幾種領取方式可供選擇? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse111" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion13">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            目前有提供收益分配的基金，僅提供匯款方式領取收益分配(配息)。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse112" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 收益分配(配息)的部份是否需要課稅? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse112" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion13">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            目前有提供收益分配的基金，配息來源為所投資的海外子基金之配息所得，依目前基本稅額條例(最低稅賦制)，自然人一申報戶全年合計海外所得未達新台幣100萬元者，免予計入；新台幣100萬元以上者，應全數計入。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse113" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 若投資有配息的基金，會收到哪些通知? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse113" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion13">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            若您有提供收益分配的基金，本公司於基金交易完成後十個營業日內寄發「受益權單位交易確認書」；而於每月月中寄發「交易對帳單」給投資人，並於收益分配發放日後七個營業日內寄發「收益分配發放通知書」。最後，會於年初寄發前一年之「受益分配境外所得明細表」。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse114" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> Q: 分配型與累積型二者的投資報酬率(或績效)是否會有差異？應選何者較佳? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse114" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion13">
+                    <div class="accordion-body">
+                      <div class="list-disc">
+                        <ul>
+                          <li>
+                            基金雖然有分成分配型與累積型兩種投資選擇，簡單來說仍是同一檔基金，差異僅在於分配型每月會定期將投資標的所配發的利息發放給投資者，至於累積型則是將投資標的所配發的利息納入基金資產中並反應在淨值上。因此，若您選擇的是分配型，在計算總投資報酬時，除淨值價差的資本利得外，還應將已領取之配息收益加總才為您實際的總投資報酬率。所以，當您在選擇分配型（配息）與累積型（不配息）二者時，仍建議投資朋友可依照個人投資喜好來決定是否要每月領息。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- tab end -->
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="list">
+        <ul class="">
+          <li><a href="https://www.ftft.com.tw/CustomerServiceFAQ/OpenAccount" target=_blank>常見問題</a></li>
+          <li><a href="https://www.ftft.com.tw/Bulletin/1000823_RSP/con_E.htm" target=_blank>最新優惠</a></li>
+          <li><a href="webservice@ftftfund.com.tw" target=_blank>客戶服務信箱</a></li>
+          <li><a href="https://www.ftft.com.tw/" target=_blank>富蘭克林華美投信理財網</a></li>
+        </ul>
+        <div class="phone-num">
+          <p>申請諮詢專線</p>
+          <span>0800-088-899</span>
+        </div>
+      </div>
+      <div class="row justify-content-between mb-3 border-bottom mt-3">
+        <div
+          class="d-flex list-logo col-xl-6 col-12 col-md-6 align-items-center justify-content-center justify-content-xl-start ">
+          <div class="row justify-content-start ">
+            <div class="col-5 img">
+              <img src="image/ftft-logo.png" alt="" />
+              <span class="mt-2">110金管 投信新字第010號</span>
+            </div>
+            <ul class="col-xl-7 col-12  text-start  mt-2 mt-lg-0">
+              <li class="text-primary fw-bold mb-2">
+                富蘭克林華美證券投資信託股份有限公司
+              </li class="fw-bold">
+              <li class="">106 台北市大安區忠孝東路四段87號12樓</li>
+              <li class="">電話：(02)2781-9599 傳真：(02)2781-8299</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-6 col-12 col-md-6 ps-0 ps-xl-2">
+          <div class="d-flex justify-content-start mb-2 ms-2 m-md-0 justify-content-md-end align-items-center">
+            <img src="image/SMALL.gif" alt="" />
+            <a class="protect-link" href="https://www.ftft.com.tw/Privacy" target=_blank>隱私權保護政策</a>
+          </div>
+        </div>
+      </div>
+      <p>
+        本基金受益憑證以無實體發行，經理公司依有價證券集中保管帳簿劃撥作業辦法及集保機構之相關規定以帳簿劃撥方式交付受益憑證。本基金經金管會核准或申報生效，惟不表示本基金絕無風險。經理公司以往之經理績效不保證基金之最低投資收益；經理公司除盡善良管理人之注意義務外，不負責基金之盈虧，亦不保證最低之收益。【富蘭克林華美投信獨立經營管理】
+      </p>
+    </div>
+  </footer>
+  <!-- 手機版本使用者視窗 modal -->
+  <div class="modal fade user-mobile-modal" id="userModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><i class="bi bi-person"></i> <span>客戶姓名 </span>王大明</li>
+            <li><i class="bi bi-credit-card-2-back"></i> <span>指定扣款帳號</span>臺灣銀行00000000****</li>
+            <li><i class="bi bi-wallet"></i><span>投信戶號</span>45251</li>
+          </ul>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <div class="btn btn-outline-primary">登出</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 手機版本搜尋視窗 modal -->
+  <!-- 點擊按鈕後 新增加 show 的classname -->
+  <div class="user-mobile-popover ">
+    <div class="search">
+      <div class="d-flex mb-3 ">
+        <input type="text" class="form-control " placeholder="輸入搜尋文字">
+        <button class="btn btn-primary" type="button">搜尋</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.js"></script>
+  <!-- apexcharts -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <!-- 全站同用的ＪＳ -->
+  <script src="js/ftft.js"></script>
+  <!-- 廣告圖片大小 -->
+  <script src="js/picturefill.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>

@@ -802,6 +802,25 @@ th{
 	}
 }
 
+.table-faq{
+	.th{
+		white-space: unset;
+	}
+	.td{
+		&:nth-child(1){
+			//background: #333;
+			border-top: 1px solid #dee2e6;
+		}
+	}
+	tbody{
+		td{
+			min-width: 85px;
+			text-align: center;
+    		padding: 0.5em;
+		}
+	}
+}
+
 .table-detail{
 	thead{
 		th{
