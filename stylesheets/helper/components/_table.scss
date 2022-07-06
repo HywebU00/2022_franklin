@@ -6,7 +6,8 @@
 
 			th {
 				white-space: nowrap;
-				min-width: 200px;
+				//min-width: 200px;
+				min-width: 120px;
 				padding-top: 1.2em;
 				padding-bottom: 1.2em;
 				position: relative;
@@ -353,8 +354,8 @@
 	}
 
 	.tr-collapse {
-		background-color: #333;
-
+		// background-color: #333;
+		background-color: #e4eefd;
 
 		table {
 			margin-bottom: 0;
@@ -362,7 +363,7 @@
 
 		tbody {
 			background-color: unset;
-			color: #fff;
+			// color: #fff;
 
 			th,
 			td {
@@ -381,23 +382,25 @@
 				text-align: end;
 				position: relative;
 				padding-right: 1rem;
-
+				border-bottom: 0px;
 				&::after {
 					position: absolute;
 					content: '';
 					width: 1px;
 					height: 1.5em;
-					background: #fff;
+					// background: #fff;
+					background: lighten($primary, 50%);
 					right: 0;
 					top: 1em;
 				}
 			}
 
 			tr {
-				border: 1px solid #333;
-
+				// border: 1px solid #333;
+				border: 0px;
 				&:nth-child(even) {
-					border-bottom: 1px solid #333;
+					border: 0px;
+					// border-bottom: 1px solid #333;
 				}
 			}
 		}
@@ -412,6 +415,7 @@
 			padding: 0.5em 0.8em;
 			background: $danger;
 			border-radius: 2px;
+			color: #fff;
 		}
 	}
 }
@@ -442,6 +446,13 @@
 		// }
 		.tr-collapse{
 			padding-left: 0.5em !important; 
+			tbody tr{
+				th{
+					&:first-child{
+						min-width: 210px;
+					}
+				}
+			}
 		}
 	}
 	tbody .tfoot{
@@ -697,6 +708,7 @@ th{
 	thead {
 		th {
 			padding: 1.25em 1.2em;
+			vertical-align: middle;
 		}
 	}
 
@@ -740,6 +752,7 @@ th{
 		th {
 			background-color: #dee5ef;
 			text-align: center;
+			vertical-align: middle;
 		}
 	}
 

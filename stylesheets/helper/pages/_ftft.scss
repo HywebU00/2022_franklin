@@ -43,6 +43,7 @@ ul {
 
 .list-disc,
 .list-square,
+.list-danger,
 .list-num {
     color: $gray-600;
 
@@ -74,7 +75,7 @@ ul {
     }
 }
 
-.list-square {
+.list-square,.list-danger {
     ul {
         list-style-type: none;
 
@@ -103,7 +104,12 @@ ul {
         }
     }
 }
-
+.list-danger{
+    margin-top: -2em;
+   li{
+    color: $danger;
+   }
+}
 .list-introduce {
     font-weight: 600;
     color: #000;
@@ -143,6 +149,12 @@ main {
 
     .container {
         padding-bottom: 3em;
+    }
+}
+h4{
+    .sub-title{
+        font-weight: 400;
+        font-size: 0.8em;
     }
 }
 

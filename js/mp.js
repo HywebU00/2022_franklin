@@ -181,7 +181,7 @@ var options2 = {
     show: false,
   },
   title: {
-    text: "計算幣別",
+    text: "幣別𢑥總",
     align: "center",
     offsetY: 150,
     floating: true,
