@@ -27,7 +27,13 @@ h1 {
 h2 {
     color: $primary;
 }
-
+h3{
+    .sub-title{
+        font-weight: 400;
+        font-size: 0.7em;
+        margin-top: 0.3em;
+    }
+}
 ul {
     list-style: none;
     color: $gray-600;
