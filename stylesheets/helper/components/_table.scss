@@ -609,7 +609,7 @@ th{
 	white-space: unset;
 }
 }
-.table-explain {
+.table-explain,.table-fundsHelp {
 
 
 	thead th {
@@ -675,7 +675,15 @@ th{
 
 	}
 }
-
+.table-fundsHelp{
+	th,td{
+		min-width: unset;
+	}
+	td{
+		padding-left: 0.5em;
+		border-right: 1px solid #ccc;
+	}
+}
 .table-style-border {
 	table {
 		background: #fff;
