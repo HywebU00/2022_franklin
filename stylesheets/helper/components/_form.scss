@@ -226,7 +226,14 @@
       border: 1px solid #00000020;
       min-height: 100px;
       cursor: pointer;
-
+      +label{
+        +input{
+          color: #646464;
+          &::placeholder{
+            color: #646464;
+           }
+        }
+      }
       &:hover {
         background-color: lighten(#e9ecef, 3%);
         transition: all .4s;
@@ -244,8 +251,7 @@
     }
 
     input:checked[type="checkbox"] {
-      // background-color: #e4eefd;
-      // background-color: #e9ecef;
+   
       background-color: $primary;
       background-image: none;
       &::after{
@@ -254,16 +260,13 @@
       }
       +label{
         color: #fff;
-      // left: -10px;
-      //  &::after{
-      //   position: absolute;
-      //   content: '';
-      //   width: 50px;
-      //   height: 50px;
-      //   background-image: url(../image/check_icon_white.png);
-      //   top: -15px;
-      //   right: 40px;      
-      //  }
+         +input{
+          color: #fff;
+          &::placeholder{
+            color: #fff;
+           }
+         }
+         
       }
     }
 
@@ -313,6 +316,15 @@
         border-radius: 50%;
    
       }
+      +label{
+        +input{
+          color: #646464;
+          ::placeholder{
+            color: #646464;
+           }
+        }
+        }
+       
     }
 
     input:checked[type="radio"] {
@@ -324,10 +336,39 @@
       }
       +label{
         color: #fff;
-  
+         +input{
+          color: #fff;
+          &::placeholder{
+            color: #fff;
+           }
+         }
+         
+      }
+      
+     
+    }
+    .form-set{
+      position: absolute;
+      left: 10px;
+      width: calc(100% - 3em);
+      bottom: -3em;
+      background: unset;
+      border:0px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color:#fff;
+      text-align: right;
+      font-size: 1.2rem;
+      &::placeholder{
+        padding-right: 0.5em;
+        text-align: end;
+        font-weight: 600;
+        font-size: 1.2rem;
+      }
+      &:focus-visible {
+        outline-width: 0px;
       }
     }
-
     .btn {
       width: 100%;
       height: 100px;
