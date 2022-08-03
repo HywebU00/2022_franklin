@@ -350,23 +350,29 @@
     .form-set{
       position: absolute;
       left: 10px;
-      width: calc(100% - 3em);
+      width: calc(100% - 2em);
       bottom: -3em;
       background: unset;
       border:0px;
       font-weight: 600;
       font-size: 1.2rem;
       color:#fff;
-      text-align: right;
+      text-align: center;
       font-size: 1.2rem;
       &::placeholder{
         padding-right: 0.5em;
-        text-align: end;
+        text-align:center;
         font-weight: 600;
         font-size: 1.2rem;
       }
       &:focus-visible {
         outline-width: 0px;
+      }
+      @include media-breakpoint-up(md){
+        text-align: end;
+        &::placeholder{
+          text-align: end;
+        }
       }
     }
     .btn {
