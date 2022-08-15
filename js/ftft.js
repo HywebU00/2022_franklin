@@ -78,3 +78,31 @@ if (EyeBtn != null) {
     });
   });
 }
+
+//==========================
+// 停利報酬 modal的input 判斷
+//==========================
+const PayInput = document.querySelectorAll(".form-control-pay");
+PayInput.forEach(function (item) {
+  item.addEventListener("change", function (e) {
+    let value = e.target.value;
+    addDisabled();
+    if (value.length > 0) {
+      item.removeAttribute("disabled");
+    } else {
+      removeDisabled();
+    }
+  });
+  //新增所有 disabled 標籤
+  function addDisabled() {
+    PayInput.forEach(function (item) {
+      item.setAttribute("disabled", "");
+    });
+  }
+  //移除所有 disabled 標籤
+  function removeDisabled() {
+    PayInput.forEach(function (item) {
+      item.removeAttribute("disabled");
+    });
+  }
+});
