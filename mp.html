@@ -664,7 +664,7 @@
                                   </div>
                                   <div class="col-3 justify-content-end d-flex mt-5  pe-4">
                                     <button class="btn btn-secondary" data-bs-toggle="modal"
-                                      data-bs-target="#StopModal">停利停損</button>
+                                      data-bs-target="#StopModal">停利停損通知</button>
                                   </div>
                                 </div>
                               </div>
@@ -793,7 +793,7 @@
                                   </div>
                                   <div class="col-3 justify-content-end d-flex mt-5  pe-4">
                                     <button class="btn btn-secondary" data-bs-toggle="modal"
-                                      data-bs-target="#StopModal">停利停損</button>
+                                      data-bs-target="#StopModal">停利停損通知</button>
                                   </div>
                                 </div>
                               </div>
@@ -922,7 +922,7 @@
                                   </div>
                                   <div class="col-3 justify-content-end d-flex mt-5  pe-4">
                                     <button class="btn btn-secondary" data-bs-toggle="modal"
-                                      data-bs-target="#StopModal">停利停損</button>
+                                      data-bs-target="#StopModal">停利停損通知</button>
                                   </div>
                                 </div>
                               </div>
@@ -1029,9 +1029,10 @@
       </div>
     </div>
   </div>
+
   <!-- 停損停利 視窗 modal -->
   <!-- Modal -->
-  <div class="modal fade modal-stop" id="StopModal" tabindex="-1">
+  <div class="modal fade modal-stop " id="StopModal" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
         <form action="">
@@ -1043,7 +1044,7 @@
               <div class="col-lg-6 col-12 mb-4">
                 <label for="" class="form-label ">停利點(報酬率)</label>
                 <div class="row g-2">
-                  <div class="col-12 d-flex align-items-center"><input type="number" class="form-control "
+                  <div class="col-12 d-flex align-items-center"><input type="number" class="form-control form-control-pay"
                       placeholder="請輸入數值" id="">
                     <span class="text-nowrap ms-2 ">%</span>
                   </div>
@@ -1052,18 +1053,45 @@
               <div class="col-lg-6 col-12 mb-4">
                 <label for="" class="form-label ">停損點(報酬率)</label>
                 <div class="row g-2">
-                  <div class="col-12 d-flex align-items-center"><input type="number" class="form-control "
+                  <div class="col-12 d-flex align-items-center"><input type="number" class="form-control form-control-pay"
                       placeholder="請輸入數值" id="">
                     <span class="text-nowrap ms-2 ">%</span>
                   </div>
                 </div>
+              </div>      
+              <div class="col-md-6 col-12 mb-4">
+                <span for="" class="form-label ">開啟通知</span>
+                <div class="btn-switch">
+                  <span>關</span>
+                  <input class="" type="checkbox" id="switch" />
+                  <label for="switch"></label>
+                  <span>開</span>
+                </div>           
+              </div>
+              <div class="col-md-6 col-12 mb-4">
+                <span for="" class="form-label ">通知頻率</span>
+                <div class="form-check">
+                  <input class="form-check-input"name="drone" type="radio" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    每次通知
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input"name="drone" type="radio" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    只通知一次
+                  </label>
+                </div>
               </div>
               <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    開啟通知
-                  </label>
+                <div class="list-disc">
+                  <p>通知頻率說明</p>
+                  <ul>
+                    <li>
+                     每次通知：每當基金報酬率到達停利/停損點時，每日都會通知您，每日最多通知一次。
+                    </li>
+                    <li>只通知一次：當基金報酬率到達停利/停損點時，僅通知一次並自動關閉通知設定。</li>
+                  </ul>
                 </div>
               </div>
             </div>
