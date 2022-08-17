@@ -214,6 +214,37 @@
 			border-color: transparent transparent transparent $ligthdanger;
 		}
 	}
+
+	.table-light-tab {
+		border-left: 5px solid #9ad4de;
+
+		td {
+			&:last-child {
+				color: darken(#9ad4de, 40);
+			}
+		}
+	}
+
+	.active.table-light-tab {
+		&::after {
+			border-color: transparent transparent transparent #9ad4de;
+		}
+	}
+	.table-dark-tab {
+		border-left: 5px solid #006d77;
+
+		td {
+			&:last-child {
+				color: #006d77;
+			}
+		}
+	}
+
+	.active.table-dark-tab {
+		&::after {
+			border-color: transparent transparent transparent #006d77;
+		}
+	}
 }
 
 .table-fundlist {

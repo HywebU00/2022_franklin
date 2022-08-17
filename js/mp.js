@@ -195,12 +195,12 @@ var options2 = {
 };
 
 var options3 = {
-  series: [44, 55, 13, 33],
+  series: [44, 55, 13, 13, 10, 10],
   chart: {
     type: "donut",
   },
 
-  colors: ["#013e8e", "#0086b7", "#00b3c0", "#ff7353"],
+  colors: ["#013e8e", "#0086b7", "#006d77", "#00b3c0", "#ff7353", "#9ad4de"],
   dataLabels: {
     enabled: false,
   },
@@ -209,6 +209,8 @@ var options3 = {
     "特別股收益基金",
     "全球高收益債券基金",
     "新世界股票基金",
+    "第一富基金",
+    "其他",
   ],
 
   responsive: [
