@@ -514,7 +514,7 @@
 					margin-left: 0.5em;
 				}
 			}
-
+			
 			&:first-child {
 				text-align: start;
 				padding-left: 1.25em;
@@ -526,10 +526,8 @@
 
 			}
 
-			&:nth-child(6) {
-				&::after {
-					display: none;
-				}
+			&:nth-child(7) {
+			text-align: center;
 			}
 
 			&::after {
@@ -558,6 +556,7 @@
 		}
 
 		button {
+			padding: 1em;
 			i {
 				cursor: pointer;
 				font-size: 1.3em;
@@ -569,12 +568,36 @@
 		select {
 			background-color: #f6f6f6;
 			color: rgb(119, 119, 119);
-			padding: 0.8em;
+			padding: 1em;
 			width: 165px;
+			margin: 0.6em;
 		}
 
 		.active {
-			color: $ligthdanger;
+			i{
+				color: $ligthdanger;
+			}
+		}
+		.btn-bell{
+			position: relative;
+			
+			&::after{
+				position: absolute;
+				color: darken(#ccc, 20);
+				content: '未設定';
+				left: 0.8em;
+				bottom: 0em;
+				font-size: 0.8em;
+			}
+		}
+		.btn-bell.active{
+			i{
+				color: #0086b7;
+			}
+			&::after{
+				content: '已開啟';
+				color: #212529;
+			}
 		}
 	}
 }

@@ -2,6 +2,17 @@
     .modal-header{
         padding-bottom: 0px;
     }
+    .modal-body{
+        padding-top:0;
+        h5{
+            margin-bottom: 0;
+        }
+        p{
+            margin-bottom: 1em;
+            color: #212529;
+            font-weight: 500;
+        }
+    }
     .form-control{
         background-color: #e4eefd;
         border:0px;
