@@ -446,7 +446,8 @@
                         <td>
                           <div class="d-flex justify-content-around">
                             <!-- 點擊設定 增加 “active” 的 class name -->
-                            <button class="btn btn-bell "><i class="bi bi-bell-fill"></i>
+                            <button class="btn btn-bell" data-bs-toggle="modal"
+                            data-bs-target="#NoticeModal"><i class="bi bi-bell-fill"></i>
                             </button>
                             <!-- 點擊蒐藏 增加 “active” 的 class name -->
                             <button class="btn btn-like "><i class="bi bi-suit-heart-fill  "></i></button>
@@ -470,8 +471,8 @@
                         <td>
                           <div class="d-flex">
                             <!-- 點擊設定 增加 “active” 的 class name -->
-                            <button class="btn btn-bell active"><i class="bi bi-bell-fill"></i>
-
+                            <button class="btn btn-bell" data-bs-toggle="modal"
+                            data-bs-target="#NoticeModal"><i class="bi bi-bell-fill"></i>
                             </button>
                             <!-- 點擊蒐藏 增加 “active” 的 class name -->
                             <button class="btn btn-like active"><i class="bi bi-suit-heart-fill  "></i></button>
@@ -495,8 +496,8 @@
                         <td>
                           <div class="d-flex">
                             <!-- 點擊設定 增加 “active” 的 class name -->
-                            <button class="btn btn-bell "><i class="bi bi-bell-fill"></i>
-
+                            <button class="btn btn-bell" data-bs-toggle="modal"
+                            data-bs-target="#NoticeModal"><i class="bi bi-bell-fill"></i>
                             </button>
                             <!-- 點擊蒐藏 增加 “active” 的 class name -->
                             <button class="btn btn-like active"><i class="bi bi-suit-heart-fill  "></i></button>
@@ -573,6 +574,82 @@
       <div class="d-flex mb-3 ">
         <input type="text" class="form-control " placeholder="輸入搜尋文字">
         <button class="btn btn-primary" type="button">搜尋</button>
+      </div>
+    </div>
+  </div>
+    <!-- 停損停利 視窗 modal -->
+  <!-- Modal -->
+  <div class="modal fade modal-stop " id="NoticeModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form action="">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12">
+                <h5>第一富基金</h5>
+                <p>最新淨值(淨值日期):5.48(2022/08/26)</p>
+              </div>
+              <div class="col-lg-6 col-12 mb-4">
+                
+                <label for="" class="form-label ">到價高於(淨值)</label>
+                <div class="row g-2">
+                  <div class="col-12 d-flex align-items-center"><input type="number" class="form-control form-control-pay"
+                      placeholder="請輸入數值" id="">
+                    <span class="text-nowrap ms-2 ">%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12 mb-4">
+                <label for="" class="form-label ">到價低於(淨值)</label>
+                <div class="row g-2">
+                  <div class="col-12 d-flex align-items-center"><input type="number" class="form-control form-control-pay"
+                      placeholder="請輸入數值" id="">
+                    <span class="text-nowrap ms-2 ">%</span>
+                  </div>
+                </div>
+              </div>      
+              <div class="col-md-6 col-12 mb-4">
+                <span for="" class="form-label ">開啟通知</span>
+                <div class="btn-switch">
+                  <span>關</span>
+                  <input class="" type="checkbox" id="switch" />
+                  <label for="switch"></label>
+                  <span>開</span>
+                </div>           
+              </div>
+              <div class="col-md-6 col-12 mb-4">
+                <span for="" class="form-label ">通知頻率</span>
+                <div class="form-check">
+                  <input class="form-check-input"name="drone" type="radio" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    每次通知
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input"name="drone" type="radio" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    只通知一次
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="list-disc">
+                  <p>通知頻率說明</p>
+                  <ul>
+                    <li>每次通知：每當基金淨值觸及提醒價格時，每日都會通知您，每日最多通知一次。</li>
+                    <li>只通知一次：當基金淨值觸及提醒價格，僅通知一次並自動關閉通知設定。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-primary btn-width">確定</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
