@@ -12,11 +12,12 @@
 	align-items: center;
 
 	.nav-item {
-.btn{
-	white-space: nowrap;
-}
+		.btn {
+			white-space: nowrap;
+		}
+
 		a.nav-link {
-			padding: 0 1em;
+			padding: 0 1em 0 0.5em;
 
 			i {
 				color: $gray-600;
@@ -53,12 +54,14 @@
 		li {
 			margin: 0 0.5em;
 
-			button{
+			button {
 				border-radius: 30px;
-				&:last-child{
+
+				&:last-child {
 					margin-left: 0.5em;
 				}
 			}
+
 			@include media-breakpoint-down(xs) {
 
 				margin: 0em;
@@ -71,10 +74,12 @@
 	}
 
 	.navbar-brand {
-		img{
+		img {
 			width: 100%;
 			margin-left: 0.5em;
+			min-width: 80px;
 		}
+
 		@include media-breakpoint-down(lg) {
 			margin-top: 0.8em;
 		}
@@ -125,12 +130,15 @@
 				border-radius: 20px;
 				height: 44px;
 				padding: 0.6em 2.5em 0.6em 1em;
-				max-width: 150px;
+				max-width: 120px;
 
 				@include media-breakpoint-up(xxl) {
 					max-width: 200px;
 				}
 
+				@include media-breakpoint-up(xl) {
+					max-width: 150px;
+				}
 			}
 
 			i {
@@ -146,7 +154,8 @@
 				top: 2px;
 				color: $primary;
 				cursor: pointer;
-				&:focus{
+
+				&:focus {
 					box-shadow: none;
 				}
 			}
@@ -157,6 +166,19 @@
 			background: #eaeaea;
 			padding: 0.5em 1em;
 			border-radius: 1.6em;
+		}
+
+		.date {
+			letter-spacing: 0em;
+			font-size: 0.75em;
+			text-align: center;
+			margin-left: 0.5em;
+			width: 120px;
+			cursor: default;
+			@include media-breakpoint-up(xl) {
+				font-size: 0.8em;
+				width: 130px;
+			}
 		}
 	}
 
@@ -170,10 +192,12 @@
 
 			h6 {
 				margin-left: 1rem;
-				a{
+
+				a {
 					color: #000;
 					text-decoration: none;
-					&:hover{
+
+					&:hover {
 						color: $primary;
 					}
 				}
@@ -217,13 +241,16 @@
 		position: relative;
 		color: $primary;
 		border-top: 5px solid $primary;
+
 		&:focus {
 			color: $primary;
 		}
-		@include media-breakpoint-down(lg) { 
+
+		@include media-breakpoint-down(lg) {
 			border-top: #fff 5px solid;
 
-		 }
+		}
+
 		// &::before {
 		// 	display: none;
 		// 	content: '';
@@ -234,9 +261,10 @@
 		// 	left: 0;
 		// 	background-color: $primary;
 		// }
-     
+
 		@include media-breakpoint-up(lg) {
 			background: #eaeaea;
+
 			&::before {
 				display: block;
 			}
@@ -244,18 +272,20 @@
 		}
 	}
 
-	.nav-toggle{
+	.nav-toggle {
 		border-top: 5px solid #fff;
-		&:hover{
+
+		&:hover {
 			background: #eaeaea;
 			border-top: 5px solid $primary;
-			@include media-breakpoint-down(lg){
+
+			@include media-breakpoint-down(lg) {
 				border-top: #fff 5px solid;
 				background: #fff;
 			}
-	
+
 		}
-		
+
 	}
 
 	.dropdown-menu {
@@ -277,6 +307,7 @@
 
 	.dropdown-toggle {
 		border-top: 5px solid #fff;
+
 		&::after {
 			display: none;
 		}
@@ -354,6 +385,7 @@
 		}
 
 		line-height: 2em;
+
 		span {
 			height: 2em;
 			margin: 0 0.5em;
@@ -383,9 +415,10 @@
 			padding: 0.5em 1em;
 			border-radius: .25em;
 			white-space: nowrap;
-			@include media-breakpoint-up(sm) { 
-				padding:  0.5em 3em;
-			 }
+
+			@include media-breakpoint-up(sm) {
+				padding: 0.5em 3em;
+			}
 		}
 	}
 
@@ -401,15 +434,17 @@
 	.modal-footer {
 		border: none;
 	}
-	.modal-footer{
-		.btn{
+
+	.modal-footer {
+		.btn {
 			background-color: #fff;
 			cursor: pointer;
 		}
 	}
+
 	.btn-close {
-	background-image: url(../image/white-close.svg);
-		
+		background-image: url(../image/white-close.svg);
+
 	}
 
 	.modal-content {
@@ -440,6 +475,7 @@
 			border-bottom: 1px solid #4b76af;
 			color: #fff;
 			padding: 0.7em 0;
+
 			&:last-child {
 				border-bottom: none;
 			}
@@ -451,7 +487,14 @@
 				margin: 0 0.5em;
 				display: inline-block;
 			}
-			@include media-breakpoint-up(sm) { align-items: center; }
+			.date{
+				span{
+					margin: 0 0.2em;
+				}
+			}
+			@include media-breakpoint-up(sm) {
+				align-items: center;
+			}
 		}
 	}
 
