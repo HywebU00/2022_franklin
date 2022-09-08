@@ -126,7 +126,9 @@
 
 			overflow: hidden;
 			text-overflow: ellipsis;
-			white-space: nowrap;
+			// white-space: nowrap;
+			line-height: 1.25em;
+			vertical-align: middle;
 			max-width: 180px;
 		}
 
@@ -300,6 +302,9 @@
 
 					&:focus {
 						box-shadow: unset;
+					}
+					@include media-breakpoint-down(xxl) {
+						min-width: 160px;
 					}
 				}
 
