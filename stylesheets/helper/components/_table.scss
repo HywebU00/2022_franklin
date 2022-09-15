@@ -99,6 +99,7 @@
 	.table>:not(:first-child) {
 		border-top: 0;
 	}
+	
 }
 
 .table-combination {
@@ -852,7 +853,11 @@ th{
 		}
 	}
 }
-
+.table-buylist .table.table-striped{
+	>:not(:first-child){
+		border-top: 2px solid #ccc;
+	}
+}
 .table-trade {
 	thead {
 		th {
