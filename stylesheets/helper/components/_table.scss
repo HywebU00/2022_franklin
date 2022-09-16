@@ -1001,3 +1001,29 @@ th{
 }
 
 }
+.table-changelist{
+	thead th{
+		width: 100px;
+		padding: 1.25em 0em;
+		&:nth-child(3){
+			width: 200px;
+		}
+		&:nth-child(7),&:nth-child(9){
+			width: 150px;
+		}
+		&:last-child{
+			padding-right: 1em;
+		}
+	}
+	.td-table tbody{
+		tr>td{
+			&:nth-child(6),&:nth-child(8){
+				min-width: 150px;
+			}
+		}
+	}
+	.td-table td{
+		min-width: 100px;
+		
+	}
+}
