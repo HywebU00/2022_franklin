@@ -257,11 +257,7 @@
 		thead {
 			th {
 				vertical-align: middle !important;
-
-				// &:first-child {
-				// 	padding-left: 1.25rem;
-				// }
-
+				min-width: 100px;
 			}
 		}
 
@@ -317,10 +313,25 @@
 				&:last-child {
 					border-right: none;
 				}
-
-				// &:hover{
-				// 	background: lighten($primary, 80%);
-				// }
+				.btn-grp{
+					display: flex;
+    				justify-content: center;
+    				flex-wrap: wrap;
+					span{
+						margin-bottom: 0.5em;
+						width: 100%;
+						text-align: center;
+					}
+					button{
+						border: 1px solid #ced4da;
+						color: #777;
+						width: 148px;
+						&:hover{
+							background: darken($light, 10);
+							color: darken(#777, 10);
+						}
+					}
+				}
 			}
 
 		}
@@ -369,6 +380,7 @@
 				border-right: 1px solid #dee2e6;
 				text-align: start;
 				padding-left: 2rem;
+				min-width: 20em;
 			}
 
 			&:last-child {
@@ -387,7 +399,7 @@
 		background-color: #f6f6f6;
 		color: rgb(119, 119, 119);
 		padding: 0.8em;
-		width: 165px;
+		width: 148px;
 	}
 
 	.tr-collapse {
