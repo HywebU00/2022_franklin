@@ -636,15 +636,24 @@
   overflow-y: scroll;
   background: #ece8e8;
   border: 0px;
-
+ 
+ 
   .list-square {
+    
     li {
       margin-bottom: 1em;
       color: #212529;
     }
   }
 }
-
+.card-directions.card-title-sticky{
+  padding-top: 0;
+  .sticky-top{
+    background: #ece8e8;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+  }
+}
 .card-agree {
   padding: 1em 2em;
   width: 760px;
