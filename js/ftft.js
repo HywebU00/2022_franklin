@@ -128,3 +128,13 @@ if (loading !== null) {
     addRemoveClass();
   }, '5000');
 }
+
+var popoverTriggerList = [].slice.call(document.querySelectorAll('.btn-bell'));
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl, {
+    trigger: 'hover',
+    template:
+      '<div class="tooltip bell-tooltip" role="tooltip"><ul><li>到價高於</li><li>到價低於</li><li> -- </li><li> 28 </li></ul></div>',
+    placement: 'bottom',
+  });
+});

@@ -1039,3 +1039,23 @@ th{
 		
 	}
 }
+.bell-tooltip{
+	ul{
+		padding:1em;
+		// background: #eaeaea;
+		
+		border: solid 1px #ccc;
+		background: #fff;
+		li{
+			color:#212529;
+			padding: 0.5em 0;
+			border-bottom: #ccc 1px solid;
+			&:first-child{
+				padding-top: 0;
+			}
+		&:last-child{
+				padding-bottom: 0;
+			}
+		}
+	}
+}
