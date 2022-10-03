@@ -114,13 +114,13 @@ function addRemoveClass() {
   loading.classList.add('remove');
 }
 
-lottie.loadAnimation({
-  container: document.querySelector('.loading-img'),
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: 'image/loading-img.json',
-});
+// lottie.loadAnimation({
+//   container: document.querySelector('.loading-img'),
+//   renderer: 'svg',
+//   loop: true,
+//   autoplay: true,
+//   path: 'image/loading-img.json',
+// });
 
 //模擬 loading 出現的效果
 if (loading !== null) {

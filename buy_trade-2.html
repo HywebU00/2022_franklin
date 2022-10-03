@@ -781,8 +781,15 @@
                   </div>
                 </div>
                 <!-- 請選擇每月扣款日期按鈕 end-->
+     
                 <!-- 加碼啟動 start-->
                 <div class="row mb-4">
+                  <div class="col-lg-8  mb-3">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#exModal"  class="btn btn-outline-secondary d-flex justify-content-center align-items-center">
+                      <span class="">加減碼設定範例說明</span>             
+                    </button>
+                    
+                  </div>
                   <div class="col-lg-8 mb-4">
                     <label for="" class="form-label ">加碼啟動
                       <a tabindex="0" class="popover-add " role="button" data-bs-toggle="popover"
@@ -836,6 +843,7 @@
             <div class="row mt-5 pb-5  ">
               <div class="col d-flex  justify-content-center">
                 <button type="button" class="btn btn-outline-secondary btn-width btn-height mx-1 mx-lg-2">上一步</button>
+                <button type="button" class="btn btn-outline-primary btn-clear btn-width btn-height mx-1 mx-lg-2">重新輸入</button>
                 <button type="submit" class="btn btn-primary btn-width btn-height mx-1 mx-lg-2">下一步</button>
               </div>
             </div>
@@ -949,6 +957,47 @@
       </div>
     </div>
   </div>
+    <!-- 加減碼設定視窗 modal -->
+    <div class="modal fade modal-ex " id="exModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+         
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-12">
+                  <h5 class="mb-2">加減碼設定範例說明</h5> 
+                </div>
+                <div class="col-12">
+                  <div class="list-disc">
+                    <p class="mb-0">加碼啟動需設定</p>
+                    <ul>
+                      <li>1.報酬率 (限整數，可設定負1~100 )</li>
+                      <li>2.加碼扣款金額 (以仟元為級距增加，最低3000元)</li>
+                    </ul>
+                    <p class="mb-0">減碼啟動需設定</p>
+                    <ul>
+                      <li>1.報酬率 (限整數，可設定正1~100 %)</li>
+                      <li>2.減碼扣款金額 (以仟元為級距減少，最低3000元)</li>
+                      <p class="fw-normal">加減碼金額及報酬率為必填欄位，若您只想使用單一加(減)碼功能，不想使用減(加)碼功能則請您在減(加)碼啟動報酬率部份數字設定為1，減(加)碼扣款金額設定和基準扣款金額一樣即可。</p>
+                    </ul>
+                    <p class="mb-0">若林克富先生選擇定期不定額扣款，設定</p>
+                    <ul>
+                      <li>1.基準扣款金額：4000元</li>
+                      <li>2.加碼啟動報酬率：-30 % 加碼扣款金額：5000元</li>
+                      <li>3.減碼啟動報酬率：+50 % 減碼扣款金額：3000元</li>
+                      <p class="fw-normal">系統於基準日會自動計算該張定期(不)定額契約所有交易之平均成本與基準日最新淨值比較，若報酬率達加碼啟動-30%之標準，則當次扣款金額加碼為5000元。若報酬率達減碼啟動+50%之標準，則當次扣款金額減碼為3000元。若報酬率未達加/減碼標準，則依基準扣款金額4000元進行扣款。</p>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
   <script src="js/bootstrap.bundle.js"></script>
   <!-- apexcharts -->
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>

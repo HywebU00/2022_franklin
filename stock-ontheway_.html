@@ -5,14 +5,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="stylesheets/all.min.css" />
-  <title>2022富蘭克林基金mp</title>
+  <title>2022富蘭克林基金_fstock-ontheway_2.3基金在途交易</title>
+  <style>
+    .table-style-border thead th {
+    white-space: wrap;
+    min-width: 88px !important;
+    max-width: 130px !important;
+    padding: 1.25em 0.25em;
+}
+
+.table-list tbody td{
+    padding: 1.25em 0.25em;
+}
+.table-buylist tbody tr td:nth-child(2) {
+  min-width: 88px !important;
+    max-width: 130px !important;
+}
+.table-buylist .td-table td, .table-stock .td-table td {
+    min-width: unset;
+    padding: 0.5em 0.5em;
+}
+.table-buylist .td-table td{
+  width: 88px;
+}
+  </style>
 </head>
+
 <body>
   <header>
     <nav class="navbar navbar-light navbar-expand-lg nav-default fixed-top">
       <!-- container-fluid -->
       <div class="container ">
-        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -26,12 +49,12 @@
               <button class="btn search-mobile popover-mobile-search">
                 <img class="search" src="image/search_icon.png" alt="">
               </button>
-            </li>        
+            </li>
             <li class="nav-item">
               <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#userModal">
                 <img src="image/user_icon.png" alt="">
               </button>
-            </li>           
+            </li>
           </ul>
         </div>
         <div class="collapse navbar-collapse" id="main_nav">
@@ -343,7 +366,7 @@
               </div>
             </li>
           </ul>
-          <ul class="navbar-nav navbar-user ms-auto align-items-center">   
+          <ul class="navbar-nav navbar-user ms-auto align-items-center">
             <li class="nav-item">
               <div class="search">
                 <input type="text">
@@ -374,54 +397,409 @@
       </div>
     </nav>
   </header>
-  <main class="mp-page">
+  <main class="">
     <!-- 廣告位置 -->
-    <section class="banner">
+    <!-- <section class="banner">
       <picture>
         <source media="(min-width: 1200px)" srcset="image/ftft_banner.jpg">
-        <source media="(min-width: 992px)" src="image/ftft_banner.jpg">
+        <source media="(min-width: 992px)" src="image/ftft_banner.jpg"">
         <source media=" (min-width: 576px)" srcset="image/ftft_banner_md.jpg">
         <source media="(max-width: 575px)" srcset="image/ftft_banner_sm.jpg">
         <img srcset="image/ftft_banner.jpg">
       </picture>
-    </section>
+    </section> -->
     <div class="container ">
       <!-- Breadcrumb -->
-      <nav aria-label="breadcrumb">
+      <nav aria-label="breadcrumb" class="d-block d-md-flex">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
           <li class="breadcrumb-item"><a href="#">Library</a></li>
           <li class="breadcrumb-item active" aria-current="page">Data</li>
         </ol>
+        <ul class="function-list mb-4 mb-md-0">
+          <li>
+            <div class="form-findfund">
+              <input class=" form-control" type="text" placeholder="找基金">
+              <button><img src="image/search_icon_gray.png" alt=""></button>
+            </div>
+          </li>
+          <li><button class="btn text-nowrap">回上頁</button></li>
+        </ul>
       </nav>
       <!-- Breadcrumb end -->
       <div class="container">
-        
-        <!-- tab -->
-        <ul class="tab nav nav-pills mb-4" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#invest"
-              type="button" role="tab" aria-controls="pills-home" aria-selected="true">基金投資組合</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#observe"
-              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">觀察基金</button>
-          </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <!-- 投資基金 -->
-          <div class="tab-pane fade show active" id="invest" role="tabpanel" aria-labelledby="pills-home-tab">
-            <!-- 沒有庫存基金 -->
-            <section>
-              <div class="content-info mb-4 content-empty">
-                <p class="text-center">沒有庫存基金</p>
-              </div>
-            </section>
-          </div>
-          <div class="tab-pane fade " id="observe" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <!-- 單筆申購 start -->
+      <section class="mb-5">
+        <h2 class="h4 py-2">單筆申購</h2>
+        <div class=" table-responsive table-style-border table-list table-buylist">
+          <div class="table-responsive-xl">
+            <table class="table">
+              <thead class="">
+                <tr>
+                  <th scope="col">交易序號</th>
+                  <th scope="col">基金名稱</th>
+                  <th scope="col">計價幣別</th>
+                  <th scope="col">申購金額</th>
+                  <th scope="col">參考手續費</th>
+                  <th scope="col">申購總額</th>
+                  <th scope="col">委託確認<br>時間</th>
+                  <th scope="col">委託有效<br>日期</th>
+                  <th scope="col">繳款方式</th>
+                  <th scope="col">委託狀態</th>
+                  <th scope="col">取消交易</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2022122A0001</td>
+                  <td>新世界股票基金</td>
+                  <td>新台幣</td>
+                  <td class="text-end">3,000</td>
+                  <td class="text-end">0</td>
+                  <td class="text-end">3,000</td>
+                  <td>2022/01/19 <br>10:32:01</td>
+                  <td>2022/01/19</td>
+                  <td>自動扣款</td>
+                  <td>委託成功</td>
+                  <td class="text-center">
+                    <a class="btn btn-outline-primary" href="#">取消</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2022122A0001</td>
+                  <td>新世界股票基金</td>
+                  <td>新台幣</td>
+                  <td class="text-end">3,000</td>
+                  <td class="text-end">0</td>
+                  <td class="text-end">3,000</td>
+                  <td>2022/01/19<br> 10:32:01</td>
+                  <td>2022/01/19</td>
+                  <td>自動扣款</td>
+                  <td>委託成功</td>
+                  <td class="text-center">
+                    <a class="btn btn-outline-primary" href="#">取消</a>
+                  </td>
+                </tr>
+                <tr class="tfoot">
+                  <td colspan="9" class="text-end">扣款帳戶：013國泰世華商業銀行</td>
+                  <td>光復分行</td>
+                  <td class="text-nowrap">帳號：01508004XXXX</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <!-- tab end -->
+      </section>
+      <!-- 單筆申購 end -->
+      <!-- 定期（不）定額 start -->
+      <section class="mb-5">
+        <h2 class="h4 py-2">定期（不）定額 </h2>
+        <div class=" table-responsive table-style-border table-list table-buylist">
+          <div class="table-responsive-xl">
+            <table class="table">
+              <thead class="">
+                <tr>
+                  <th scope="col">交易序號</th>
+                  <th scope="col">基金名稱</th>
+                  <th scope="col">交易方式</th>
+                  <th scope="col">扣款日期</th>
+                  <th scope="col">扣款金額</th>
+                  <th scope="col">參考手續費</th>
+                  <th scope="col">扣款總額</th>
+                  <th scope="col" colspan="2">加碼啟動</th>
+                  <th scope="col" colspan="2">減碼啟動</th>
+                  <th scope="col">委託確認<br>時間</th>
+                  <th scope="col">委託有效<br>日期</th>
+                  <th scope="col">交易有效<br>日期</th>
+                  <th scope="col">委託狀態</th>
+                  <th scope="col">取消交易</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>202212X0002</td>
+                  <td>全球醫療保健基金</td>
+                  <td class="">定期定額</td>
+                  <td class="">
+                    <div>6日</div>
+                    <div>16日</div>
+                  </td>
+                  <td class="text-end">10,000</td>
+                  <td class="text-end">0</td>
+                  <td class="text-end">10,000</td>
+                  <td colspan="2">
+                  </td>
+                  <td colspan="2">
+                  </td>
+                  <td>2022/01/19 10:32:01</td>
+                  <td>2022/01/19</td>
+                  <td>2022/01/24</td>
+                  <td>委託成功</td>
+                  <td class="text-center">
+                    <a class="btn btn-outline-primary" href="#">取消</a>
+                  </td>
+                </tr>
+                <tr class="tfoot">
+                  <td colspan="14" class="text-end">扣款帳戶：013國泰世華商業銀行</td>
+                  <td>光復分行</td>
+                  <td class="text-nowrap">帳號：01508004XXXX</td>
+                </tr>
+                <tr>
+                  <td>202212X0002</td>
+                  <td>全球醫療保健基金</td>
+                  <td class="">定期不定額</td>
+                  <td>
+                    <div>6日</div>
+                    <div>16日</div>
+                  </td>
+                  <td class="text-end">10,000</td>
+                  <td class="text-end">0</td>
+                  <td class="text-end">10,000</td>
+                  <td colspan="2" class="">
+                    <div>當報酬率低於-1%</div>
+                    <div>扣款調高為50,000</div>
+                  </td>
+                  <td colspan="2" class="">
+                    <div>當報酬率高於+1%</div>
+                    <div>扣款調降為3,000</div>
+                  </td>
+
+                  <td>2022/01/19 10:32:01</td>
+                  <td>2022/01/19</td>
+                  <td>2022/01/24</td>
+                  <td>委託成功</td>
+                  <td class="text-center">
+                    <a class="btn btn-outline-primary" href="#">取消</a>
+                  </td>
+                </tr>
+                <tr class="tfoot">
+                  <td colspan="14" class="text-end">扣款帳戶：013國泰世華商業銀行</td>
+                  <td>光復分行</td>
+                  <td class="text-nowrap">帳號：01508004XXXX</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- 定期（不）定額 end -->
+      <!-- 買回 start -->
+      <section class="mb-5">
+        <h2 class="h4 py-2">買回</h2>
+        <div class=" table-responsive table-style-border table-list table-buylist">
+          <div class="table-responsive-xl">
+            <table class="table">
+              <thead class="">
+                <tr>
+                  <th scope="col">交易序號</th>
+                  <th scope="col">基金名稱</th>
+                  <th scope="col">買回單位數</th>
+                  <th scope="col">參考買回<br>金額</th>
+                  <th scope="col">委託確認<br>時間</th>
+                  <th scope="col">委託有效<br>日期</th>
+                  <th scope="col">買回價金<br>匯入日期</th>
+                  <th scope="col">委託狀態</th>
+                  <th scope="col">取消交易</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2022122R0001</td>
+                  <td>貨幣市場基金</td>
+                  <td class="text-end">10,000.00</td>
+                  <td class="text-end">103,197</td>
+                  <td>2022/01/19 10:32:01</td>
+                  <td>2022/01/19</td>
+                  <td>2022/01/24</td>
+                  <td>委託成功</td>
+                  <td class="text-center">
+                    <a class="btn btn-outline-primary" href="#">取消</a>
+                  </td>
+                </tr>
+                <tr class="tfoot">
+                  <td colspan="7" class="text-end">扣款帳戶：013國泰世華商業銀行</td>
+                  <td>光復分行</td>
+                  <td class="text-nowrap">帳號：01508004XXXX</td>
+                </tr>
+                <tr>
+                  <td>2022122R0001</td>
+                  <td>富蘭克林全球債券組合基金-累積型-美金</td>
+                  <td class="text-end">10,000.00</td>
+                  <td class="text-end">97,453.00</td>
+                  <td>2022/01/19 10:32:01</td>
+                  <td>2022/01/19</td>
+                  <td>2022/01/24</td>
+                  <td>取消交易</td>
+                  <td class="text-center">
+
+                  </td>
+                </tr>
+                <tr class="tfoot">
+                  <td colspan="7" class="text-end">扣款帳戶：013國泰世華商業銀行</td>
+                  <td>光復分行</td>
+                  <td class="text-nowrap">帳號：01508004XXXX</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- 買回 end -->
+      <!-- 轉申購 start -->
+      <section class="mb-5">
+        <h2 class="h4 py-2">轉申購 </h2>
+        <div class=" table-responsive table-style-border table-list table-buylist">
+          <div class="table-responsive-xl">
+            <table class="table">
+              <thead class="">
+                <tr>
+                  <th scope="col">交易序號</th>
+                  <th scope="col">基金名稱</th>
+                  <th scope="col">轉申購<br>單位數</th>
+                  <th scope="col">轉申購<br>基金名稱</th>
+                  <th scope="col">參考手續費</th>
+                  <th scope="col">委託確認<br>時間</th>
+                  <th scope="col">委託有效<br>日期</th>
+                  <th scope="col">委託狀態</th>
+                  <th scope="col">取消交易</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>20220122S000001</td>
+                  <td>貨幣市場基金</td>
+                  <td class="text-end">3,101,689.99</td>
+                  <td>第一富基金</td>
+                  <td class="text-end">0</td>
+                  <td>2022/01/24 10:32:01</td>
+                  <td>2022/01/24</td>
+                  <td>委託成功</td>
+                  <td class="text-center">
+                    <a class="btn btn-outline-primary" href="#">取消</a>
+                  </td>
+                </tr>
+                <tr class="tfoot">
+                  <td colspan="7" class="text-end">扣款帳戶：013國泰世華商業銀行</td>
+                  <td>光復分行</td>
+                  <td class="text-nowrap">帳號：01508004XXXX</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- 轉申購 end -->
+      <!-- 定期（不）定額變更start -->
+      <section class="mb-5">
+        <h2 class="h4 py-2">定期（不）定額變更 </h2>
+        <div class=" table-responsive table-style-border table-list table-buylist">
+          <div class="table-responsive-xl">
+            <table class="table ">
+              <thead class="th-minwidth">
+                <tr>
+                  <th scope="col">交易序號</th>
+                  <th scope="col">變更</th>
+                  <th scope="col">基金名稱</th>
+                  <th scope="col">交易狀態</th>
+                  <th scope="col">交易方式</th>
+                  <th scope="col">扣款日期</th>
+                  <th scope="col">扣款金額</th>
+                  <th scope="col">加碼啟動<br>報酬率</th>
+                  <th scope="col">加碼扣款<br>金額</th>
+                  <th scope="col">減碼啟動<br>報酬率</th>
+                  <th scope="col">減碼扣款<br>金額</th>
+                  <th scope="col">停利點</th>
+                  <th scope="col">停利轉申購<br>基金</th>
+                  <th scope="col">委託確認<br>時間</th>
+                  <th scope="col">委託有效<br>日期</th>
+                  <th scope="col">委託狀態</th>
+                  <th scope="col">取消交易</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>20220122C000001</td>
+                  <td colspan="12" class="p-0">
+                    <table class="td-table">
+                      <tbody>
+                        <tr class="">
+                          <td>變更前</td>
+                          <td>策高股息基金-累積型</td>
+                          <td>正常扣款</td>
+                          <td>定期不定額</td>
+                          <td>
+                            <div>6日</div>
+                            <div>16日</div>
+                            <div>26日</div>
+                          </td>
+                          <td>2,000</td>
+                          <td>-1%</td>
+                          <td>100,000</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td>無設定</td>
+                        </tr>
+                        <tr>
+                          <td>變更後</td>
+                          <td>策高股息基金-累積型</td>
+                          <td>停止扣款</td>
+                          <td>定期不定額</td>
+                          <td>
+                            <div class="">6日</div>
+                            <div class="">16日</div>
+                            <div class="">26日</div>
+                          </td>
+                          <td>2,000</td>
+                          <td>-1%</td>
+                          <td>100,000</td>
+                          <td></td>
+                          <td></td>
+                          <td>0%</td>
+                          <td>無設定</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td>2022/01/24 11:30:00</td>
+                  <td>2022/01/24</td>
+                  <td>委託成功</td>
+                  <td class="text-center">
+                    <a class="btn btn-outline-primary" href="#">取消</a>
+                  </td>
+                </tr>
+
+                <!-- <tr>
+                  <td>20220122C000001</td>
+                  <td>變更前</td>
+                  <td class="td-minwidth">策高股息基金-累積型</td>
+                  <td>正常扣款</td>
+                  <td class="td-minwidth">定期不定額</td>
+                  <td class="td-minwidth">
+                    <div>6日</div>
+                    <div>16日</div>
+                    <div>26日</div>
+                  </td>
+                  <td class="text-end">2,000</td>
+                  <td>-1%</td>
+                  <td class="text-end">100,000</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>無設定</td>
+                  <td>2022/01/24 11:30:00</td>
+                  <td>2022/01/24</td>
+                  <td>委託成功</td>
+                  <td class="text-center">
+                    <a class="btn btn-outline-primary" href="#">取消</a>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- 定期（不）定額變更 end -->
       </div>
     </div>
   </main>
@@ -438,7 +816,7 @@
             <ul class="col-xl-7 col-12  text-start  mt-2 mt-lg-0">
               <li class="text-primary fw-bold mb-2">
                 富蘭克林華美證券投資信託股份有限公司
-              </li>
+              </li >
               <li class="">106 台北市大安區忠孝東路四段87號12樓</li>
               <li class="">電話：(02)2781-9599 傳真：(02)2781-8299</li>
             </ul>
@@ -470,12 +848,12 @@
             <li>
               <div class="date">
                 <span>2022</span>
-               年
-               <span>09</span>
-               月
-               <span>25</span>
-               日
-               <span>17:06:54</span>
+                年
+                <span>09</span>
+                月
+                <span>25</span>
+                日
+                <span>17:06:54</span>
               </div>
             </li>
           </ul>
@@ -488,8 +866,8 @@
     </div>
   </div>
   <!-- 手機版本搜尋視窗 modal -->
-  <!-- 點擊按鈕後 新增加 show 的 classname -->
-  <div class="user-mobile-popover">
+  <!-- 點擊按鈕後 新增加 show 的classname -->
+  <div class="user-mobile-popover ">
     <div class="search">
       <div class="d-flex mb-3 ">
         <input type="text" class="form-control " placeholder="輸入搜尋文字">
@@ -497,99 +875,18 @@
       </div>
     </div>
   </div>
-
-  <!-- 停損停利 視窗 modal -->
-  <!-- Modal -->
-  <div class="modal fade modal-stop " id="StopModal" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form action="">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-12">
-                <h5>第一富基金</h5>
-                <p>目前報酬率(不含息):6.21%</p>
-              </div>
-              <div class="col-lg-6 col-12 mb-4">
-                
-                <label for="" class="form-label ">停利點(報酬率)</label>
-                <div class="row g-2">
-                  <div class="col-12 d-flex align-items-center"><input type="number" class="form-control form-control-pay"
-                      placeholder="請輸入數值" id="">
-                    <span class="text-nowrap ms-2 ">%</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-12 mb-4">
-                <label for="" class="form-label ">停損點(報酬率)</label>
-                <div class="row g-2">
-                  <div class="col-12 d-flex align-items-center"><input type="number" class="form-control form-control-pay"
-                      placeholder="請輸入數值" id="">
-                    <span class="text-nowrap ms-2 ">%</span>
-                  </div>
-                </div>
-              </div>      
-              <div class="col-md-6 col-12 mb-4">
-                <span for="" class="form-label ">開啟通知</span>
-                <div class="btn-switch">
-                  <span>關</span>
-                  <input class="" type="checkbox" id="switch" />
-                  <label for="switch"></label>
-                  <span>開</span>
-                </div>           
-              </div>
-              <div class="col-md-6 col-12 mb-4">
-                <span for="" class="form-label ">通知頻率</span>
-                <div class="form-check">
-                  <input class="form-check-input"name="drone" type="radio" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    每次通知
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input"name="drone" type="radio" id="gridCheck1">
-                  <label class="form-check-label" for="gridCheck1">
-                    只通知一次
-                  </label>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="list-disc">
-                  <p>通知頻率說明</p>
-                  <ul>
-                    <li>
-                     每次通知：每當基金報酬率到達停利/停損點時，每日都會通知您，每日最多通知一次。
-                    </li>
-                    <li>只通知一次：當基金報酬率到達停利/停損點時，僅通知一次並自動關閉通知設定。</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer d-flex justify-content-center">
-            <button type="button" class="btn btn-primary btn-width">確定</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <div class="loading">
-   <div class="loading-contnet">
-    <div class="loading-img">
-      <img src="image/loading.gif" alt="">
-    </div>
-   </div>
-  </div>
   <script src="js/bootstrap.bundle.js"></script>
+  <!-- apexcharts -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   <!-- 廣告圖片大小 -->
   <script src="js/picturefill.js"></script>
-  <!-- lottie -->
-  <script src="js/lottie.min.js"></script>
   <!-- 全站同用的ＪＳ -->
   <script src="js/ftft.js"></script>
+  <!-- page setting -->
+  <script src="js/fundIntroduce.js"></script>
+  <!-- Vanilla Datepicker JS -->
+  <script src='js/vanillajs-datepicker.min.js'></script>
+  <script src="js/datePicker_setting.js"></script>
 
 </body>
 

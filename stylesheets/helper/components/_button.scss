@@ -70,3 +70,10 @@
        right: 10px;
    } 
 }
+.btn-clear{
+    background: #fff;
+    &:hover{
+        background: #e4eefd;
+        color: $primary;
+    }
+}

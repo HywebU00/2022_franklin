@@ -1,4 +1,4 @@
-.modal-stop{
+.modal-stop,.modal-ex{
     .modal-header{
         padding-bottom: 0px;
     }
@@ -92,7 +92,11 @@
         }
     }
 }
-
+.modal-ex{
+    p.fw-normal{
+        color: #646464;
+    }
+}
 .modal-explain{
 	.modal-header {
 		color: $primary;
