@@ -333,7 +333,14 @@
 		}
 	}
 }
-
+.btn-tradeNote{
+	font-size: 0.8rem;
+    line-height: 1.2em;
+	@include media-breakpoint-down(lg) {
+		font-size: 1rem;
+    line-height: 1.5em;
+	}
+}
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
 	.nav-default .has-megamenu {
@@ -451,6 +458,12 @@
 		background: $primary;
 		border-radius: 0;
 		border: 0;
+
+		.btn-outline-light{
+		&:hover{
+			color: $primary;
+		}
+		}
 	}
 
 	.modal-dialog {
