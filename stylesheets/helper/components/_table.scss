@@ -1040,12 +1040,12 @@ th{
 	}
 }
 .bell-tooltip{
+	padding: 0;
 	ul{
 		padding:1em;
-		// background: #eaeaea;
-		
 		border: solid 1px #ccc;
 		background: #fff;
+		margin-bottom: -1em;
 		li{
 			color:#212529;
 			padding: 0.5em 0;
